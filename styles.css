@@ -1,0 +1,77 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("img/bg/6.gif");
+    background-repeat: repeat;
+}
+
+body {
+    color: #292929;
+    font: 90% Roboto, Arial, sans-serif;
+    font-weight: 300;
+}
+
+#header {
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+p {
+    padding: 0 10px;
+    line-height: 1.8;
+}
+
+ul li {
+    padding-right: 10px;
+    line-height: 1.6;
+}
+
+h3 {
+    padding: 5px 20px;
+    margin: 0;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    width: 80px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div#name {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+div#wrapper {
+    float: left;
+    width: 100%;
+}
+
+div#content {
+    margin: 0 25%;
+    background: #1b0e18;
+    color: aliceblue;
+    border-style: inset;
+    border-color: blueviolet;
+}
+
+div#leftpane {
+    float: left;
+    width: 15%;
+    margin-left: -100%;
+}
+
+div#rightpane {
+    float: right;
+    width: 15%;
+    margin-left: -100%;
+}
