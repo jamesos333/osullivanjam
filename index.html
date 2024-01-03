@@ -6,7 +6,8 @@
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
     <meta name="description"
         content="Use this HTML basic website layout template with the navigation menu on the left, the main content at the center, the extra stuff on the right.">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/buttons.css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
             <div id="name">
                 <div class="row">
                     <div class="column">
-                        <img src="img/letters/o.gif" alt="o" style="width:100%">
+                        <img src="img/letters/o.gif" alt="o" style="width:110%">
                     </div>
                     <div class="column">
                         <img src="img/letters/s.gif" alt="s" style="width:100%">
@@ -64,9 +65,31 @@
             </div>
         </div>
         <div id="wrapper">
+            <div id="scrollingtext">
+                <p class="marquee">
+                    <span>This is text - This is text - This is text - This is text - This is text - This is text - This
+                        is text - This is text - This is text - This is text - This is text - This is text
+                    </span>
+                </p>
+            </div>
             <div id="content">
-                <p><strong>revolving newscast element will go here</strong></p>
-                <h3>links will go here</h3>
+                <table>
+                    <tr>
+                        <th><button class="button-92" role="button">About</button></th>
+                        <th><button class="button-92" role="button">Contact</button></th>
+                        <th><button class="button-92" role="button">LinkedIn</button></th>
+                    </tr>
+                    <tr>
+                        <th><button class="button-92" role="button">Processing</button></th>
+                        <th><img src="img/eye.gif" alt="eye" style="width:100%"></th>
+                        <th><button class="button-92" role="button">Movies</button></th>
+                    </tr>
+                    <tr>
+                        <th><button class="button-92" role="button">GitHub</button></th>
+                        <th><button class="button-92" role="button">Experience</button></th>
+                        <th><button class="button-92" role="button">Photos</button></th>
+                    </tr>
+                </table>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quod placeat itaque ipsa consequuntur
                     doloribus quaerat dolore illum optio, veritatis dignissimos culpa in rem amet ratione modi eligendi
                     maxime explicabo.

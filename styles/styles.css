@@ -2,7 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-image: url("img/bg/6.gif");
+    background-image: url("../img/bg/6.gif");
     background-repeat: repeat;
 }
 
@@ -74,4 +74,15 @@ div#rightpane {
     float: right;
     width: 15%;
     margin-left: -100%;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+td {
+    width: 25%;
 }
