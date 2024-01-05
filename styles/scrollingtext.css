@@ -1,6 +1,7 @@
 /* scrolling text */
 div#scrollingtext {
-    margin: 0 22vw;
+    margin: 0 auto;
+    max-width: 1050px;
     background: #1b0e18;
     color: aliceblue;
     margin-top: 2px;

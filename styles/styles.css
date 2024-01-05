@@ -7,12 +7,18 @@ body {
 }
 
 body {
+    margin: 0px 40px;
     color: #292929;
     font: 90% Roboto, Arial, sans-serif;
     font-weight: 300;
 }
 
 #header {
+    margin: 0 auto;
+    max-width: 1100px;
+    min-width: 600px;
+    padding: 5px; 
+
     padding-top: 2%;
     padding-bottom: 0.75%;
 }
@@ -27,17 +33,10 @@ ul li {
     line-height: 1.6;
 }
 
-h3 {
-    padding: 5px 20px;
-    margin: 0;
-}
-
-.column {
-    float: left;
-    width: 33.33%;
+.row img {
     padding: 8px 2px;
-    width: 5.5vw;
-    height: 5.5vw;
+    width: 9.6%;
+    aspect-ratio: 1;
 }
 
 .row::after {
@@ -48,17 +47,21 @@ h3 {
 
 div#name {
     text-align: center;
-    display: flex;
     justify-content: center;
 }
 
 div#wrapper {
     float: left;
     width: 100%;
+    margin-bottom: 60px;
 }
 
 div#content {
-    margin: 0 21vw;
+    margin: 0 auto;
+    max-width: 1100px;
+    min-width: 600px;
+    padding: 5px; 
+
     background: #1b0e18;
     color: aliceblue;
     border-style: inset;
@@ -79,7 +82,7 @@ div#rightpane {
 }
 
 .button {
-    width: 14vw;
+    width: 78%;
 }
 
 table {
