@@ -14,7 +14,7 @@ body {
 
 #header {
     padding-top: 2%;
-    padding-bottom: 1%;
+    padding-bottom: 0.75%;
 }
 
 p {
@@ -35,8 +35,9 @@ h3 {
 .column {
     float: left;
     width: 33.33%;
-    padding: 5px;
-    width: 80px;
+    padding: 8px 2px;
+    width: 5.5vw;
+    height: 5.5vw;
 }
 
 .row::after {
@@ -57,11 +58,12 @@ div#wrapper {
 }
 
 div#content {
-    margin: 0 25%;
+    margin: 0 21vw;
     background: #1b0e18;
     color: aliceblue;
     border-style: inset;
     border-color: blueviolet;
+    border-radius: 25px;
 }
 
 div#leftpane {
@@ -76,13 +78,16 @@ div#rightpane {
     margin-left: -100%;
 }
 
+.button {
+    width: 14vw;
+}
+
 table {
     table-layout: fixed;
     width: 100%;
-    padding-top: 35px;
-    padding-bottom: 40px;
+    padding: 40px 40px;
 }
 
-td {
-    width: 25%;
+th, tr {
+    padding: 5px 0px;
 }
