@@ -113,5 +113,6 @@ blockquote p {
   font-family: 'Times New Roman', serif;
   font-weight: bold;
   font-style: italic;
-  font-size: 15px;
+  font-size: 95%;
+  letter-spacing: 1px;
 }
