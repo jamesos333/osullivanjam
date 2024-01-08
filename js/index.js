@@ -31,12 +31,23 @@ var copyright = "Disclaimer for osullivanjam.es<br>" +
     "By using osullivanjam.es, you acknowledge that you have read, understood, and agree to be bound by this disclaimer. <br><br>" +
     "If you have any questions or concerns about this disclaimer, please discontinue all use of the Website.";
 
-// adds scrolling text content
+// adds the scrolling text content
 document.querySelectorAll('[id=marqueetext]')[0].innerHTML = scrollingText;
 document.querySelectorAll('[id=marqueetext]')[1].innerHTML = scrollingText;
 
-// adds content disclaimer
+// adds the content disclaimer
 document.querySelectorAll('[id=copyright]')[0].innerHTML = copyright;
 
-// shuffle background image
-document.querySelector('body').style.backgroundImage = 'url("../img/bg/6.gif")'
+// shuffles the background images
+//document.querySelector('body').style.backgroundImage = 'url("../img/bg/6.gif")';
+
+// shuffles some of buttons with the exception of the first and the last ones
+let buttonArray = Array.from(document.querySelectorAll('[class=button]'));
+buttonArray.shift();
+buttonArray.pop();
+const shuffledButtonArray = buttonArray.sort((a, b) => 0.5 - Math.random());
+//console.log(shuffledButtonArray);
+for( var i = 0; i < shuffledButtonArray.length; i++ ) {
+    var element = shuffledButtonArray[i].outerHTML;
+    document.querySelectorAll('[class=button]').item(i+1).outerHTML = element;
+}
