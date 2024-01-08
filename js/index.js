@@ -42,12 +42,13 @@ document.querySelectorAll('[id=copyright]')[0].innerHTML = copyright;
 //document.querySelector('body').style.backgroundImage = 'url("../img/bg/6.gif")';
 
 // shuffles some of buttons with the exception of the first and the last ones
-let buttonArray = Array.from(document.querySelectorAll('[class=button]'));
+let buttonNode = document.querySelectorAll('[class=button]');
+let buttonArray = Array.from(buttonNode);
 buttonArray.shift();
 buttonArray.pop();
 const shuffledButtonArray = buttonArray.sort((a, b) => 0.5 - Math.random());
 //console.log(shuffledButtonArray);
 for( var i = 0; i < shuffledButtonArray.length; i++ ) {
     var element = shuffledButtonArray[i].outerHTML;
-    document.querySelectorAll('[class=button]').item(i+1).outerHTML = element;
+    buttonNode.item(i+1).outerHTML = element;
 }
