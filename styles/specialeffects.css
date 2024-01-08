@@ -1,0 +1,117 @@
+/* scrolling text */
+div#scrollingtext {
+  margin: 0 auto;
+  max-width: 1050px;
+  background: #1b0e18;
+  color: aliceblue;
+  margin-top: 2px;
+  margin-bottom: 15px;
+
+  border-style: solid;
+  border-color: rgba(137, 43, 226, 0.521);
+  border-width: 2px;
+  border-radius: 8px;
+}
+
+.marquee {
+  --gap: 0.1rem;
+  display: flex;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  user-select: none;
+  gap: var(--gap);
+}
+
+#marqueetext {
+  display: inline-block;
+  font-size: 16px;
+  animation: scroll 10s linear infinite;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  flex: 0 0 auto;
+  margin: 2px;
+  padding: 0rem 0.1rem;
+  text-align: center;
+}
+
+#marqueetext span {
+  padding: 0 0.2%;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+/* intricately styled large quote with an image behind it */
+blockquote {
+  quotes: "\201C" "\201D";
+  background: rgba(0, 0, 0, 0.5);
+  border-left: 10px solid #ccc;
+  margin: 1.5em 30px;
+  padding: 0.5em 1.5em;
+  border-radius: 2px;
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+
+  font-family: 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 22px;
+  letter-spacing: 2px;
+  line-height: 60px;
+
+  width: 100%;
+  background-position: 0 -1000px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* cloud image background for blockquote */
+.cloudquote {
+  background-image: url("../img/clouds.gif");
+}
+
+/* fire image background for blockquote */
+.firequote {
+  background-image: url("../img/fire.gif");
+}
+
+/* a much smaller and differently styled quote */
+.subquote {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 10px 5px 20px;
+  padding: 0.4em 80px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: double;
+  border-color: #441539;
+
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 15px;
+}
