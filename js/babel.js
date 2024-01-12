@@ -1,4 +1,4 @@
-const prod = false;
+const prod = true;
 var baseUrl = 'https://osullivanjam.es/babel/';
 const urls = ['adjectives.txt', 'nouns.txt', 'verbs.txt', 'adverbs.txt', 'subjects.txt', "indirectobjects.txt", "directobjects.txt", "conjunctions.txt"];
 var wordLists = new Array(urls.length);
