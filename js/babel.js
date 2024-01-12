@@ -1,4 +1,4 @@
-const prod = true;
+const prod = false;
 var baseUrl = 'https://osullivanjam.es/babel/';
 const urls = ['adjectives.txt', 'nouns.txt', 'verbs.txt', 'adverbs.txt', 'subjects.txt', "indirectobjects.txt", "directobjects.txt"];
 var wordLists = new Array(urls.length);
@@ -15,7 +15,19 @@ const sentenceStructures = ['01', '425,6!', '425,6', '04,213', '42;12', '1251', 
 if(!prod){
     baseUrl = "http://127.0.0.1:5500/babel/";
 }
+
 createAndInsertSentence()
+
+// Gets a reference to the image element by its ID
+const imageElement = document.getElementById("stone");
+// Adds a click event listener to the image element
+imageElement.addEventListener("click", async function() {
+    try {
+        const result = await createAndInsertSentence();
+    } catch (error) {
+        console.error("An error occurred:", error);
+    }
+});
 
 // generates the sentence and then inserts it into the html page
 async function createAndInsertSentence() {
@@ -23,7 +35,7 @@ async function createAndInsertSentence() {
     console.log("Chosen Structure: " + chosenStruct);
 
     let sentence = await generateSentence(chosenStruct);
-    document.querySelectorAll('.wordofgod')[0].innerHTML = sentence;
+    document.querySelectorAll('.wordofgod')[0].innerHTML += sentence;
 }
 
 // generates a random sentence in accordance with the structure input

@@ -70,6 +70,13 @@ div#content {
     letter-spacing: 1px;
 }
 
+.title {
+    padding: 0 40px;
+    line-height: 1;
+    font-family: Garamond, serif;
+    font-size: 40px;
+}
+
 .wrapper {
     display: flex;
 }

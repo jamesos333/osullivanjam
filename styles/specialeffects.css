@@ -99,6 +99,11 @@ blockquote p {
   background-image: url("../img/fire.gif");
 }
 
+/* white background for god quote */
+.wordofgod{
+  background-color: white;
+}
+
 /* a much smaller and differently styled quote */
 .subquote {
   text-align: center;
@@ -152,10 +157,4 @@ blockquote p {
 
   position: sticky;
   top: 45px;
-}
-
-.wordofgod{
-  text-align: center;
-  padding: 60px;
-  font-size: 40px;
 }
