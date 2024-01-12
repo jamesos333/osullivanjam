@@ -1,6 +1,6 @@
 const prod = false;
 var baseUrl = 'https://osullivanjam.es/babel/';
-const urls = ['adjectives.txt', 'nouns.txt', 'verbs.txt', 'adverbs.txt', 'subjects.txt', "indirectobjects.txt", "directobjects.txt"];
+const urls = ['adjectives.txt', 'nouns.txt', 'verbs.txt', 'adverbs.txt', 'subjects.txt', "indirectobjects.txt", "directobjects.txt", "conjunctions.txt"];
 var wordLists = new Array(urls.length);
 // file IDs
 //       adjectives: 0
@@ -10,9 +10,10 @@ var wordLists = new Array(urls.length);
 //         subjects: 4
 // indirect objects: 5
 //   direct objects: 6
-const sentenceStructures = ['01', '425,6!', '425,6', '04,213', '42;12', '1251', '421?', '426;4,6'];
+//     conjunctions: 7
+const sentenceStructures = ['01', '120', '425,6!', '04,213', '42;12', '1251', '421?', '426;4,6'];
 
-if(!prod){
+if (!prod) {
     baseUrl = "http://127.0.0.1:5500/babel/";
 }
 
@@ -21,7 +22,7 @@ createAndInsertSentence()
 // Gets a reference to the image element by its ID
 const imageElement = document.getElementById("stone");
 // Adds a click event listener to the image element
-imageElement.addEventListener("click", async function() {
+imageElement.addEventListener("click", async function () {
     try {
         const result = await createAndInsertSentence();
     } catch (error) {
@@ -31,11 +32,23 @@ imageElement.addEventListener("click", async function() {
 
 // generates the sentence and then inserts it into the html page
 async function createAndInsertSentence() {
-    const chosenStruct = sentenceStructures[getRandomInt(sentenceStructures.length)];
+    const chosenStruct = makeSentenceStructure(getRandomInt(3));
     console.log("Chosen Structure: " + chosenStruct);
 
     let sentence = await generateSentence(chosenStruct);
     document.querySelectorAll('.wordofgod')[0].innerHTML += sentence;
+}
+
+// generates a sentence structure, the length determines how many conjunctions it will use
+function makeSentenceStructure(length){
+    var structure = "";
+    for( let i = 0; i<length-1; i++ ){
+        structure+=sentenceStructures[getRandomInt(sentenceStructures.length)];
+        structure+="7";
+    }
+    structure+=sentenceStructures[getRandomInt(sentenceStructures.length)];
+    console.log(structure);
+    return structure;
 }
 
 // generates a random sentence in accordance with the structure input
