@@ -1,6 +1,5 @@
-const prod = true;
-var baseUrl = 'https://osullivanjam.es/babel/';
-const urls = ['adjectives.txt', 'nouns.txt', 'verbs.txt', 'adverbs.txt', 'subjects.txt', "indirectobjects.txt", "directobjects.txt", "conjunctions.txt"];
+const baseUrl = window.location.href.split('/').slice(0, 3).join('/') + "/babel/";
+var urls = ['adjectives.txt', 'nouns.txt', 'verbs.txt', 'adverbs.txt', 'subjects.txt', "indirectobjects.txt", "directobjects.txt", "conjunctions.txt"];
 var wordLists = new Array(urls.length);
 // file IDs
 //       adjectives: 0
@@ -11,11 +10,7 @@ var wordLists = new Array(urls.length);
 // indirect objects: 5
 //   direct objects: 6
 //     conjunctions: 7
-const sentenceStructures = ['01', '120', '425,6!', '04,213', '42;12', '1251', '421?', '426;4,6'];
-
-if (!prod) {
-    baseUrl = "http://127.0.0.1:5500/babel/";
-}
+const sentenceStructures = ['01', '5120', '425,6!', '425,6', '04,213', '42;12', '1251', '421?', '426;4,6', '1:0,0,0, and 0. '];
 
 createAndInsertSentence()
 
@@ -24,7 +19,7 @@ const imageElement = document.getElementById("stone");
 // Adds a click event listener to the image element
 imageElement.addEventListener("click", async function () {
     try {
-        const result = await createAndInsertSentence();
+        await createAndInsertSentence();
     } catch (error) {
         console.error("An error occurred:", error);
     }
@@ -32,7 +27,8 @@ imageElement.addEventListener("click", async function () {
 
 // generates the sentence and then inserts it into the html page
 async function createAndInsertSentence() {
-    const chosenStruct = makeSentenceStructure(getRandomInt(3));
+    var chosenStruct = makeSentenceStructure(1 + getRandomInt(2));
+    //chosenStruct = "7:0,0,0, and 0.";
     console.log("Chosen Structure: " + chosenStruct);
 
     let sentence = await generateSentence(chosenStruct);
@@ -40,13 +36,18 @@ async function createAndInsertSentence() {
 }
 
 // generates a sentence structure, the length determines how many conjunctions it will use
-function makeSentenceStructure(length){
-    var structure = "";
-    for( let i = 0; i<length-1; i++ ){
-        structure+=sentenceStructures[getRandomInt(sentenceStructures.length)];
-        structure+="7";
+function makeSentenceStructure(length) {
+    var structure = "7";
+    for (let i = 0; i < length; i++) {
+        structure += sentenceStructures[getRandomInt(sentenceStructures.length)];
+        // attempts to prevent long runon sentences
+        if (structure.length > i * 5 && integerCheck(structure.charAt(structure.length - 1))) {
+            structure += ". "
+        } else {
+            structure += "7";
+        }
     }
-    structure+=sentenceStructures[getRandomInt(sentenceStructures.length)];
+    structure += sentenceStructures[getRandomInt(sentenceStructures.length)];
     console.log(structure);
     return structure;
 }
@@ -59,7 +60,7 @@ async function generateSentence(structure) {
     var isInt;
     for (let i = 0; i < structure.length; i++) {
         current = structure.charAt(i);
-        isInt = Number.isInteger(parseInt(current, 10))
+        isInt = integerCheck(current);
         if (isInt) {
             sentence += " ";
             sentence += await getWordList(current);
@@ -69,7 +70,9 @@ async function generateSentence(structure) {
     }
     // adds a period if there is no ending punctuation isn't there
     if (isInt) {
-        sentence += ".";
+        sentence += ". ";
+    } else {
+        sentence += " ";
     }
     console.log(sentence);
     return sentence;
@@ -103,4 +106,8 @@ async function getWordList(fileId) {
 // gets a random number between 0 and the max
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
+}
+
+function integerCheck(input) {
+    return Number.isInteger(parseInt(input, 10));
 }

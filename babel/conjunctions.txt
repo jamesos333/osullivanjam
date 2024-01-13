@@ -32,3 +32,9 @@ unless
 since
 so
 so that
+provided that
+in order to
+as well as
+as long as
+as soon as
+till
