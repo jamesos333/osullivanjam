@@ -172,7 +172,6 @@ blockquote p {
   letter-spacing: 2px;
   margin: 0.5em 30px;
   padding: 0.5em;
-  animation: fadeIn 1s;
 }
 
 .chatbox-container p {

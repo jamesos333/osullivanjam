@@ -66,13 +66,19 @@ function makeSentenceStructure(length) {
         }
     }
     structure += sentenceStructures[getRandomInt(sentenceStructures.length)];
-    console.log(structure);
+    //console.log(structure);
     return structure;
 }
 
 async function insertNewSentence(sentence) {
     document.querySelectorAll('[id=wizardcontainer]')[0].innerHTML += chatboxTemplate;
     var chatboxes = document.querySelectorAll('[id=chatbox]');
+    var chatboxContainers = document.querySelectorAll('.chatbox-container');
+    //console.log(chatboxContainers);
+    if( chatboxContainers.length > 1 ){
+        chatboxContainers[chatboxContainers.length - 2].style.animation = 'null';
+    }
+    chatboxContainers[chatboxContainers.length - 1].style.animation = 'fadeIn 1s';
     chatboxes[chatboxes.length - 1].innerHTML = sentence;
 }
 
