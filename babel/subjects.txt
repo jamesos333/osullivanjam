@@ -38,7 +38,21 @@ Hero
 Villain
 Princess
 Wizard
-Vampire
+Insect
+Bug 
+Vermin
+Scum
+Slime
+Joe
+Industrialist
+Liar
+Inmate
+Felon
+Convict
+Circus
+Philosopher
+Thinker
+Worm
 Ghost
 Monster
 Dragon
@@ -178,6 +192,7 @@ Police Officer
 President
 Prince
 Princess
+Gnu
 Rabbit
 Racecar Driver
 Robot

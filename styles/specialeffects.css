@@ -1,4 +1,4 @@
-/* scrolling text */
+/* scrolling text on homepage */
 div#scrollingtext {
   margin: 0 auto;
   max-width: 1050px;
@@ -100,7 +100,7 @@ blockquote p {
 }
 
 /* white background for god quote */
-.wordofgod{
+.wordofgod {
   background-color: white;
 }
 
@@ -122,6 +122,7 @@ blockquote p {
   letter-spacing: 1px;
 }
 
+/* faq */
 .faq-container {
 
   padding: 20px;
@@ -149,6 +150,7 @@ blockquote p {
   border-radius: 4px;
 }
 
+/* scrolling image on faq page */
 .scrollingimage {
   display: block;
   margin-left: auto;
@@ -157,4 +159,49 @@ blockquote p {
 
   position: sticky;
   top: 45px;
+}
+
+/* chatbox container */
+.chatbox-container {
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 5px;
+  font-family: 'Times New Roman', serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin: 0.5em 30px;
+  padding: 0.5em;
+  animation: fadeIn 1s;
+}
+
+.chatbox-container p {
+  margin: 8px;
+  padding-left: 80px;
+}
+
+.chatbox-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.chatbox-container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.time-right {
+  float: right;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

@@ -1,5 +1,8 @@
-const baseUrl = window.location.href.split('/').slice(0, 3).join('/') + "/babel/";
-var urls = ['adjectives.txt', 'nouns.txt', 'verbs.txt', 'adverbs.txt', 'subjects.txt', "indirectobjects.txt", "directobjects.txt", "conjunctions.txt"];
+const baseUrl = window.location.href.split('/').slice(0, 3).join('/');
+const chatboxTemplate = await fetchData(baseUrl + "/elements/chatbox.html");
+// a custom sentence structure is possible by using the URL parameter 'customStructure'
+const urlParams = new URLSearchParams(window.location.search);
+var urls = ['adjectives.txt', 'nouns.txt', 'verbs.txt', 'adverbs.txt', 'subjects.txt', "indirectobjects.txt", "directobjects.txt", "conjunctions.txt", "pluralnouns.txt"];
 var wordLists = new Array(urls.length);
 // file IDs
 //       adjectives: 0
@@ -10,7 +13,20 @@ var wordLists = new Array(urls.length);
 // indirect objects: 5
 //   direct objects: 6
 //     conjunctions: 7
-const sentenceStructures = ['01', '5120', '425,6!', '425,6', '04,213', '42;12', '1251', '421?', '426;4,6', '1:0,0,0, and 0. '];
+//     plural nouns: 8
+const sentenceStructures = [
+    '01', '210', '251',
+    '5120', '5201', '102',
+    '425,6!', '452,6!', '4,526',
+    '04,213',
+    '42;12',
+    '82;12',
+    '1251', '1125',
+    '421?',
+    '426;4,6',
+    '1:0,0,0, and 0.',
+    '5315,01'
+];
 
 createAndInsertSentence()
 
@@ -28,11 +44,13 @@ imageElement.addEventListener("click", async function () {
 // generates the sentence and then inserts it into the html page
 async function createAndInsertSentence() {
     var chosenStruct = makeSentenceStructure(1 + getRandomInt(2));
-    //chosenStruct = "7:0,0,0, and 0.";
+    if (urlParams.has('customStructure')) {
+        chosenStruct = urlParams.get('customStructure');
+    }
+    //chosenStruct = "75315,01";
     console.log("Chosen Structure: " + chosenStruct);
-
-    let sentence = await generateSentence(chosenStruct);
-    document.querySelectorAll('.wordofgod')[0].innerHTML += sentence;
+    var sentence = await generateSentence(chosenStruct);
+    insertNewSentence(sentence);
 }
 
 // generates a sentence structure, the length determines how many conjunctions it will use
@@ -41,7 +59,7 @@ function makeSentenceStructure(length) {
     for (let i = 0; i < length; i++) {
         structure += sentenceStructures[getRandomInt(sentenceStructures.length)];
         // attempts to prevent long runon sentences
-        if (structure.length > i * 5 && integerCheck(structure.charAt(structure.length - 1))) {
+        if (structure.length > i * 6 && integerCheck(structure.charAt(structure.length - 1))) {
             structure += ". "
         } else {
             structure += "7";
@@ -50,6 +68,12 @@ function makeSentenceStructure(length) {
     structure += sentenceStructures[getRandomInt(sentenceStructures.length)];
     console.log(structure);
     return structure;
+}
+
+async function insertNewSentence(sentence) {
+    document.querySelectorAll('[id=wizardcontainer]')[0].innerHTML += chatboxTemplate;
+    var chatboxes = document.querySelectorAll('[id=chatbox]');
+    chatboxes[chatboxes.length - 1].innerHTML = sentence;
 }
 
 // generates a random sentence in accordance with the structure input
@@ -81,26 +105,31 @@ async function generateSentence(structure) {
 // takes the fileId (the place in the URL/wordlist array of the file) and selects a random word from it.
 // if the file isn't in an array yet it will create one for it
 async function getWordList(fileId) {
-    var randomWord
+    var randomWord;
     if (wordLists[fileId] == null) {
-        try {
-            const fileUrl = baseUrl + urls[fileId];
-            const response = await fetch(fileUrl);
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            const data = await response.text();
-            const newWordList = data.split("\n");
-            wordLists[fileId] = newWordList;
-            //console.log(fileUrl);
-        } catch (error) {
-            console.error('There was a problem with the fetch operation:', error);
-        }
+        const fileUrl = baseUrl + "/babel/" + urls[fileId];
+        const data = await fetchData(fileUrl);
+        const newWordList = data.split("\n");
+        wordLists[fileId] = newWordList;
+        //console.log(fileUrl);
+        //console.log(newWordList);
     }
     randomWord = wordLists[fileId][getRandomInt(wordLists[fileId].length)];
     randomWord = randomWord.toLowerCase().trim();
     console.log(fileId + " " + randomWord);
     return randomWord;
+}
+
+async function fetchData(fileUrl) {
+    try {
+        const response = await fetch(fileUrl);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return await response.text();
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+    }
 }
 
 // gets a random number between 0 and the max

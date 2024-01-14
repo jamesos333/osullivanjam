@@ -115,7 +115,7 @@ tr {
 }
 
 .button:hover {
-    box-shadow: 0 0 3px 3px blue;
+    box-shadow: 0 0 3px 3px plum;
     border-radius: 25px;
 }
 
