@@ -73,7 +73,7 @@ function makeSentenceStructure(length) {
 async function insertNewSentence(sentence) {
     document.querySelectorAll('[id=wizardcontainer]')[0].innerHTML += chatboxTemplate;
     var chatboxes = document.querySelectorAll('[id=chatbox]');
-    var chatboxContainers = document.querySelectorAll('.chatbox-container');
+    var chatboxContainers = document.querySelectorAll('.chatbox');
     //console.log(chatboxContainers);
     if( chatboxContainers.length > 1 ){
         chatboxContainers[chatboxContainers.length - 2].style.animation = 'null';

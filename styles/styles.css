@@ -58,10 +58,9 @@ div#content {
     background: rgba(0, 0, 0, 0.4);
     margin: 10px 5px 20px;
     padding: 0.6em 10px;
-    border-radius: 5px;
-    border-width: 2px;
-    border-style: double;
-    border-color: #441539;
+    border: 5px double rgb(68, 21, 57);
+    border-radius: 2px;
+    height: 25px;
 
     font-family: 'Times New Roman', serif;
     font-weight: bold;
@@ -70,11 +69,30 @@ div#content {
     letter-spacing: 1px;
 }
 
+.description img {
+    height: 25px;
+}
+
 .title {
-    padding: 0 40px;
+    padding: 8px 40px;
+    margin: 1em 20px;
+    margin-bottom: 0px;
+
     line-height: 1;
+    letter-spacing: 3px;
     font-family: Garamond, serif;
-    font-size: 40px;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+
+    border: 5px solid rgb(68, 21, 57);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.chat-container {
+    padding: 15px 0px;
+    margin: 0 20px;
 }
 
 .wrapper {
