@@ -1,36 +1,43 @@
 /* intricately styled large quote with an image behind it */
 blockquote {
-  quotes: "\201C" "\201D";
   background: rgba(0, 0, 0, 0.5);
   border-left: 10px solid #ccc;
   margin: 1.5em 30px;
   padding: 0.5em 1.5em;
+  padding: 0.5em 1.5em 0.5em 55px;
   border-radius: 2px;
+
+  font-size: 1.4em;
+  font-style:italic;
+  line-height:1.6;
+  position: relative;
 }
 
 blockquote:before {
   color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
+  font-family: 'Times New Roman', serif;
+  content: "\201C";
+  font-size:4em;
+  position: absolute;
+  left: 8px;
+  top:-17px;
 }
 
 blockquote p {
-  display: inline;
-
   font-family: 'Times New Roman', serif;
   font-style: italic;
   font-size: 22px;
   letter-spacing: 2px;
   line-height: 60px;
 
+  display: inline;
   width: 100%;
   background-position: 0 -1000px;
   background-clip: text;
+  box-decoration-break: clone;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
 }
 
 /* cloud image background for blockquote */
@@ -41,11 +48,6 @@ blockquote p {
 /* fire image background for blockquote */
 .firequote {
   background-image: url("../img/fire.gif");
-}
-
-/* white background for god quote */
-.wordofgod {
-  background-color: white;
 }
 
 /* a much smaller and differently styled quote */
