@@ -6,7 +6,7 @@
     </div>
     <div id="rightpane">
         <p class="description">
-            <? echo $pageName;?>
+            <?php echo $pageName;?>
         </p>
     </div>
 </div>
