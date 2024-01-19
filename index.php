@@ -6,6 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
     <meta name="description" content="osullivanjam.es">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/scrollingtext.css">
     <link rel="stylesheet" href="styles/specialeffects.css">
     <link rel="icon" type="image/x-icon" href="img/icon.png">
 </head>
@@ -38,15 +39,15 @@
         <table>
             <tr>
                 <th>
-                    <img src="img/alligator.gif" alt="alligators dancing" style="width: 70%">
+                    <img src="img/alligator.gif" alt="alligators dancing" style="width: 70%; margin-bottom: 10px">
                 </th>
                 <th>
-                    <img src="img/alligator.gif" alt="alligators dancing" style="width: 70%">
+                    <img src="img/alligator.gif" alt="alligators dancing" style="width: 70%; margin-bottom: 10px">
                 </th>
             </tr>
         </table>
         <p class="subquote">"i am the creative nothing, the nothing out of which i as creator create everything"</p>
-        <img src="img/bodywithoutorgans2.png" alt="body without organs" class="center" style="width: 75%;">
+        <img src="img/bodywithoutorgans2.png" alt="body without organs" class="center" style="width: 87%; margin-top: 30px">
         <blockquote>
             <p class="firequote">Your wealth has rotted, and moths have eaten your clothes. Your gold and silver
                 are corroded. Their corrosion will testify against you and eat your flesh like fire.

@@ -28,7 +28,7 @@ function createButton($buttonParameters){
     </tr>
     <tr>
         <th><?php createButton($buttonArray[2])?></th>
-        <th><img src="img/eye.gif" alt="eye" style="width: 84%"></th>
+        <th><img src="img/eye.gif" alt="eye" style="width: 84%; padding: 0.5em 0px"></th>
         <th><?php createButton($buttonArray[3])?></th>
     </tr>
     <tr>

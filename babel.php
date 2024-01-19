@@ -5,6 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
     <meta name="description" content="osullivanjam.es">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/chatbox.css">
     <link rel="stylesheet" href="styles/specialeffects.css">
     <link rel="icon" type="image/x-icon" href="img/icon.png">
     <?php $pageName = "tower of babel"?>
