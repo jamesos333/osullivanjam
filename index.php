@@ -11,45 +11,8 @@
 </head>
 
 <body>
-    <div id="container">
-        <div id="header">
-            <div id="name">
-                <div class="row">
-                    <img src="img/letters/j.gif" alt="j">
-                    <img src="img/letters/a.gif" alt="a">
-                    <img src="img/letters/m.gif" alt="m">
-                    <img src="img/letters/e.gif" alt="e">
-                    <img src="img/letters/s.gif" alt="s">
-                </div>
-            </div>
-            <div id="name">
-                <div class="row">
-                    <img src="img/letters/o.gif" alt="o">
-                    <img src="img/letters/s.gif" alt="s">
-                    <img src="img/letters/u.gif" alt="u">
-                    <img src="img/letters/l.gif" alt="l">
-                    <img src="img/letters/l.gif" alt="l">
-                    <img src="img/letters/i.gif" alt="i">
-                    <img src="img/letters/v.gif" alt="v">
-                    <img src="img/letters/a.gif" alt="a">
-                    <img src="img/letters/n.gif" alt="n">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="scrollingtext">
-        <p class="marquee">
-            <span id="marqueetext">- YOUR IP ADDRESS HAS BEEN LOGGED AND WILL BE HELD INDEFINITELY - YOU ARE NOW
-                ENTERING THE FREE WORLD -
-                BY CONNECTING TO THIS WEBSITE YOU REVOKE OWNERSHIP OF EVERY ORGAN IN YOUR BODY
-            </span>
-            <span aria-hidden="true" id="marqueetext">- YOUR IP ADDRESS HAS BEEN LOGGED AND WILL BE HELD
-                INDEFINITELY - YOU ARE NOW ENTERING THE FREE WORLD -
-                BY CONNECTING TO THIS WEBSITE YOU REVOKE OWNERSHIP OF EVERY ORGAN IN YOUR BODY
-            </span>
-        </p>
-    </div>
+    <?php include 'elements/header.php';?>
+    <?php include 'elements/scrollingtext.php';?>
 
     <div id="content">
         <table>
@@ -69,7 +32,7 @@
             <tr>
                 <th><a><img src="img/buttons/button_about.png" alt="about" class="button comingsoon"></a>
                 </th>
-                <th><a href="babel.html"><img src="img/buttons/button_contact.png" alt="contact" class="button"></a></th>
+                <th><a href="babel.php"><img src="img/buttons/button_contact.png" alt="contact" class="button"></a></th>
                 <th><a><img src="img/buttons/button_photos.png" alt="photos" class="button comingsoon"></a></th>
             </tr>
             <tr>
@@ -83,7 +46,7 @@
                 <th><a href="https://github.com/jamesos333/osullivanjam"><img src="img/buttons/button_github.png"
                             alt="github" class="button"></a></th>
                 <th><a><img src="img/buttons/button_experience.png" alt="ex" class="button comingsoon"></a></th>
-                <th><a href="faq.html"><img src="img/buttons/button_faq.png" alt="faq" class="button"></a></th>
+                <th><a href="faq.php"><img src="img/buttons/button_faq.png" alt="faq" class="button"></a></th>
             </tr>
         </table>
         <blockquote>
@@ -111,8 +74,7 @@
         </blockquote>
     </div>
 
-    <copyright id="copyright" class="center">The content on o'sullivanjam.es is provided for general informational
-        purposes only. Any reliance you place on such information is strictly at your own risk.</copyright>
+    <?php include 'elements/footer.php';?>
     <script type="module" src="js/index.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>

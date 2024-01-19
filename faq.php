@@ -2,54 +2,26 @@
 <html lang="en">
 
 <head>
-    <title>osullivanjam.es</title>
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
     <meta name="description" content="osullivanjam.es">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/specialeffects.css">
     <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <?php $pageName = "faq"?>
+    <title>osullivanjam.es: 
+        <?php echo $pageName; ?>
+    </title>
 </head>
 
 <body>
-    <div id="container">
-        <div id="header">
-            <div id="name">
-                <div class="row">
-                    <img src="img/letters/j.gif" alt="j">
-                    <img src="img/letters/a.gif" alt="a">
-                    <img src="img/letters/m.gif" alt="m">
-                    <img src="img/letters/e.gif" alt="e">
-                    <img src="img/letters/s.gif" alt="s">
-                </div>
-            </div>
-            <div id="name">
-                <div class="row">
-                    <img src="img/letters/o.gif" alt="o">
-                    <img src="img/letters/s.gif" alt="s">
-                    <img src="img/letters/u.gif" alt="u">
-                    <img src="img/letters/l.gif" alt="l">
-                    <img src="img/letters/l.gif" alt="l">
-                    <img src="img/letters/i.gif" alt="i">
-                    <img src="img/letters/v.gif" alt="v">
-                    <img src="img/letters/a.gif" alt="a">
-                    <img src="img/letters/n.gif" alt="n">
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <?php include 'elements/header.php'; ?>
     <div id="content">
+        <?php include 'elements/navbar.php'; ?>
         <div class="wrapper">
             <div id="leftpane">
-                <p class="description">
-                    <a href="/"><img src="img/skeletonhand.png" alt="back"></a>
-                </p>
                 <img src="img/icon.png" alt="myface" class="scrollingimage">
             </div>
             <div id="rightpane">
-                <p class="description">
-                    faq
-                </p>
                 <h1>I am living in your walls.</h1>
                 <h3>You may be concerned about this. Incase you are, please read the below:</h3>
 
@@ -140,8 +112,7 @@
 
     </div>
 
-    <copyright id="copyright" class="center">The content on o'sullivanjam.es is provided for general informational
-        purposes only. Any reliance you place on such information is strictly at your own risk.</copyright>
+    <?php include 'elements/footer.php'; ?>
     <script type="module" src="js/main.js"></script>
 </body>
 
