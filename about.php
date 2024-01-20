@@ -25,10 +25,11 @@
             </div>
 
             <div class="warning-right">
-                <p><span style="color: #ff0000">WARNING</span>: THIS WEBPAGE HOLDS A DISEASE WHICH HAS NO CURE</p>
+                <p><span style="color: #ff0000; font-weight: 900">WARNING</span>: THIS WEBPAGE HOLDS A 
+                <span style="font-style: italic">DISEASE</span> WHICH HAS <span style="font-style: italic">NO</span> CURE.</p>
             </div>
         </div>
-        
+
         <br><br>
     </div>
     <?php include 'elements/footer.php'; ?>
