@@ -32,8 +32,8 @@
     margin-left: auto;
     margin-right: auto;
     width: 84%;
-  
+    padding-top: 20px;
     position: sticky;
-    top: 45px;
+    top: 15px;
   }
   

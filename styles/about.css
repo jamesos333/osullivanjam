@@ -1,0 +1,36 @@
+.warning {
+    display: flex;
+    margin: 0px 4rem;
+
+    background-color: black;
+    border: 4px solid white;
+    flex-direction: row;
+}
+
+.warning-left {
+    float: left;
+    min-width: 25%;
+    display: flex;
+    justify-content: right;
+}
+
+.warning-right {
+    float: right;
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5rem;
+}
+
+.warning img {
+    width: 55%;
+    float: right;
+    aspect-ratio: 1;
+    padding: 1.8rem 2.5rem 1.8rem 2rem;
+    margin: auto 0 auto auto;
+}
+
+.warning p {
+    font-size: 2em;
+    margin: auto;
+}

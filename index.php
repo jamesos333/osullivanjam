@@ -46,7 +46,7 @@
                 </th>
             </tr>
         </table>
-        <p class="subquote">"i am the creative nothing, the nothing out of which i as creator create everything"</p>
+        <p class="subquote">"a labyrinth with no exit, a maze with no prize"</p>
         <img src="img/bodywithoutorgans2.png" alt="body without organs" class="center" style="width: 87%; margin-top: 30px">
         <blockquote>
             <p class="firequote">Your wealth has rotted, and moths have eaten your clothes. Your gold and silver

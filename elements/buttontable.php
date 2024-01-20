@@ -1,5 +1,5 @@
 <?php
-$aboutButton = array("/", "img/buttons/button_about.png", "about", "button comingsoon");
+$aboutButton = array("about.php", "img/buttons/button_about.png", "about", "button comingsoon");
 $faqButton = array("faq.php", "img/buttons/button_faq.png", "faq", "button");
 $buttonArray = array(
     array("babel.php", "img/buttons/button_contact.png", "contact", "button"),
