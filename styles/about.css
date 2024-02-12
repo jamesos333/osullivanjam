@@ -1,6 +1,6 @@
 .warning {
     display: flex;
-    margin: 0.8rem 4rem;
+    margin: 0.8rem 3rem;
 
     background-color: black;
     border: 4px solid white;
@@ -33,4 +33,47 @@
 .warning p {
     font-size: 2em;
     margin: auto;
+}
+
+.textcontainer {
+    position: relative;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 5px 30px;
+    font-family: "Open Sans", apple-system, blinkmacsystemfont, "Segoe UI", "Helvetica Neue", arial, sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.25rem;
+}
+
+h3 {
+    margin-top: 0.7rem;
+    margin-bottom: 1.5rem;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.summarybox {
+    background-color: var(--transparent-black);
+    margin-bottom: 10px;
+    width: 76%;
+    float: left;
+}
+
+p {
+    font-size: 17px;
+}
+
+.metricsbox {
+    float: right;
+    width: 23%;
+    text-align: left;
+    background-color: var(--transparent-black);
 }

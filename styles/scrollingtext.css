@@ -2,7 +2,7 @@
 div#scrollingtext {
     margin: 0 auto;
     max-width: 1050px;
-    background: #1b0e18;
+    background: var(--dark-purple);
     color: aliceblue;
     margin-top: 2px;
     margin-bottom: 15px;

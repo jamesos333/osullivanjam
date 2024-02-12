@@ -18,15 +18,38 @@
     <?php include 'elements/header.php'; ?>
     <div id="content">
         <?php include 'elements/navbar.php'; ?>
-
         <div class="warning">
             <div class="warning-left">
                 <img src="img/skull.gif" alt="spinning warning skull">
             </div>
-
             <div class="warning-right">
-                <p><span style="color: #ff0000; font-weight: 900">WARNING</span>: THIS WEBPAGE HOLDS A 
-                <span style="font-style: italic">DISEASE</span> WHICH HAS <span style="font-style: italic">NO</span> CURE.</p>
+                <p><span style="color: #ff0000; font-weight: 900">WARNING</span>: THIS WEBPAGE HOLDS A
+                    <span style="font-style: italic">DISEASE</span> WHICH HAS <span style="font-style: italic">NO</span> CURE.
+                </p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="textcontainer">
+                <h1><em>Notes from the Field</em>: Cluster of Severe Illness from Internet Usaged Linked to osullivanjam.es webpage - New York, June-February 2024</h1>
+                <div class="summarybox">
+                    <h3>Summary</h3>
+                    <p><strong>What is already known about this topic?</strong></p>
+                    <p>osullivanjam.es is a continuously evolving programming project which serves as a home for the personal projects of its creator.
+                        the exact contents of this website are vast and remain subject to contant changes and development.</p>
+
+                    <p><strong>What is added by this report?</strong></p>
+                    <p>The website has been associated with severe clinical effects first reported in New York during June-February 2024,
+                        representing a sharp increase from the poison center's baseline of zero exposure calls per year.</p>
+                </div>
+
+                <div class="metricsbox">
+                    <h3>Works Cited</h3>
+                    <img src="img/spinningamp.gif" alt="spinning molecule" class="center" style="width: 90%; margin-top:-20px;">
+                    <img src="img/spinninggaba.gif" alt="spinning molecule" class="center" style="width: 90%; margin-top:-20px;">
+                    <img src="img/spinninglisdex.gif" alt="spinning molecule" class="center" style="width: 90%; margin-top:-20px;">
+                </div>
+
+                <p></p>
             </div>
         </div>
 
