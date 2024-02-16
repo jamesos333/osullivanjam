@@ -5,6 +5,7 @@ function letterPath($letter){
 }
 ?>
 
+<script>0</script>
 <div id="container">
     <div id="header">
         <a href="/">
