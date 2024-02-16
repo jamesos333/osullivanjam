@@ -1,5 +1,5 @@
 const baseUrl = window.location.href.split('/').slice(0, 3).join('/');
-const chatboxTemplate = await fetchData(baseUrl + "/elements/chatbox.html");
+const chatboxTemplate = await fetchData(baseUrl + "/elements/contact/chatbox.html");
 // a custom sentence structure is possible by using the URL parameter 'customStructure'
 const urlParams = new URLSearchParams(window.location.search);
 var urls = ['adjectives.txt', 'nouns.txt', 'verbs.txt', 'adverbs.txt', 'subjects.txt', "indirectobjects.txt", "directobjects.txt", "conjunctions.txt", "pluralnouns.txt"];

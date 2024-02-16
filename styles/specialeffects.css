@@ -42,12 +42,12 @@ blockquote p {
 
 /* cloud image background for blockquote */
 .cloudquote {
-  background-image: url("../img/clouds.gif");
+  background-image: url("../img/background/quotes/clouds.gif");
 }
 
 /* fire image background for blockquote */
 .firequote {
-  background-image: url("../img/fire.gif");
+  background-image: url("../img/background/quotes/fire.gif");
 }
 
 /* a much smaller and differently styled quote */

@@ -1,3 +1,4 @@
+/* for the warning at the top of the page */
 .warning {
     display: flex;
     margin: 0.8rem 3rem;
@@ -35,14 +36,7 @@
     margin: auto;
 }
 
-.textcontainer {
-    position: relative;
-    flex-basis: 0;
-    flex-grow: 1;
-    padding: 5px 30px;
-    font-family: "Open Sans", apple-system, blinkmacsystemfont, "Segoe UI", "Helvetica Neue", arial, sans-serif;
-}
-
+/* the rest of the page */
 h1 {
     font-weight: 400;
     font-size: 2.25rem;
@@ -56,24 +50,41 @@ h3 {
     font-size: 1.6rem;
 }
 
-strong {
-    font-weight: bolder;
-}
-
-.summarybox {
-    background-color: var(--transparent-black);
-    margin-bottom: 10px;
-    width: 76%;
-    float: left;
-}
-
 p {
     font-size: 17px;
 }
 
-.metricsbox {
+strong {
+    font-weight: bolder;
+}
+
+.textcontainer {
+    position: relative;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 5px 30px;
+    padding-bottom: 20px;
+    font-family: "Open Sans", apple-system, blinkmacsystemfont, "Segoe UI", "Helvetica Neue", arial, sans-serif;
+}
+
+.leftbox {
+    width: 76%;
+    float: left;
+}
+
+.rightbox {
     float: right;
     width: 23%;
     text-align: left;
     background-color: var(--transparent-black);
+}
+
+.summarybox {
+    background-color: var(--transparent-black);
+    padding-bottom: 5px;
+}
+
+.moth {
+    width: 60%;
+    padding-top: 25px;
 }

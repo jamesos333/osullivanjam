@@ -1,26 +1,33 @@
+<?php
+include_once 'config.php';
+function letterPath($letter){
+    echo IMAGE_PATH_LETTERS . $letter . '.gif';
+}
+?>
+
 <div id="container">
     <div id="header">
         <a href="/">
             <div id="name">
                 <div class="row">
-                    <img src="img/letters/j.gif" alt="j">
-                    <img src="img/letters/a.gif" alt="a">
-                    <img src="img/letters/m.gif" alt="m">
-                    <img src="img/letters/e.gif" alt="e">
-                    <img src="img/letters/s.gif" alt="s">
+                    <img src="<?php letterPath('j')?>" alt="j">
+                    <img src="<?php letterPath('a')?>" alt="a">
+                    <img src="<?php letterPath('m')?>" alt="m">
+                    <img src="<?php letterPath('e')?>" alt="e">
+                    <img src="<?php letterPath('s')?>" alt="s">
                 </div>
             </div>
             <div id="name">
                 <div class="row">
-                    <img src="img/letters/o.gif" alt="o">
-                    <img src="img/letters/s.gif" alt="s">
-                    <img src="img/letters/u.gif" alt="u">
-                    <img src="img/letters/l.gif" alt="l">
-                    <img src="img/letters/l.gif" alt="l">
-                    <img src="img/letters/i.gif" alt="i">
-                    <img src="img/letters/v.gif" alt="v">
-                    <img src="img/letters/a.gif" alt="a">
-                    <img src="img/letters/n.gif" alt="n">
+                    <img src="<?php letterPath('o')?>" alt="o">
+                    <img src="<?php letterPath('s')?>" alt="s">
+                    <img src="<?php letterPath('u')?>" alt="u">
+                    <img src="<?php letterPath('l')?>" alt="l">
+                    <img src="<?php letterPath('l')?>" alt="l">
+                    <img src="<?php letterPath('i')?>" alt="i">
+                    <img src="<?php letterPath('v')?>" alt="v">
+                    <img src="<?php letterPath('a')?>" alt="a">
+                    <img src="<?php letterPath('n')?>" alt="n">
                 </div>
             </div>
         </a>

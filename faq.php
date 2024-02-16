@@ -1,26 +1,27 @@
+<?php 
+include_once 'config.php';
+$pageName = "faq";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
     <meta name="description" content="osullivanjam.es">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/faq.css">
-    <link rel="stylesheet" href="styles/specialeffects.css">
-    <link rel="icon" type="image/x-icon" href="img/icon.png">
-    <?php $pageName = "faq"?>
-    <title>osullivanjam.es: 
-        <?php echo $pageName; ?>
-    </title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH . 'styles.css';?>">
+    <link rel="stylesheet" href="<?php echo CSS_PATH . 'faq.css';?>">
+    <link rel="stylesheet" href="<?php echo CSS_PATH . 'specialeffects.css';?>">
+    <link rel="icon" type="image/x-icon" href="<?php echo IMAGE_PATH . 'icon.png';?>">
+    <title><?php echo 'osullivanjam.es: ' . $pageName;?></title>
 </head>
 
 <body>
-    <?php include 'elements/header.php'; ?>
+    <?php include ELEMENTS_PATH . 'header.php';?>
     <div id="content">
-        <?php include 'elements/navbar.php'; ?>
+        <?php include ELEMENTS_PATH . 'navbar.php';?>
         <div class="wrapper">
             <div id="leftpane">
-                <img src="img/icon.png" alt="myface" class="scrollingimage">
+                <img src="<?php echo IMAGE_PATH . 'icon.png';?>" alt="myface" class="scrollingimage">
             </div>
             <div id="rightpane">
                 <h1>I am living in your walls.</h1>
@@ -113,8 +114,7 @@
 
     </div>
 
-    <?php include 'elements/footer.php'; ?>
-    <script type="module" src="js/main.js"></script>
+    <?php include ELEMENTS_PATH . 'footer.php';?>
 </body>
 
 </html>

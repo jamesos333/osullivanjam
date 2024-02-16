@@ -1,7 +1,7 @@
 <?php
-    $scrollingTextFile = fopen("mscl/scrollingtext.txt", "r") or die("Unable to open file!");
-    $scrollingText = fread($scrollingTextFile, filesize("mscl/scrollingtext.txt"));
-    fclose($scrollingTextFile);
+    include_once 'config.php';
+    $scrollingTextPath = MSCL_PATH . 'scrollingtext.txt';
+    $scrollingText = getText($scrollingTextPath);
 ?>
 
 <div id="scrollingtext">
