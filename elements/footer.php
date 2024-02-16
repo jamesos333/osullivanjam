@@ -4,5 +4,5 @@ $copyrightPath = MSCL_PATH . 'copyright.txt';
 ?>
 
 <copyright id="copyright" class="center">
-    <?php echo getText($copyrightPath);?>
+    <?php echo getFileTextContent($copyrightPath);?>
 </copyright>

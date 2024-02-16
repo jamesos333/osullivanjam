@@ -20,7 +20,7 @@ define('IMAGE_PATH_LETTERS', IMAGE_PATH . 'letters/');
 define('IMAGE_PATH_NAVBAR', IMAGE_PATH . 'navbar/');
 
 // some basic functions
-function getText($path) {
+function getFileTextContent($path) {
     $file = fopen($path, "r") or die("Unable to open file!");
     $text = fread($file, filesize($path));
     fclose($file);

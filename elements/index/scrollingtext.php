@@ -1,7 +1,7 @@
 <?php
     include_once 'config.php';
     $scrollingTextPath = MSCL_PATH . 'scrollingtext.txt';
-    $scrollingText = getText($scrollingTextPath);
+    $scrollingText = getFileTextContent($scrollingTextPath);
 ?>
 
 <div id="scrollingtext">
