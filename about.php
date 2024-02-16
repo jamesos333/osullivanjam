@@ -46,9 +46,9 @@ $pageName = "about";
                 </div>
 
                 <div class="rightbox">
-                    <h3>Works Cited</h3>
+                    <h3>Sources Cited</h3>
                     <img src="<?php echo IMAGE_PATH_ABOUT . 'spinninglisdex.gif';?>" alt="spinning molecule" class="center" style="width: 90%; margin-top:-20px;">
-                    <img src="<?php echo IMAGE_PATH_ABOUT . 'spinningchina.gif';?>" alt="spinning molecule" class="center" style="width: 90%; margin-top:-20px;">
+                    <img src="<?php echo IMAGE_PATH_ABOUT . 'spinningamp.gif';?>" alt="spinning molecule" class="center" style="width: 90%; margin-top:-20px;">
                 </div>
 
                 <img src="<?php echo IMAGE_PATH_ABOUT . 'moth.gif';?>" alt="moth" class="moth center">
