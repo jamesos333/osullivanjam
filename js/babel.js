@@ -1,7 +1,7 @@
-const baseUrl = window.location.href.split('/').slice(0, 3).join('/');
-var chatboxTemplate = document.getElementsByClassName('chatbox')[0].outerHTML;
 // a custom sentence structure is possible by using the URL parameter 'customStructure'
 const urlParams = new URLSearchParams(window.location.search);
+const baseUrl = window.location.href.split('/').slice(0, 3).join('/');
+const chatboxTemplate = document.getElementsByClassName('chatbox')[0].outerHTML;
 var urls = ['adjectives.txt', 'nouns.txt', 'verbs.txt', 'adverbs.txt', 'subjects.txt', "indirectobjects.txt", "directobjects.txt", "conjunctions.txt", "pluralnouns.txt"];
 var wordLists = new Array(urls.length);
 // file IDs
@@ -27,39 +27,32 @@ const sentenceStructures = [
     '1:0,0,0, and 0.',
     '5315,01'
 ];
+var counter = 0;
 
-createAndInsertSentence()
+createAndInsertSentence();
 
 // Gets a reference to the image element by its ID
 const imageElement = document.getElementById("stone");
 // Adds a click event listener to the image element
 imageElement.addEventListener("click", async function () {
     try {
-        await createAndInsertNewSentence();
+        await createAndInsertSentence();
     } catch (error) {
         console.error("An error occurred:", error);
     }
 });
 
 // generates the sentence and then inserts it into the html page
-async function createAndInsertNewSentence() {
-    document.querySelectorAll('[id=wizardcontainer]')[0].innerHTML += chatboxTemplate;
-    createAndInsertSentence();
-}
-
 async function createAndInsertSentence() {
     var chosenStruct = makeSentenceStructure(1 + getRandomInt(2));
-    if (urlParams.has('customStructure')) {
-        chosenStruct = urlParams.get('customStructure');
-    }
-    //chosenStruct = "75315,01";
-    console.log("Chosen Structure: " + chosenStruct);
-    var sentence = await generateSentence(chosenStruct);
-    insertNewSentence(sentence);
+    insertNewSentence(await generateSentence(chosenStruct));
 }
 
 // generates a sentence structure, the length determines how many conjunctions it will use
 function makeSentenceStructure(length) {
+    if (urlParams.has('customStructure')) {
+        return urlParams.get('customStructure');
+    }
     var structure = "7";
     for (let i = 0; i < length; i++) {
         structure += sentenceStructures[getRandomInt(sentenceStructures.length)];
@@ -71,11 +64,12 @@ function makeSentenceStructure(length) {
         }
     }
     structure += sentenceStructures[getRandomInt(sentenceStructures.length)];
-    //console.log(structure);
+    console.log("Chosen Structure: " + structure);
     return structure;
 }
 
 async function insertNewSentence(sentence) {
+    insertNewChatbox();
     var chatboxes = document.querySelectorAll('[id=chatbox]');
     var chatboxContainers = document.querySelectorAll('.chatbox');
     //console.log(chatboxContainers);
@@ -84,6 +78,14 @@ async function insertNewSentence(sentence) {
     }
     chatboxContainers[chatboxContainers.length - 1].style.animation = 'fadeIn 1s';
     chatboxes[chatboxes.length - 1].innerHTML = sentence;
+}
+
+// inserts a new chatbox element if needed
+function insertNewChatbox(){
+    if(counter > 0){
+        document.querySelectorAll('[id=wizardcontainer]')[0].innerHTML += chatboxTemplate;
+    }
+    counter++;
 }
 
 // generates a random sentence in accordance with the structure input
