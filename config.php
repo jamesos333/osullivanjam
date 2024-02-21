@@ -1,5 +1,4 @@
 <?php
-$pageName = '';
 // variables for basic paths
 define('CSS_PATH', 'styles/');
 define('JS_PATH', 'js/');
@@ -14,6 +13,7 @@ define('ELEMENTS_PATH_INDEX', ELEMENTS_PATH . 'index/');
 define('IMAGE_PATH_ABOUT', IMAGE_PATH . 'about/');
 
 define('IMAGE_PATH_CONTACT', IMAGE_PATH . 'contact/');
+define('ELEMENTS_PATH_CONTACT', ELEMENTS_PATH . 'contact/');
 
 define('IMAGE_PATH_BUTTONS', IMAGE_PATH_INDEX . 'buttons/');
 define('IMAGE_PATH_LETTERS', IMAGE_PATH . 'letters/');

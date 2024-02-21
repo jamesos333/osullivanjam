@@ -8,11 +8,11 @@ $pageName = "faq";
 <head>
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
     <meta name="description" content="osullivanjam.es">
-    <link rel="stylesheet" href="<?php echo CSS_PATH . 'styles.css';?>">
-    <link rel="stylesheet" href="<?php echo CSS_PATH . 'faq.css';?>">
-    <link rel="stylesheet" href="<?php echo CSS_PATH . 'specialeffects.css';?>">
-    <link rel="icon" type="image/x-icon" href="<?php echo IMAGE_PATH . 'icon.png';?>">
-    <title><?php echo 'osullivanjam.es: ' . $pageName;?></title>
+    <link rel="stylesheet" href="<?=CSS_PATH . 'styles.css';?>">
+    <link rel="stylesheet" href="<?=CSS_PATH . 'faq.css';?>">
+    <link rel="stylesheet" href="<?=CSS_PATH . 'specialeffects.css';?>">
+    <link rel="icon" type="image/x-icon" href="<?=IMAGE_PATH . 'icon.png';?>">
+    <title><?='osullivanjam.es: ' . $pageName;?></title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@ $pageName = "faq";
         <?php include ELEMENTS_PATH . 'navbar.php';?>
         <div class="wrapper">
             <div id="leftpane">
-                <img src="<?php echo IMAGE_PATH . 'icon.png';?>" alt="myface" class="scrollingimage">
+                <img src="<?=IMAGE_PATH . 'icon.png';?>" alt="myface" class="scrollingimage">
             </div>
             <div id="rightpane">
                 <h1>I am living in your walls.</h1>

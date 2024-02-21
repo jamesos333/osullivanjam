@@ -1,5 +1,5 @@
 const baseUrl = window.location.href.split('/').slice(0, 3).join('/');
-const chatboxTemplate = await fetchData(baseUrl + "/elements/contact/chatbox.html");
+var chatboxTemplate = document.getElementsByClassName('chatbox')[0].outerHTML;
 // a custom sentence structure is possible by using the URL parameter 'customStructure'
 const urlParams = new URLSearchParams(window.location.search);
 var urls = ['adjectives.txt', 'nouns.txt', 'verbs.txt', 'adverbs.txt', 'subjects.txt', "indirectobjects.txt", "directobjects.txt", "conjunctions.txt", "pluralnouns.txt"];
@@ -35,13 +35,18 @@ const imageElement = document.getElementById("stone");
 // Adds a click event listener to the image element
 imageElement.addEventListener("click", async function () {
     try {
-        await createAndInsertSentence();
+        await createAndInsertNewSentence();
     } catch (error) {
         console.error("An error occurred:", error);
     }
 });
 
 // generates the sentence and then inserts it into the html page
+async function createAndInsertNewSentence() {
+    document.querySelectorAll('[id=wizardcontainer]')[0].innerHTML += chatboxTemplate;
+    createAndInsertSentence();
+}
+
 async function createAndInsertSentence() {
     var chosenStruct = makeSentenceStructure(1 + getRandomInt(2));
     if (urlParams.has('customStructure')) {
@@ -71,7 +76,6 @@ function makeSentenceStructure(length) {
 }
 
 async function insertNewSentence(sentence) {
-    document.querySelectorAll('[id=wizardcontainer]')[0].innerHTML += chatboxTemplate;
     var chatboxes = document.querySelectorAll('[id=chatbox]');
     var chatboxContainers = document.querySelectorAll('.chatbox');
     //console.log(chatboxContainers);

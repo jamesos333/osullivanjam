@@ -8,10 +8,10 @@ $pageName = "tower of babel";
 <head>
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
     <meta name="description" content="osullivanjam.es">
-    <link rel="stylesheet" href="<?php echo CSS_PATH . 'styles.css';?>">
-    <link rel="stylesheet" href="<?php echo CSS_PATH . 'chatbox.css';?>">
-    <link rel="stylesheet" href="<?php echo CSS_PATH . 'specialeffects.css';?>">
-    <link rel="icon" type="image/x-icon" href="<?php echo IMAGE_PATH . 'icon.png';?>">
+    <link rel="stylesheet" href="<?=CSS_PATH . 'styles.css';?>">
+    <link rel="stylesheet" href="<?=CSS_PATH . 'chatbox.css';?>">
+    <link rel="stylesheet" href="<?=CSS_PATH . 'specialeffects.css';?>">
+    <link rel="icon" type="image/x-icon" href="<?=IMAGE_PATH . 'icon.png';?>">
     <title>osullivanjam.es: contact</title>
 </head>
 
@@ -23,17 +23,18 @@ $pageName = "tower of babel";
         <p class="title">SPEAK TO THE WIZARD, BEHOLD YOUR FATE!</p>
         <div class="chat-container">
             <div id="wizardcontainer" style="min-height: 110px">
+                <?php include ELEMENTS_PATH_CONTACT . 'chatbox.php';?>
             </div>
-            <img src="<?php echo IMAGE_PATH_CONTACT . 'emerald.gif'; ?>" alt="seeingstone" id="stone" class="center" style="width: 10%; margin-top: 20px">
+            <img src="<?=IMAGE_PATH_CONTACT . 'emerald.gif'; ?>" alt="seeingstone" id="stone" class="center" style="width: 10%; margin-top: 20px">
         </div>
 
         <table>
             <tr>
                 <th>
-                    <img src="<?php echo IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" alt="wizard" style="width: 70%">
+                    <img src="<?=IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" alt="wizard" style="width: 70%">
                 </th>
                 <th>
-                    <img src="<?php echo IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" alt="wizard" style="width: 70%">
+                    <img src="<?=IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" alt="wizard" style="width: 70%">
                 </th>
             </tr>
         </table>

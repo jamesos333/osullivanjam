@@ -8,11 +8,11 @@ $pageName = "about";
 <head>
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
     <meta name="description" content="osullivanjam.es">
-    <link rel="stylesheet" href="<?php echo CSS_PATH . 'styles.css';?>">
-    <link rel="stylesheet" href="<?php echo CSS_PATH . 'about.css';?>">
-    <link rel="stylesheet" href="<?php echo CSS_PATH . 'specialeffects.css';?>">
-    <link rel="icon" type="image/x-icon" href="<?php echo IMAGE_PATH . 'icon.png';?>">
-    <title><?php echo 'osullivanjam.es: ' . $pageName;?></title>
+    <link rel="stylesheet" href="<?= CSS_PATH . 'styles.css';?>">
+    <link rel="stylesheet" href="<?= CSS_PATH . 'about.css';?>">
+    <link rel="stylesheet" href="<?= CSS_PATH . 'specialeffects.css';?>">
+    <link rel="icon" type="image/x-icon" href="<?=IMAGE_PATH . 'icon.png';?>">
+    <title><?= 'osullivanjam.es: ' . $pageName;?></title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@ $pageName = "about";
         <?php include ELEMENTS_PATH . 'navbar.php';?>
         <div class="warning">
             <div class="warning-left">
-                <img src="<?php echo IMAGE_PATH_ABOUT . 'skull.gif';?>" alt="spinning skull">
+                <img src="<?=IMAGE_PATH_ABOUT . 'skull.gif';?>" alt="spinning skull">
             </div>
             <div class="warning-right">
                 <p><span style="color: #ff0000; font-weight: 900">WARNING</span>: THIS WEBPAGE HOLDS A
@@ -47,11 +47,10 @@ $pageName = "about";
 
                 <div class="rightbox">
                     <h3>Sources Cited</h3>
-                    <img src="<?php echo IMAGE_PATH_ABOUT . 'spinninglisdex.gif';?>" alt="spinning molecule" class="center" style="width: 90%; margin-top:-20px;">
-                    <img src="<?php echo IMAGE_PATH_ABOUT . 'spinningamp.gif';?>" alt="spinning molecule" class="center" style="width: 90%; margin-top:-20px;">
+                    <img src="<?=IMAGE_PATH_ABOUT . 'spinninglisdex.gif';?>" alt="spinning molecule" class="center" style="width: 90%; margin-top:-20px;">
+                    <img src="<?=IMAGE_PATH_ABOUT . 'spinningamp.gif';?>" alt="spinning molecule" class="center" style="width: 90%; margin-top:-20px;">
                 </div>
-
-                <img src="<?php echo IMAGE_PATH_ABOUT . 'moth.gif';?>" alt="moth" class="moth center">
+                
                 <p></p>
                 
             </div>
