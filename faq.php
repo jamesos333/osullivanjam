@@ -21,7 +21,7 @@ $pageName = "faq";
         <?php include ELEMENTS_PATH . 'navbar.php';?>
         <div class="wrapper">
             <div id="leftpane">
-                <img src="<?=IMAGE_PATH . 'icon.png';?>" alt="myface" class="scrollingimage">
+                <img src="<?=IMAGE_PATH_FAQ . 'face1.gif';?>" alt="myface" class="scrollingimage">
             </div>
             <div id="rightpane">
                 <h1>I am living in your walls.</h1>

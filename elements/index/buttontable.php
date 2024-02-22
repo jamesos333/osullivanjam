@@ -1,14 +1,15 @@
 <?php
 include_once 'config.php';
+$githubLink = "https://github.com/jamesos333/osullivanjam";
 $aboutButton = array("about.php", "button_about.png", "about", "button");
 $faqButton = array("faq.php", "button_faq.png", "faq", "button");
 $buttonArray = array(
-    array("babel.php", "button_contact.png", "contact", "button"),
-    array("/cooking.php", "button_cooking.png", "cooking", "button comingsoon"),
-    array("/", "button_music.png", "music", "button comingsoon"),
-    array("/", "button_movies.png", "movies", "button comingsoon"),
-    array("/", "button_experience.png", "experience", "button comingsoon"),
-    array("https://github.com/jamesos333/osullivanjam", "button_github.png", "github", "button")
+    array("babel.php"   , "button_contact.png"      , "contact"     , "button"),
+    array("/cooking.php", "button_cooking.png"      , "cooking"     , "button comingsoon"),
+    array("/"           , "button_music.png"        , "music"       , "button comingsoon"),
+    array("/"           , "button_movies.png"       , "movies"      , "button comingsoon"),
+    array("/"           , "button_experience.png"   , "experience"  , "button comingsoon"),
+    array($githubLink   , "button_github.png"       , "github"      , "button")
 );
 shuffle($buttonArray);
 

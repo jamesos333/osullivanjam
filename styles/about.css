@@ -10,7 +10,7 @@
 
 .warning-left {
     float: left;
-    min-width: 25%;
+    min-width: 24%;
     display: flex;
     justify-content: right;
 }
@@ -40,22 +40,37 @@
 h1 {
     font-weight: 400;
     font-size: 2.25rem;
+    padding-left: 8px;
 }
 
 h3 {
-    margin-top: 0.7rem;
-    margin-bottom: 1.5rem;
-    padding-left: 10px;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
     font-weight: 500;
     font-size: 1.6rem;
 }
 
-p {
-    font-size: 17px;
+.summarybox h3 {
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
-strong {
-    font-weight: bolder;
+.rightbox h3 {
+    padding: 7px 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    margin: 0;
+    margin-left: 2px;
+}
+
+.leftbox p {
+    font-size: 17px;
 }
 
 .textcontainer {
@@ -70,6 +85,7 @@ strong {
 .leftbox {
     width: 76%;
     float: left;
+    margin-top: 10px;
 }
 
 .rightbox {
@@ -79,12 +95,22 @@ strong {
     background-color: var(--transparent-black);
 }
 
-.summarybox {
-    background-color: var(--transparent-black);
-    padding-bottom: 5px;
+.investigationBox {
+    padding: 0px 3px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    margin-left: 5px;
 }
 
-.moth {
-    width: 60%;
-    padding-top: 25px;
+.summarybox {
+    background-color: var(--transparent-black);
+    padding: 0 5px;
+
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.summarybox #title {
+    margin-top: 18px;
+    margin-bottom: 3px;
 }

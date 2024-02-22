@@ -12,6 +12,8 @@ define('ELEMENTS_PATH_INDEX', ELEMENTS_PATH . 'index/');
 
 define('IMAGE_PATH_ABOUT', IMAGE_PATH . 'about/');
 
+define('IMAGE_PATH_FAQ', IMAGE_PATH . 'faq/');
+
 define('IMAGE_PATH_CONTACT', IMAGE_PATH . 'contact/');
 define('ELEMENTS_PATH_CONTACT', ELEMENTS_PATH . 'contact/');
 
