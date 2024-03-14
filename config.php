@@ -14,6 +14,10 @@ define('IMAGE_PATH_ABOUT', IMAGE_PATH . 'about/');
 
 define('IMAGE_PATH_FAQ', IMAGE_PATH . 'faq/');
 
+define('IMAGE_PATH_MOVIES', IMAGE_PATH . 'movies/');
+define('IMAGE_PATH_MOVIES_THUMBNAILS', IMAGE_PATH_MOVIES . 'thumbnails/');
+define('ELEMENTS_PATH_MOVIES', ELEMENTS_PATH . 'movies/');
+
 define('IMAGE_PATH_CONTACT', IMAGE_PATH . 'contact/');
 define('ELEMENTS_PATH_CONTACT', ELEMENTS_PATH . 'contact/');
 
