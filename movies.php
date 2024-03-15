@@ -23,9 +23,11 @@ $pageName = "movies";
 
         <div class="movieInfoHeader">
             <h1>Archive of the <span style="color:#ffc4c4">TWW Films</span> Project</h1>
-            <p>TWW Films was a YouTube channel active from 2015-2019 that specialized in horror short films. During this time period we 
-                managed to create around 16 original videos, eventually culminating into the release of 'Extermination of Scum', which is our masterpiece.
-                The contents of the channel are available for viewing via YouTube or through the links below.</p>
+            <p><span style="color:#ffc4c4">TWW Films</span> was a YouTube channel active from 2015-2019 that specialized in 
+            horror short films. During this time period we managed to create around 16 original videos, eventually culminating 
+            in the release of <span style="font-style:italic; color:#ffc4c4">Extermination of Scum</span>, our masterpiece. The contents of 
+            the channel are available for viewing via 
+            <a href="https://www.youtube.com/@TheWhattetyWhaters"><span style="color:white">YouTube</span></a>, or through the links below.</p>
         </div>
 
         <?php echo getMovieTable() ?>
