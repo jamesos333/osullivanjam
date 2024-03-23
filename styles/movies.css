@@ -3,7 +3,27 @@
     height: auto;
 }
 
-h5 {
+.movieTable {
+    border-spacing: 16px 6px;
+    margin-bottom: 16px;
+}
+
+.movieElement {
+    background-color: rgba(46, 15, 39, 0.8);
+    border: 3px solid rgba(68, 21, 57, 0.4);
+    border-radius: 6px;
+    max-width: 640px;
+    padding: 0px;
+    padding-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.movieElement:hover {
+    background-color: rgba(68, 21, 57, 0.8);
+}
+
+.movieElement h5 {
     color: white;
     font-family: "Times New Roman";
     text-decoration: underline;
@@ -13,25 +33,39 @@ h5 {
     margin: 8px;
 }
 
-h4 {
+.movieElement h4 {
     color: red;
     font-family: "Times New Roman";
     text-align: center;
     margin-top: 12px;
+    margin-bottom: 0px;
     line-height: 17px;
     font-size: 17px;
 }
 
-.movieInfoHeader {
+.movieElement img {
+    width: 650px;
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.infoHeader {
     text-align: center;
     padding: 0 40px;
 }
 
-.movieTable {
-    border-spacing: 20px 13px;
+.infoHeader p {
+    margin-bottom: 12px;
 }
 
-.movieTable img {
-    width: 560px;
-    border-radius: 3px;
+.youtubeLink {
+    color: white; 
+    text-decoration: underline;
+}
+
+.youtubeLink:hover {
+    color: #ffc4c4;
 }
