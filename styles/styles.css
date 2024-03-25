@@ -1,149 +1,126 @@
-:root {
-    --main-purple:rgb(68, 21, 57);
-    --dark-purple:#1b0e18;
-    --dark-purple-offset:#180714;
-    --light-grey:#ccc;
-    --transparent-black:rgba(0, 0, 0, 0.4);
-    --transparent-grey:rgba(255, 255, 255, 0.4);
-}
-
 body {
-    margin: 0px 40px;
-    padding-bottom: 5px;
-    color: #292929;
-    font: 90% Roboto, Arial, sans-serif;
-    font-weight: 300;
-    background-image: url("../img/background/6.gif");
-    background-repeat: repeat;
-}
-
-#header {
-    margin: 0 auto;
-    max-width: 1100px;
-    min-width: 600px;
-    padding: 5px;
-
-    padding-top: 2%;
-    padding-bottom: 0.75%;
+  margin: 0px 40px;
+  padding-bottom: 5px;
+  color: #292929;
+  font: 90% Roboto, Arial, sans-serif;
+  font-weight: 300;
+  background-image: url("../img/background/6.gif");
+  background-repeat: repeat;
 }
 
 p {
-    padding: 0 10px;
-    line-height: 1.8;
-}
-
-.row img {
-    padding: 8px 2px;
-    width: 9.6%;
-    aspect-ratio: 1;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-div#name {
-    text-align: center;
-    justify-content: center;
-}
-
-div#content {
-    margin: 0 auto;
-    max-width: 1100px;
-    padding: 5px;
-
-    background: var(--dark-purple);
-    background-image: linear-gradient(180deg, var(--dark-purple), var(--dark-purple-offset));
-    color: aliceblue;
-    border-style: inset;
-    border-color: blueviolet;
-    border-radius: 25px;
-}
-
-.description {
-    text-align: center;
-    background: var(--transparent-black);
-    margin: 10px 5px 20px;
-    padding: 0.6em 10px;
-    border: 5px double var(--main-purple);
-    border-radius: 2px;
-    height: 25px;
-
-    font-family: 'Times New Roman', serif;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 95%;
-    letter-spacing: 1px;
-}
-
-.description img {
-    height: 25px;
-}
-
-.wrapper {
-    display: flex;
-}
-
-div#leftpane {
-    float: left;
-    display: inline;
-    width: 30%;
-}
-
-div#rightpane {
-    float: right;
-    display: inline;
-    width: 70%;
-}
-
-table {
-    table-layout: fixed;
-    width: 100%;
-}
-
-th,
-tr {
-    padding: 5px 0px;
-}
-
-.button {
-    width: 84%;
-    box-shadow: 0 0 2px 2px black;
-    border-radius: 25px;
-}
-
-.buttontable {
-    padding: 1em 2em;
-    padding-top: 10px;
-}
-
-.button:hover {
-    box-shadow: 0 0 3px 3px plum;
-    border-radius: 25px;
-}
-
-.button.comingsoon {
-    box-shadow: 0 0 2px 2px black;
-    border-radius: 25px;
-    filter: grayscale(80%) blur(2px);
+  padding: 0 10px;
+  line-height: 1.8;
 }
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  margin: 0 auto;
+  max-width: 1100px;
+  min-width: 600px;
+  padding: 5px;
+  padding-top: 2%;
+  padding-bottom: 0.75%;
+}
+#header #name {
+  text-align: center;
+  justify-content: center;
+}
+#header .row img {
+  padding: 8px 2px;
+  width: 9.6%;
+  aspect-ratio: 1;
+}
+#header .row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div#content {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 5px;
+  background: #1b0e18;
+  background-image: linear-gradient(180deg, #1b0e18, #180714);
+  color: aliceblue;
+  border-style: inset;
+  border-color: blueviolet;
+  border-radius: 25px;
+}
+div#leftpane {
+  float: left;
+  display: inline;
+  width: 30%;
+}
+div#rightpane {
+  float: right;
+  display: inline;
+  width: 70%;
+}
+
+.description {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 10px 5px 20px;
+  padding: 0.6em 10px;
+  border: 5px double rgb(68, 21, 57);
+  border-radius: 2px;
+  height: 25px;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 95%;
+  letter-spacing: 1px;
+}
+.description img {
+  height: 25px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+table th,
+table tr {
+  padding: 5px 0px;
+}
+
+.buttontable {
+  padding: 1em 2em;
+  padding-top: 10px;
+}
+.buttontable .button {
+  width: 84%;
+  box-shadow: 0 0 2px 2px black;
+  border-radius: 25px;
+}
+.buttontable .button:hover {
+  box-shadow: 0 0 3px 3px plum;
+  border-radius: 25px;
+}
+.buttontable .button.comingsoon {
+  box-shadow: 0 0 2px 2px black;
+  border-radius: 25px;
+  filter: grayscale(95%) blur(4px);
 }
 
 copyright {
-    text-align: center;
-    font-size: 80%;
-    margin: 0 auto;
-    max-width: 1100px;
-    padding: 5px;
-
-    padding-top: 20px;
-    text-align: center;
-    color: var(--transparent-grey);
+  text-align: center;
+  font-size: 80%;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 5px;
+  padding-top: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
 }

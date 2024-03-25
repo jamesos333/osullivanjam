@@ -1,5 +1,6 @@
 <?php 
 include_once 'config.php';
+include_once ELEMENTS_PATH_INDEX . 'quotes.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +25,7 @@ include_once 'config.php';
                     <p class="subquote" style="border-width: 10px;">consumers of illusions</p>
                 </th>
                 <th>
-                    <p class="subquote" style="border-width: 5px;">an official language of univeral separation</p>
+                    <p class="subquote" style="border-width: 5px;"><?php echo $quoteArray[0]?></p>
                 </th>
                 <th>
                     <p class="subquote" style="border-width: 10px;">united in isolation</p>
@@ -48,7 +49,7 @@ include_once 'config.php';
                 </th>
             </tr>
         </table>
-        <p class="subquote">"a labyrinth with no exit, a maze with no prize"</p>
+        <p class="subquote">"i descended beneath the earth and became hypoxic from the fumes"</p>
         <img src="<?= IMAGE_PATH_INDEX . 'bodywithoutorgans2.png'; ?>" alt="body without organs" class="center" style="width: 87%; margin-top: 30px">
         <blockquote>
             <p class="firequote">Your wealth has rotted, and moths have eaten your clothes. Your gold and silver
