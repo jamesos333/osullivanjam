@@ -23,13 +23,13 @@ include_once ELEMENTS_PATH_INDEX . 'quotes.php';
         <table>
             <tr>
                 <th>
-                    <p class="subquote" style="border-width: 10px;">consumers of illusions</p>
+                    <p class="subquote" style="border-width: 10px;"><?php echo $smallQuoteArray[0]?></p>
                 </th>
                 <th>
                     <p class="subquote" style="border-width: 5px;"><?php echo $quoteArray[0]?></p>
                 </th>
                 <th>
-                    <p class="subquote" style="border-width: 10px;">united in isolation</p>
+                    <p class="subquote" style="border-width: 10px;"><?php echo $smallQuoteArray[1]?></p>
                 </th>
             </tr>
         </table>
