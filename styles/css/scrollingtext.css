@@ -1,14 +1,13 @@
 /* scrolling text on homepage */
 div#scrollingtext {
   max-width: 1050px;
-  background: #1b0e18;
+  background: rgb(27, 14, 24);
   color: aliceblue;
   margin: 2px auto 15px auto;
   border-radius: 8px;
   border: 2px solid rgba(137, 43, 226, 0.521);
 }
 div#scrollingtext .marquee {
-  --gap: 0.1rem;
   display: flex;
   margin: 0 auto;
   white-space: nowrap;
@@ -18,7 +17,7 @@ div#scrollingtext .marquee {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  gap: var(--gap);
+  gap: 0.1rem;
 }
 div#scrollingtext .marquee #marqueetext {
   display: inline-block;
@@ -27,7 +26,7 @@ div#scrollingtext .marquee #marqueetext {
   flex-shrink: 0;
   display: flex;
   justify-content: space-around;
-  gap: var(--gap);
+  gap: 0.1rem;
   min-width: 100%;
   flex: 0 0 auto;
   margin: 2px;
@@ -43,6 +42,6 @@ div#scrollingtext .marquee #marqueetext span {
     transform: translateX(0);
   }
   to {
-    transform: translateX(calc(-100% - var(--gap)));
+    transform: translateX(calc(-100% - 0.1rem));
   }
 }

@@ -1,0 +1,32 @@
+.faq-container {
+  padding: 10px 20px 20px 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: rgb(240, 248, 255);
+}
+.faq-container .faq-item {
+  margin-bottom: 20px;
+}
+.faq-container .faq-item .question {
+  padding: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.faq-container .faq-item .answer {
+  padding: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+}
+
+/* scrolling image on faq page */
+.scrollingimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 84%;
+  padding-top: 20px;
+  position: sticky;
+  top: 15px;
+}

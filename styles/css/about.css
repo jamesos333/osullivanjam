@@ -1,0 +1,106 @@
+/* for the warning at the top of the page */
+.warning {
+  display: flex;
+  margin: 0.8rem 3rem;
+  background-color: black;
+  border: 4px solid white;
+  flex-direction: row;
+}
+.warning .warning-left {
+  float: left;
+  min-width: 24%;
+  display: flex;
+  justify-content: right;
+}
+.warning .warning-right {
+  float: right;
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1.5rem;
+}
+.warning img {
+  width: 55%;
+  float: right;
+  aspect-ratio: 1;
+  padding: 1.8rem 2.5rem 1.8rem 2rem;
+  margin: auto 0 auto auto;
+}
+.warning p {
+  font-size: 2em;
+  margin: auto;
+}
+
+/* for the rest of the page */
+h1 {
+  font-weight: 400;
+  font-size: 2.25rem;
+  padding-left: 8px;
+}
+
+h3 {
+  margin: 0;
+  padding: 5px 0px 10px 5px;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+p {
+  margin: 0px 0px 0px 2px;
+}
+
+.textcontainer {
+  color: rgb(240, 248, 255);
+  position: relative;
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 5px 30px 20px 30px;
+  font-family: "Open Sans", apple-system, blinkmacsystemfont, "Segoe UI", "Helvetica Neue", arial, sans-serif;
+}
+
+.leftbox {
+  width: 76%;
+  float: left;
+  margin-top: 10px;
+}
+.leftbox p {
+  font-size: 17px;
+}
+.leftbox .investigationBox {
+  padding: 0px 3px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  margin-left: 5px;
+}
+.leftbox .summarybox {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0 5px 15px 5px;
+  margin-bottom: 15px;
+}
+.leftbox .summarybox #title {
+  margin-top: 18px;
+  margin-bottom: 3px;
+}
+.leftbox .summarybox h3 {
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.rightbox {
+  float: right;
+  width: 23%;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.rightbox h3 {
+  padding: 7px 10px;
+  padding-bottom: 10px;
+}
+.rightbox img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: -20px;
+}

@@ -1,0 +1,87 @@
+// imports
+@use 'colors' as c;
+@use 'global' as g;
+
+a {
+    text-decoration: none;
+}
+
+.fixedresize {
+    max-width: 100%;
+    height: auto;
+}
+
+.movieTable {
+    border-spacing: 16px 6px;
+    margin-bottom: 16px;
+}
+
+.movieElement {
+    background-color: rgba(46, 15, 39, 0.8);
+    border: 3px solid rgba(c.$main-purple, 0.4);
+    border-radius: 6px;
+    max-width: 640px;
+    padding: 0px;
+    padding-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+        background-color: rgba(c.$main-purple, 0.8);
+        img {
+            filter: saturate(500%);
+        }
+    }
+
+    h5 {
+        color: white;
+        font-family: "Times New Roman";
+        text-decoration: underline;
+        text-align: center;
+        line-height: 20px;
+        font-size: 20px;
+        margin: 8px;
+    }
+
+    h4 {
+        color: red;
+        font-family: "Times New Roman";
+        text-align: center;
+        margin-top: 12px;
+        margin-bottom: 0px;
+        line-height: 17px;
+        font-size: 17px;
+    }
+
+    img {
+        width: 650px;
+        border-radius: 4px;
+    }
+}
+
+.infoHeader {
+    color: c.$light-blue;
+    text-align: center;
+    padding: 0 40px;
+
+    p {
+        margin-bottom: 12px;
+    }
+
+    .youtubeLink {
+        color: c.$light-blue;
+        text-decoration: underline;
+
+        &:hover {
+            color: #ffc4c4;
+        }
+    }
+
+    .pink {
+        color: #ffc4c4;
+    }
+
+    .pinkI {
+        @extend .pink;
+        font-style: italic;
+    }
+}

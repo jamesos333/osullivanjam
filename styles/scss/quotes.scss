@@ -1,0 +1,74 @@
+// imports
+@use 'colors' as c;
+@use 'global' as g;
+
+/* a much smaller and differently styled quote */
+.subquote {
+    padding: 0.4em 2em;
+    margin: 10px 5px 20px;
+
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px double c.$main-purple;
+    border-radius: 5px;
+
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 14px;
+    font-size: 1.6vmin;
+    font-style: italic;
+    letter-spacing: 0.1vmin;
+    color: c.$light-blue;
+}
+
+/* intricately styled large quote with an image behind it */
+blockquote {
+    padding: 0.5em 1.5em;
+    margin: 1.5em 30px;
+    position: relative;
+
+    background: rgba(0, 0, 0, 0.5);
+    border-left: 10px solid #ccc;
+    border-radius: 2px;
+
+    font-size: 1.4em;
+    font-style: italic;
+    line-height: 1.6;
+
+    &:before {
+        color: #ccc;
+        font-family: 'Arial', serif;
+        content: "\201C";
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    }
+
+    p {
+        font-family: 'Times New Roman', serif;
+        font-style: italic;
+        font-size: 22px;
+        font-size: 2.2vmin;
+        letter-spacing: 0.2vmin;
+        line-height: 6vmin;
+
+        display: inline;
+        width: 100%;
+        background-position: 0 -1000px;
+        background-clip: text;
+        box-decoration-break: clone;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-box-decoration-break: clone;
+    }
+}
+
+/* cloud image background for blockquote */
+.cloudquote {
+    background-image: url(g.$background_path + "quotes/clouds.gif");
+}
+
+/* fire image background for blockquote */
+.firequote {
+    background-image: url(g.$background_path + "quotes/fire.gif");
+}

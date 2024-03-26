@@ -1,0 +1,18 @@
+.buttontable {
+  padding: 1em 2em;
+  padding-top: 10px;
+}
+.buttontable .button {
+  width: 84%;
+  box-shadow: 0 0 2px 2px black;
+  border-radius: 25px;
+}
+.buttontable .button:hover {
+  box-shadow: 0 0 3px 3px plum;
+  border-radius: 25px;
+}
+.buttontable .button.comingsoon {
+  box-shadow: 0 0 2px 2px black;
+  border-radius: 25px;
+  filter: grayscale(95%) blur(4px);
+}

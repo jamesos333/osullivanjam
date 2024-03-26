@@ -1,6 +1,6 @@
 <?php
 // variables for basic paths
-define('CSS_PATH', 'styles/');
+define('CSS_PATH', 'styles/css/');
 define('JS_PATH', 'js/');
 define('IMAGE_PATH', 'img/');
 define('ELEMENTS_PATH', 'elements/');

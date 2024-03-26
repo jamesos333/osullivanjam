@@ -10,7 +10,7 @@ $pageName = "about";
     <meta name="description" content="osullivanjam.es">
     <link rel="stylesheet" href="<?= CSS_PATH . 'styles.css';?>">
     <link rel="stylesheet" href="<?= CSS_PATH . 'about.css';?>">
-    <link rel="stylesheet" href="<?= CSS_PATH . 'specialeffects.css';?>">
+    <link rel="stylesheet" href="<?= CSS_PATH . 'quotes.css';?>">
     <link rel="icon" type="image/x-icon" href="<?=IMAGE_PATH . 'icon.png';?>">
     <title><?= 'osullivanjam.es: ' . $pageName;?></title>
 </head>
@@ -59,9 +59,9 @@ $pageName = "about";
 
                 <div class="rightbox">
                     <h3>Sources Cited</h3>
-                    <img src="<?=IMAGE_PATH_ABOUT . 'spinninglisdex.gif';?>" alt="spinning molecule" class="center" style="width: 90%; margin-top:-20px;">
-                    <img src="<?=IMAGE_PATH_ABOUT . 'spinningglobe2.gif';?>" alt="spinning molecule" class="center" style="width: 90%; margin-top:-20px;">
-                    <img src="<?=IMAGE_PATH_ABOUT . 'spinningamp.gif';?>" alt="spinning molecule" class="center" style="width: 90%; margin-top:-20px;">
+                    <img src="<?=IMAGE_PATH_ABOUT . 'spinninglisdex.gif';?>" alt="spinning molecule">
+                    <img src="<?=IMAGE_PATH_ABOUT . 'spinningglobe2.gif';?>" alt="spinning molecule">
+                    <img src="<?=IMAGE_PATH_ABOUT . 'spinningamp.gif';?>" alt="spinning molecule">
                 </div>
                 
             </div>
