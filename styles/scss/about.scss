@@ -56,6 +56,7 @@ h3 {
 
 p {
     margin: 0px 0px 0px 2px;
+    font-size: 17px;
 }
 
 .textcontainer {
@@ -72,15 +73,15 @@ p {
     float: left;
     margin-top: 10px;
 
-    p {
-        font-size: 17px;
-    }
-
     .investigationBox {
         padding: 0px 3px;
         padding-right: 10px;
         padding-bottom: 20px;
         margin-left: 5px;
+
+        p {
+            padding-left: 7px;
+        }
     }
 
     .summarybox {
@@ -103,18 +104,21 @@ p {
 
 .rightbox {
     float: right;
-    width: 23%;
+    width: 22%;
     text-align: left;
-    background-color: c.$transparent-black;
+    background-color: c.$dark-purple;
+    border: 4px solid c.$transparent-black;
+    border-radius: 4px;
 
     h3 {
         padding: 7px 10px;
         padding-bottom: 10px;
+        background-color: c.$transparent-black;
     }
 
     img {
         @include g.center;
-        width: 90%;
-        margin-top: -20px;
+        width: 75%;
+        margin: 20px auto;
     }
 }

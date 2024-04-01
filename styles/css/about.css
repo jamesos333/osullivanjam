@@ -47,6 +47,7 @@ h3 {
 
 p {
   margin: 0px 0px 0px 2px;
+  font-size: 17px;
 }
 
 .textcontainer {
@@ -63,14 +64,14 @@ p {
   float: left;
   margin-top: 10px;
 }
-.leftbox p {
-  font-size: 17px;
-}
 .leftbox .investigationBox {
   padding: 0px 3px;
   padding-right: 10px;
   padding-bottom: 20px;
   margin-left: 5px;
+}
+.leftbox .investigationBox p {
+  padding-left: 7px;
 }
 .leftbox .summarybox {
   background-color: rgba(0, 0, 0, 0.4);
@@ -89,18 +90,21 @@ p {
 
 .rightbox {
   float: right;
-  width: 23%;
+  width: 22%;
   text-align: left;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgb(27, 14, 24);
+  border: 4px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
 }
 .rightbox h3 {
   padding: 7px 10px;
   padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .rightbox img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-  margin-top: -20px;
+  width: 75%;
+  margin: 20px auto;
 }

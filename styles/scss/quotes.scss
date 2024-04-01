@@ -27,7 +27,7 @@ blockquote {
     position: relative;
 
     background: rgba(0, 0, 0, 0.5);
-    border-left: 10px solid #ccc;
+    border-left: 10px solid rgba(c.$light-blue, 0.8);
     border-radius: 2px;
 
     font-size: 1.4em;
@@ -35,7 +35,7 @@ blockquote {
     line-height: 1.6;
 
     &:before {
-        color: #ccc;
+        color: rgba(c.$light-blue, 1);
         font-family: 'Arial', serif;
         content: "\201C";
         font-size: 4em;
