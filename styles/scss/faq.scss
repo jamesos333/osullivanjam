@@ -2,6 +2,10 @@
 @use 'colors' as c;
 @use 'global' as g;
 
+// used stylesheets
+@use 'styles';
+@use 'quotes';
+
 @mixin qaItem {
     padding: 10px;
     border: 1px solid c.$light-grey;

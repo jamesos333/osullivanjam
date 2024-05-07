@@ -8,10 +8,7 @@ include_once ELEMENTS_PATH_INDEX . 'quotes.php';
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="osullivanjam.es">
-    <link rel="stylesheet" href="<?= CSS_PATH . 'styles.css'; ?>">
     <link rel="stylesheet" href="<?= CSS_PATH . 'index.css'; ?>">
-    <link rel="stylesheet" href="<?= CSS_PATH . 'scrollingtext.css'; ?>">
-    <link rel="stylesheet" href="<?= CSS_PATH . 'quotes.css'; ?>">
     <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH . 'icon.png'; ?>">
     <title>osullivanjam.es</title>
 </head>

@@ -2,6 +2,10 @@
 @use 'colors' as c;
 @use 'global' as g;
 
+// used stylesheets
+@use 'styles';
+@use 'quotes';
+
 a {
     text-decoration: none;
 }

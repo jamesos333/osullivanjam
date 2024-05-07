@@ -2,6 +2,10 @@
 @use 'colors' as c;
 @use 'global' as g;
 
+// used stylesheets
+@use 'styles';
+@use 'quotes';
+
 /* for the warning at the top of the page */
 .warning {
     display: flex;

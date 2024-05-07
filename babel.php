@@ -8,9 +8,7 @@ $pageName = "tower of babel";
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="osullivanjam.es">
-    <link rel="stylesheet" href="<?=CSS_PATH . 'styles.css';?>">
     <link rel="stylesheet" href="<?=CSS_PATH . 'contact.css';?>">
-    <link rel="stylesheet" href="<?=CSS_PATH . 'quotes.css';?>">
     <link rel="icon" type="image/x-icon" href="<?=IMAGE_PATH . 'icon.png';?>">
     <title>osullivanjam.es: contact</title>
 </head>

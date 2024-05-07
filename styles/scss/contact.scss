@@ -2,6 +2,10 @@
 @use 'colors' as c;
 @use 'global' as g;
 
+// used stylesheets
+@use 'styles';
+@use 'quotes';
+
 .chat-container {
     padding: 15px 0px;
     margin: 0 20px;
