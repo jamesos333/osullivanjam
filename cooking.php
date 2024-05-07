@@ -6,7 +6,7 @@ $pageName = "recipes";
 <html lang="en">
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <meta charset="UTF-8">
     <meta name="description" content="osullivanjam.es">
     <link rel="stylesheet" href="<?= CSS_PATH . 'styles.css'; ?>">
     <link rel="stylesheet" href="<?= CSS_PATH . 'cooking.css'; ?>">

@@ -6,7 +6,7 @@ $pageName = "about";
 <html lang="en">
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <meta charset="UTF-8">
     <meta name="description" content="osullivanjam.es">
     <link rel="stylesheet" href="<?= CSS_PATH . 'styles.css'; ?>">
     <link rel="stylesheet" href="<?= CSS_PATH . 'about.css'; ?>">
@@ -35,10 +35,10 @@ $pageName = "about";
                 <div class="leftbox">
                     <div class="summarybox">
                         <h3>Summary</h3>
-                        <p id="title"><strong>What is already known about this topic?</strong></p>
+                        <p class="summaryTitle"><strong>What is already known about this topic?</strong></p>
                         <p>osullivanjam.es is a continuously evolving programming project which serves as a home for the personal projects of its creator. The exact contents of this website are vast and remain subject to contant changes and development.</p>
 
-                        <p id="title"><strong>What is added by this report?</strong></p>
+                        <p class="summaryTitle"><strong>What is added by this report?</strong></p>
                         <p>The osullivanjam.es website has not yet had its purpose and objectives explicitly outlined; I believe it stands to benefit from this analysis. In this document we will investigate its broder aims and design philosophy.</p>
                     </div>
                     <div class="investigationBox">
@@ -64,6 +64,8 @@ $pageName = "about";
                     <img src="<?= IMAGE_PATH_ABOUT . 'phplogo.gif'; ?>" alt="spinning logo">
                     <img src="<?= IMAGE_PATH_ABOUT . 'esdomain.png'; ?>" alt="spinning logo">
                     <img src="<?= IMAGE_PATH_ABOUT . 'sasslogo.png'; ?>" alt="spinning logo">
+                    <img src="<?= IMAGE_PATH_ABOUT . 'html5logo.png'; ?>" alt="spinning logo">
+                    <img src="<?= IMAGE_PATH_ABOUT . 'csslogo.png'; ?>" alt="spinning logo">
                 </div>
 
             </div>

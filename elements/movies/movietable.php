@@ -38,7 +38,7 @@ function getMovieElement($element){
     $releaseDateText = getReleaseDateText($element[3]);
 
     $imgSection = "<img class='fixedresize' src='$imgLink' alt='movie thumb'>";
-    $descriptionSection = "<h5>$title</h5><h4>$releaseDateText</h4>";
+    $descriptionSection = "<div class='movieTitle'>$title</div><div class='movieSubtitle'>$releaseDateText</div>";
     $body = "<a href='$link'>$imgSection $descriptionSection</a>";
 
     if(!empty($title)){

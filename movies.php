@@ -7,7 +7,7 @@ $pageName = "movies";
 <html lang="en">
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <meta charset="UTF-8">
     <meta name="description" content="osullivanjam.es">
     <link rel="stylesheet" href="<?= CSS_PATH . 'styles.css'; ?>">
     <link rel="stylesheet" href="<?= CSS_PATH . 'movies.css'; ?>">
@@ -29,12 +29,8 @@ $pageName = "movies";
             the channel are available for viewing via 
             <a href="https://www.youtube.com/@TheWhattetyWhaters"><span class="youtubeLink">YouTube</span></a>, or through the links below.</p>
         </div>
-
         <?php echo getMovieTable() ?>
-
     </div>
-
     <?php include ELEMENTS_PATH . 'footer.php'; ?>
 </body>
-
 </html>

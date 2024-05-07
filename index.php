@@ -4,16 +4,16 @@ include_once ELEMENTS_PATH_INDEX . 'quotes.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
-    <title>osullivanjam.es</title>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <meta charset="UTF-8">
     <meta name="description" content="osullivanjam.es">
     <link rel="stylesheet" href="<?= CSS_PATH . 'styles.css'; ?>">
     <link rel="stylesheet" href="<?= CSS_PATH . 'index.css'; ?>">
     <link rel="stylesheet" href="<?= CSS_PATH . 'scrollingtext.css'; ?>">
     <link rel="stylesheet" href="<?= CSS_PATH . 'quotes.css'; ?>">
     <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH . 'icon.png'; ?>">
+    <title>osullivanjam.es</title>
 </head>
 
 <body>
@@ -54,12 +54,9 @@ include_once ELEMENTS_PATH_INDEX . 'quotes.php';
         <img src="<?= IMAGE_PATH_INDEX . 'bodywithoutorgans2.png'; ?>" alt="body without organs" class="center" style="width: 87%; margin-top: 30px">
         <blockquote>
             <p class="firequote">Your wealth has rotted, and moths have eaten your clothes. Your gold and silver
-                are corroded. Their corrosion will testify against you and eat your flesh like fire.
-            </p>
+                are corroded. Their corrosion will testify against you and eat your flesh like fire.</p>
         </blockquote>
     </div>
-
     <?php include ELEMENTS_PATH . 'footer.php';?>
 </body>
-
 </html>

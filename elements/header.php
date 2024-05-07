@@ -6,10 +6,10 @@ function letterPath($letter){
 ?>
 
 <script>0</script>
-<div id="container">
-    <div id="header">
+<div class="container">
+    <div class="header">
         <a href="/">
-            <div id="name">
+            <div class="name">
                 <div class="row">
                     <img src="<?php letterPath('j')?>" alt="j">
                     <img src="<?php letterPath('a')?>" alt="a">
@@ -18,7 +18,7 @@ function letterPath($letter){
                     <img src="<?php letterPath('s')?>" alt="s">
                 </div>
             </div>
-            <div id="name">
+            <div class="name">
                 <div class="row">
                     <img src="<?php letterPath('o')?>" alt="o">
                     <img src="<?php letterPath('s')?>" alt="s">

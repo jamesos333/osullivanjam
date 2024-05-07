@@ -1,5 +1,5 @@
 /* scrolling text on homepage */
-div#scrollingtext {
+div.scrollingtext {
   max-width: 1050px;
   background: rgb(27, 14, 24);
   color: aliceblue;
@@ -7,7 +7,7 @@ div#scrollingtext {
   border-radius: 8px;
   border: 2px solid rgba(137, 43, 226, 0.521);
 }
-div#scrollingtext .marquee {
+div.scrollingtext .marquee {
   display: flex;
   margin: 0 auto;
   white-space: nowrap;
@@ -19,7 +19,7 @@ div#scrollingtext .marquee {
           user-select: none;
   gap: 0.1rem;
 }
-div#scrollingtext .marquee #marqueetext {
+div.scrollingtext .marquee .marqueetext {
   display: inline-block;
   font-size: 16px;
   animation: scroll 10s linear infinite;
@@ -33,7 +33,7 @@ div#scrollingtext .marquee #marqueetext {
   padding: 0rem 0.1rem;
   text-align: center;
 }
-div#scrollingtext .marquee #marqueetext span {
+div.scrollingtext .marquee .marqueetext span {
   padding: 0 0.2%;
 }
 

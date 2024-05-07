@@ -29,7 +29,7 @@ a {
 .movieElement:hover img {
   filter: saturate(500%);
 }
-.movieElement h5 {
+.movieElement .movieTitle {
   color: white;
   font-family: "Times New Roman";
   text-decoration: underline;
@@ -38,7 +38,7 @@ a {
   font-size: 20px;
   margin: 8px;
 }
-.movieElement h4 {
+.movieElement .movieSubtitle {
   color: red;
   font-family: "Times New Roman";
   text-align: center;

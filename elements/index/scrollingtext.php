@@ -4,9 +4,9 @@
     $scrollingText = getFileTextContent($scrollingTextPath);
 ?>
 
-<div id="scrollingtext">
+<div class="scrollingtext">
     <p class="marquee">
-        <span id="marqueetext"><?php echo $scrollingText;?></span>
-        <span aria-hidden="true" id="marqueetext"><?php echo $scrollingText;?></span>
+        <span class="marqueetext"><?php echo $scrollingText;?></span>
+        <span aria-hidden="true" class="marqueetext"><?php echo $scrollingText;?></span>
     </p>
 </div>

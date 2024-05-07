@@ -3,6 +3,6 @@ include_once 'config.php';
 $copyrightPath = MSCL_PATH . 'copyright.txt';
 ?>
 
-<copyright id="copyright" class="center">
+<div class="copyright">
     <?php echo getFileTextContent($copyrightPath);?>
-</copyright>
+</div>

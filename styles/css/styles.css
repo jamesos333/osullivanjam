@@ -42,13 +42,13 @@ table tr {
   border-radius: 25px;
 }
 
-#leftpane {
+.leftpane {
   float: left;
   display: inline;
   width: 30%;
 }
 
-#rightpane {
+.rightpane {
   float: right;
   display: inline;
   width: 70%;
@@ -69,7 +69,7 @@ table tr {
   color: rgb(240, 248, 255);
 }
 
-#header {
+.header {
   margin: 0 auto;
   max-width: 1100px;
   min-width: 600px;
@@ -77,16 +77,16 @@ table tr {
   padding-top: 2%;
   padding-bottom: 0.75%;
 }
-#header #name {
+.header .name {
   text-align: center;
   justify-content: center;
 }
-#header .row img {
+.header .row img {
   padding: 8px 2px;
   width: 9.6%;
   aspect-ratio: 1;
 }
-#header .row:after {
+.header .row:after {
   content: "";
   clear: both;
   display: table;
@@ -110,7 +110,10 @@ table tr {
   height: 25px;
 }
 
-copyright {
+.copyright {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   font-size: 80%;
   margin: 0 auto;

@@ -89,7 +89,7 @@ p {
         padding: 0 5px 15px 5px;
         margin-bottom: 15px;
 
-        #title {
+        .summaryTitle {
             margin-top: 18px;
             margin-bottom: 3px;
         }
@@ -109,6 +109,8 @@ p {
     background-color: c.$dark-purple;
     border: 4px solid c.$transparent-black;
     border-radius: 4px;
+    height: auto;
+    overflow: hidden;
 
     h3 {
         padding: 7px 10px;

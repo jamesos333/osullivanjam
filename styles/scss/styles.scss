@@ -45,13 +45,13 @@ table {
     border-radius: 25px;
 }
 
-#leftpane {
+.leftpane {
     float: left;
     display: inline;
     width: 30%;
 }
 
-#rightpane {
+.rightpane {
     float: right;
     display: inline;
     width: 70%;
@@ -75,7 +75,7 @@ table {
 }
 
 // dancing letters
-#header {
+.header {
     margin: 0 auto;
     max-width: 1100px;
     min-width: 600px;
@@ -84,7 +84,7 @@ table {
     padding-top: 2%;
     padding-bottom: 0.75%;
 
-    #name {
+    .name {
         text-align: center;
         justify-content: center;
     }
@@ -125,7 +125,8 @@ table {
     }
 }
 
-copyright {
+.copyright {
+    @include g.center;
     text-align: center;
     font-size: 80%;
     margin: 0 auto;

@@ -6,7 +6,7 @@ $pageName = "faq";
 <html lang="en">
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <meta charset="UTF-8">
     <meta name="description" content="osullivanjam.es">
     <link rel="stylesheet" href="<?=CSS_PATH . 'styles.css';?>">
     <link rel="stylesheet" href="<?=CSS_PATH . 'faq.css';?>">
@@ -20,10 +20,10 @@ $pageName = "faq";
     <div id="content">
         <?php include ELEMENTS_PATH . 'navbar.php';?>
         <div class="wrapper">
-            <div id="leftpane">
+            <div class="leftpane">
                 <img src="<?=IMAGE_PATH_FAQ . 'face1.gif';?>" alt="myface" class="scrollingimage">
             </div>
-            <div id="rightpane">
+            <div class="rightpane">
                 <h1>I am living in your walls.</h1>
                 <h3>You may be concerned about this. Incase you are, please read the below:</h3>
 
@@ -113,8 +113,6 @@ $pageName = "faq";
         </div>
 
     </div>
-
     <?php include ELEMENTS_PATH . 'footer.php';?>
 </body>
-
 </html>
