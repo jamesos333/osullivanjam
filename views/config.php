@@ -1,10 +1,12 @@
 <?php
 // variables for basic paths
-define('CSS_PATH', 'styles/css/');
-define('JS_PATH', 'js/');
-define('IMAGE_PATH', 'img/');
-define('ELEMENTS_PATH', 'elements/');
-define('MSCL_PATH', 'mscl/');
+define('BASE_PATH', '../');
+
+define('CSS_PATH', BASE_PATH . 'styles/css/');
+define('JS_PATH', BASE_PATH . 'files/js/');
+define('IMAGE_PATH', BASE_PATH . 'files/img/');
+define('ELEMENTS_PATH', BASE_PATH . 'modules/');
+define('MSCL_PATH', BASE_PATH . 'files/txt/');
 
 // variables for page-specific paths
 define('IMAGE_PATH_INDEX', IMAGE_PATH . 'index/');
