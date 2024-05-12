@@ -119,7 +119,7 @@ async function generateSentence(structure) {
 async function getWordList(fileId) {
     var randomWord;
     if (wordLists[fileId] == null) {
-        const fileUrl = baseUrl + "/mscl/wordlists/" + urls[fileId];
+        const fileUrl = baseUrl + "/files/txt/wordlists/" + urls[fileId];
         const data = await fetchData(fileUrl);
         const newWordList = data.split("\n");
         wordLists[fileId] = newWordList;
