@@ -1,8 +1,7 @@
 <?php
-include_once 'config.php';
-function letterPath($letter){
-    echo IMAGE_PATH_LETTERS . $letter . '.gif';
-}
+    function letterPath($letter){
+        echo IMAGE_PATH_LETTERS . $letter . '.gif';
+    }
 ?>
 
 <script>0</script>

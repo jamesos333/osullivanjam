@@ -1,6 +1,3 @@
-<?php 
-include_once 'config.php';
-?>
 <div class="wrapper navbar">
     <div class="leftpane">
         <p class="description">

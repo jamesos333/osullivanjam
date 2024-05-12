@@ -1,7 +1,7 @@
 <?php
-include_once 'config.php';
-include_once ELEMENTS_PATH_MOVIES . 'movietable.php';
-$pageName = "movies";
+    include_once '../_config.php';
+    include_once ELEMENTS_PATH_MOVIES . 'movietable.php';
+    $pageName = "movies";
 ?>
 <!DOCTYPE html>
 <html lang="en">

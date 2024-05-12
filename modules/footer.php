@@ -1,6 +1,5 @@
 <?php
-include_once 'config.php';
-$copyrightPath = MSCL_PATH . 'copyright.txt';
+    $copyrightPath = MSCL_PATH . 'copyright.txt';
 ?>
 
 <div class="copyright">

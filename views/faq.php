@@ -1,5 +1,5 @@
 <?php 
-include_once 'config.php';
+include_once '../_config.php';
 $pageName = "faq";
 ?>
 <!DOCTYPE html>
