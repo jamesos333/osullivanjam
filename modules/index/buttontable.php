@@ -1,13 +1,13 @@
 <?php
     $githubLink = "https://github.com/jamesos333/osullivanjam";
-    $aboutButton = array("about.php", "button_about.png", "about", "button");
-    $faqButton = array("faq.php", "button_faq.png", "faq", "button");
+    $aboutButton =  array("about"   , "button_about.png", "about"   , "button");
+    $faqButton =    array("faq"     , "button_faq.png"  , "faq"     , "button");
     $buttonArray = array(
-        array("babel.php"   , "button_contact.png"      , "contact"     , "button"),
-        array("/"           , "button_cooking.png"      , "cooking"     , "button comingsoon"),
-        array("/"           , "button_music.png"        , "music"       , "button comingsoon"),
-        array("movies.php"  , "button_movies.png"       , "movies"      , "button"),
-        array("/"           , "button_experience.png"   , "experience"  , "button comingsoon"),
+        array("contact"     , "button_contact.png"      , "contact"     , "button"),
+        array("cooking"     , "button_cooking.png"      , "cooking"     , "button comingsoon"),
+        array("music"       , "button_music.png"        , "music"       , "button comingsoon"),
+        array("movies"      , "button_movies.png"       , "movies"      , "button"),
+        array("experience"  , "button_experience.png"   , "experience"  , "button comingsoon"),
         array($githubLink   , "button_github.png"       , "github"      , "button")
     );
     shuffle($buttonArray);

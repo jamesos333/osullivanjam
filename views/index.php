@@ -1,5 +1,5 @@
 <?php 
-    include_once '../_config.php';
+    include_once '_config.php';
     include_once ELEMENTS_PATH_INDEX . 'quotes.php';
 ?>
 <!DOCTYPE html>
