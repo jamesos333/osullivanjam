@@ -1,6 +1,6 @@
 <?php
 // variables for basic paths
-define('BASE_PATH', '');
+define('BASE_PATH', dirname(__DIR__) . '/');
 
 define('CSS_PATH', BASE_PATH . 'styles/css/');
 define('JS_PATH', BASE_PATH . 'files/js/');
