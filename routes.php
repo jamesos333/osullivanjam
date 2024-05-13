@@ -14,3 +14,4 @@ if (preg_match('/\.(?:png|jpg|jpeg|gif|css|js|txt)$/', $_SERVER["REQUEST_URI"]))
 	any('/404', '/views/404.php');
 	return false;
 }
+?>
