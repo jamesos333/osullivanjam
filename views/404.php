@@ -50,7 +50,7 @@
     <a href="/">
         <div class="content">
             <h1>404</h1>
-            <img src="files/img/404/smiledog.gif" alt="smiledog">
+            <img src="/files/img/404/smiledog.gif" alt="smiledog">
             <h2>looking for something?</h2>
         </div>
     </a>
