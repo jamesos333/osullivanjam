@@ -3,9 +3,13 @@ body {
   margin: 0px 40px;
   padding-bottom: 5px;
   font: 90% Roboto, Arial, sans-serif;
-  background-image: url("../../img/background/6.gif");
+  background-image: url("/files/img/background/6.gif");
   background-repeat: repeat;
   font-weight: 300;
+}
+
+a {
+  text-decoration: none;
 }
 
 p {
@@ -181,12 +185,12 @@ blockquote p {
 
 /* cloud image background for blockquote */
 .cloudquote {
-  background-image: url("../../img/background/quotes/clouds.gif");
+  background-image: url("/files/img/background/quotes/clouds.gif");
 }
 
 /* fire image background for blockquote */
 .firequote {
-  background-image: url("../../img/background/quotes/fire.gif");
+  background-image: url("/files/img/background/quotes/fire.gif");
 }
 
 a {

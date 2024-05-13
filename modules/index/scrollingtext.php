@@ -1,5 +1,4 @@
 <?php
-    include_once 'config.php';
     $scrollingTextPath = MSCL_PATH . 'scrollingtext.txt';
     $scrollingText = getFileTextContent($scrollingTextPath);
 ?>

@@ -1,6 +1,6 @@
 <?php 
-include_once 'config.php';
-$pageName = "faq";
+    include_once '_config.php';
+    $pageName = "faq";
 ?>
 <!DOCTYPE html>
 <html lang="en">

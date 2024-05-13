@@ -4,7 +4,7 @@
 
 // used stylesheets
 @use 'styles';
-@use 'quotes';
+@use '_quotes';
 
 .chat-container {
     padding: 15px 0px;

@@ -1,6 +1,6 @@
 <?php 
-include_once 'config.php';
-$pageName = "tower of babel";
+    include_once '_config.php';
+    $pageName = "tower of babel";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,6 +38,6 @@ $pageName = "tower of babel";
         </table>
     </div>
     <?php include ELEMENTS_PATH . 'footer.php';?>
-    <script type="module" src="js/babel.js"></script>
+    <script type="module" src="<?=JS_PATH . 'babel.js'; ?>"></script>
 </body>
 </html>

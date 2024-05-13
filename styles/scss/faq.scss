@@ -4,7 +4,7 @@
 
 // used stylesheets
 @use 'styles';
-@use 'quotes';
+@use '_quotes';
 
 @mixin qaItem {
     padding: 10px;
