@@ -8,6 +8,10 @@ body {
   font-weight: 300;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   padding: 0 10px;
   line-height: 1.8;
