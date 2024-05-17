@@ -1,9 +1,6 @@
 <?php
 require_once __DIR__ . '/router.php';
 
-if (preg_match('/\.(?:png|jpg|jpeg|gif|css|js|txt)$/', $_SERVER["REQUEST_URI"])) {
-	return false;
-} else {
 	// basic page paths
 	get('/', '/views/index.php');
 	get('/about', '/views/about.php');
@@ -13,5 +10,5 @@ if (preg_match('/\.(?:png|jpg|jpeg|gif|css|js|txt)$/', $_SERVER["REQUEST_URI"]))
 	// 404
 	any('/404', '/views/404.php');
 	return false;
-}
+	
 ?>
