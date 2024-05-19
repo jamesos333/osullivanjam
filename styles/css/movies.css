@@ -1,4 +1,14 @@
 @charset "UTF-8";
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  display: flex;
+}
+
 body {
   margin: 0px 40px;
   padding-bottom: 5px;
@@ -24,16 +34,6 @@ table {
 table th,
 table tr {
   padding: 5px 0px;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wrapper {
-  display: flex;
 }
 
 #content {
@@ -211,8 +211,8 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(68, 21, 57, 0.6);
-  border: 3px solid #441539;
+  background-color: rgba(68, 21, 57, 0.5);
+  border: 3px solid rgba(68, 21, 57, 0.8);
   border-radius: 6px;
   max-width: 640px;
   padding: 0px;

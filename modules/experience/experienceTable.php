@@ -12,9 +12,9 @@
         $imgLink  = IMAGE_PATH_EXPERIENCE . $element[1];
         $iconPath = IMAGE_PATH_EXPERIENCE_ICONS . $element[3] . '.svg';
 
-        $sectionThumb = "<div class='imageThumb'><img src='$imgLink' alt='program thumb'></div>";
-        $sectionTitle = "<div class='bottom-left'>$element[2]</div>";
-        $sectionIcons = "<div class='top-right'><img src='$iconPath' alt='icon logo'/></div>";
+        $sectionThumb = "<div class='imageThumb'><img src='$imgLink' alt='$element[2] thumbnail'></div>";
+        $sectionTitle = "<div class='elementTitle'>$element[2]</div>";
+        $sectionIcons = "<div class='elementIcons'><img src='$iconPath' alt='$element[3] logo'/></div>";
         
         $body = $sectionThumb . $sectionTitle . $sectionIcons;
         $body = "<div class='linkElement'><a href='$link'>$body</a></div>";

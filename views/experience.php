@@ -19,9 +19,6 @@
     <div id="content">
         <?php include ELEMENTS_PATH . 'navbar.php'; ?>
 
-        <div class="infoHeader">
-            <h1>Experiences</h1>
-        </div>
         <?php echo getLinkTable() ?>
     </div>
     <?php include ELEMENTS_PATH . 'footer.php'; ?>
