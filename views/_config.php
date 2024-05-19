@@ -3,6 +3,7 @@
 define('CSS_PATH', '/styles/css/');
 define('JS_PATH', '/files/js/');
 define('IMAGE_PATH', '/files/img/');
+
 define('ELEMENTS_PATH', 'modules/');
 define('MSCL_PATH', 'files/txt/');
 
@@ -17,6 +18,10 @@ define('IMAGE_PATH_FAQ', IMAGE_PATH . 'faq/');
 define('IMAGE_PATH_MOVIES', IMAGE_PATH . 'movies/');
 define('IMAGE_PATH_MOVIES_THUMBNAILS', IMAGE_PATH_MOVIES . 'thumbnails/');
 define('ELEMENTS_PATH_MOVIES', ELEMENTS_PATH . 'movies/');
+
+define('ELEMENTS_PATH_EXPERIENCE', ELEMENTS_PATH . 'experience/');
+define('IMAGE_PATH_EXPERIENCE', IMAGE_PATH . 'experience/');
+define('IMAGE_PATH_EXPERIENCE_ICONS', IMAGE_PATH_EXPERIENCE . 'icons/');
 
 define('IMAGE_PATH_CONTACT', IMAGE_PATH . 'contact/');
 define('ELEMENTS_PATH_CONTACT', ELEMENTS_PATH . 'contact/');

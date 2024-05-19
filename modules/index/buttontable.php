@@ -1,14 +1,14 @@
 <?php
     $githubLink = "https://github.com/jamesos333/osullivanjam";
     $aboutButton =  array("about"   , "button_about.png", "about"   , "button");
-    $faqButton =    array("faq"     , "button_faq.png"  , "faq"     , "button");
     $buttonArray = array(
         array("contact"     , "button_contact.png"      , "contact"     , "button"),
         array("cooking"     , "button_cooking.png"      , "cooking"     , "button comingsoon"),
         array("music"       , "button_music.png"        , "music"       , "button comingsoon"),
         array("movies"      , "button_movies.png"       , "movies"      , "button"),
-        array("experience"  , "button_experience.png"   , "experience"  , "button comingsoon"),
-        array($githubLink   , "button_github.png"       , "github"      , "button")
+        array("experience"  , "button_experience.png"   , "experience"  , "button"),
+        array($githubLink   , "button_github.png"       , "github"      , "button"),
+        array("faq"         , "button_faq.png"          , "faq"         , "button")
     );
     shuffle($buttonArray);
 
@@ -35,6 +35,6 @@
     <tr>
         <th><?php getButton($buttonArray[4])?></th>
         <th><?php getButton($buttonArray[5])?></th>
-        <th><?php getButton($faqButton)?></th>
+        <th><?php getButton($buttonArray[6])?></th>
     </tr>
 </table>
