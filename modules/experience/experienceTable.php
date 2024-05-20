@@ -1,8 +1,8 @@
 <?php
     function getLinkTable(){
         $experienceArray = array(
-            array("experience/damned/damned.html",      "damned.png",       "Savior of the Damned", "godot"),
-            array("experience/cyberjellies/index.html", "cyberjellies.png", "Cyberjellies",         "p5js")
+            array("/experience/damned/damned.html",      "damned.png",       "Savior of the Damned", "godot"),
+            array("/experience/cyberjellies/index.html", "cyberjellies.png", "Cyberjellies",         "p5js")
         );
         return populateAndCreateLinkTable($experienceArray);
     }
