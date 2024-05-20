@@ -139,7 +139,6 @@ table tr {
   text-align: center;
   font-family: "Times New Roman", serif;
   font-size: 14px;
-  font-size: 1.6vmin;
   font-style: italic;
   letter-spacing: 0.1vmin;
   color: rgb(240, 248, 255);
@@ -241,8 +240,9 @@ a {
   bottom: 0.7em;
   left: 2.1vw;
   color: rgb(240, 248, 255);
-  text-shadow: -4px 4px 10px rgb(0, 0, 0), -4px 4px 8px rgb(0, 0, 0);
-  font-size: 28px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 1.6rem;
+  font-family: "Brush Script MT", cursive;
 }
 
 .elementIcons {

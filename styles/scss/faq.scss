@@ -5,10 +5,12 @@
 // used stylesheets
 @use '_quotes';
 
+$borderRadius: 4px;
+
 @mixin qaItem {
     padding: 10px;
     border: 1px solid c.$light-grey;
-    border-radius: 4px;
+    border-radius: $borderRadius $borderRadius 0 $borderRadius;
     background-color: rgba(c.$main-purple, 0.4);
 }
 
@@ -29,8 +31,15 @@
         
         .answer {
             @include qaItem();
+            margin-left: 14px;
+            border-top: 0;
+            border-radius: 0 0 $borderRadius $borderRadius;
         }
     }
+}
+
+.title-text {
+    margin-left: 16px;
 }
 
 /* scrolling image on faq page */
@@ -38,6 +47,7 @@
     @include g.center;
     width: 84%;
     padding-top: 20px;
+    padding-bottom: 20px;
     position: sticky;
     top: 15px;
 }

@@ -139,7 +139,6 @@ table tr {
   text-align: center;
   font-family: "Times New Roman", serif;
   font-size: 14px;
-  font-size: 1.6vmin;
   font-style: italic;
   letter-spacing: 0.1vmin;
   color: rgb(240, 248, 255);
@@ -205,7 +204,7 @@ blockquote p {
 .faq-container .faq-item .question {
   padding: 10px;
   border: 1px solid rgb(204, 204, 204);
-  border-radius: 4px;
+  border-radius: 4px 4px 0 4px;
   background-color: rgba(68, 21, 57, 0.4);
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.4);
@@ -213,8 +212,15 @@ blockquote p {
 .faq-container .faq-item .answer {
   padding: 10px;
   border: 1px solid rgb(204, 204, 204);
-  border-radius: 4px;
+  border-radius: 4px 4px 0 4px;
   background-color: rgba(68, 21, 57, 0.4);
+  margin-left: 14px;
+  border-top: 0;
+  border-radius: 0 0 4px 4px;
+}
+
+.title-text {
+  margin-left: 16px;
 }
 
 /* scrolling image on faq page */
@@ -224,6 +230,7 @@ blockquote p {
   margin-right: auto;
   width: 84%;
   padding-top: 20px;
+  padding-bottom: 20px;
   position: sticky;
   top: 15px;
 }

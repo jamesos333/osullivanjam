@@ -22,8 +22,10 @@
                 <img src="<?=IMAGE_PATH_FAQ . 'face1.gif';?>" alt="myface" class="scrollingimage">
             </div>
             <div class="rightpane">
-                <h1>I am living in your walls.</h1>
-                <h3>You may be concerned about this. Incase you are, please read the below:</h3>
+                <div class="title-text">
+                    <h1>I am living in your walls.</h1>
+                    <h3>You may be concerned about this. In case you are, please read the below:</h3>
+                </div>
 
                 <div class="faq-container">
                     <div class="faq-item">
