@@ -13,7 +13,7 @@ var jellie = [];
 var speed = [];
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  let canvas = createCanvas(window.innerWidth, window.innerHeight);
   //gets amount of jellies from url by putting ?jelly=1 at end of URL
   var params = getURLParams();
   if (params.jelly > 0) {
@@ -34,6 +34,10 @@ function setup() {
     //sets up jellyfish with created values
     jellie[i] = new Jellyfish(jelW, jelH, jellyColor, 6, 20, 40, 12, 240, 360);
   }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function mousePressed() {

@@ -216,7 +216,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   border-radius: 6px;
-  max-width: 640px;
+  max-width: 480px;
   padding: 0px;
   position: relative;
   text-align: center;
@@ -235,10 +235,14 @@ a {
   border: 3px solid #441539;
 }
 
+.unavailable {
+  filter: grayscale(95%) blur(4px);
+}
+
 .elementTitle {
   position: absolute;
   bottom: 0.7em;
-  left: 2.1vw;
+  left: 0.9em;
   color: rgb(240, 248, 255);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   font-size: 1.6rem;
@@ -248,7 +252,7 @@ a {
 .elementIcons {
   position: absolute;
   top: 1em;
-  right: 1.8vw;
+  right: 0.6em;
   width: 34px;
   height: 34px;
 }
