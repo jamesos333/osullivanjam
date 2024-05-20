@@ -5,7 +5,8 @@ $quoteArray = array(
     "they spoke through my body in the form of an ominous prophecy",
     "i no longer look for meaning in things. it's not my responsibility",
     "bitch you're not real, you're in my system",
-    "the voice of those who preach death is heard"
+    "the voice of those who preach death is heard",
+    "they're trying to take us away from me"
 );
 
 $smallQuoteArray = array (
@@ -14,7 +15,8 @@ $smallQuoteArray = array (
     "in the depth of winter",
     "has he got lost?",
     "or is he hiding?",
-    "made in my own image"
+    "made in my own image",
+    "all things are nothing to me"
 );
 
 shuffle($quoteArray);

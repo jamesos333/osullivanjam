@@ -20,6 +20,11 @@
         <?php include ELEMENTS_PATH . 'navbar.php'; ?>
 
         <?php echo getLinkTable() ?>
+        <blockquote>
+            <p class="darkcloudsquote">I am not nothing in the sense of emptiness, but I am the creative nothing, 
+                the nothing out of which I as creator create everything.</p>
+        </blockquote>
+
     </div>
     <?php include ELEMENTS_PATH . 'footer.php'; ?>
 </body>
