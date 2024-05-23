@@ -121,7 +121,7 @@ table tr {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 80%;
+  font-size: 0.8em;
   margin: 0 auto;
   max-width: 1100px;
   padding: 5px;
@@ -139,9 +139,10 @@ table tr {
   border-radius: 5px;
   text-align: center;
   font-family: "Times New Roman", serif;
-  font-size: 14px;
+  font-size: 1em;
   font-style: italic;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.06em;
+  line-height: 1.8em;
   color: rgb(240, 248, 255);
 }
 
@@ -168,10 +169,9 @@ blockquote:before {
 blockquote p {
   font-family: "Times New Roman", serif;
   font-style: italic;
-  font-size: 22px;
-  font-size: 1.4rem;
-  letter-spacing: 0.1rem;
-  line-height: 60px;
+  font-size: 1.1em;
+  letter-spacing: 0.07em;
+  line-height: 2.7em;
   display: inline;
   width: 100%;
   background-position: 0 -1000px;
@@ -226,6 +226,7 @@ blockquote p {
   border: 1px solid rgb(204, 204, 204);
   border-radius: 4px 4px 0 4px;
   background-color: rgba(68, 21, 57, 0.4);
+  padding-left: 14px;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -238,9 +239,12 @@ blockquote p {
   border-top: 0;
   border-radius: 0 0 4px 4px;
 }
+.faq-container h3 {
+  padding-left: 15px;
+}
 
 .title-text {
-  margin-left: 16px;
+  margin: 20px;
 }
 
 /* scrolling image on faq page */
@@ -249,8 +253,7 @@ blockquote p {
   margin-left: auto;
   margin-right: auto;
   width: 84%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   position: sticky;
   top: 15px;
 }

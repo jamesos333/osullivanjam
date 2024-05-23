@@ -25,6 +25,7 @@ $borderRadius: 4px;
     
         .question {
             @include qaItem();
+            padding-left: 14px;
             font-weight: bold;
             background-color: c.$transparent-black;
         }
@@ -36,18 +37,21 @@ $borderRadius: 4px;
             border-radius: 0 0 $borderRadius $borderRadius;
         }
     }
+
+    h3 {
+        padding-left: 15px;
+    }
 }
 
 .title-text {
-    margin-left: 16px;
+    margin: 20px;
 }
 
 /* scrolling image on faq page */
 .scrollingimage {
     @include g.center;
     width: 84%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     position: sticky;
     top: 15px;
 }

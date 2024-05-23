@@ -13,10 +13,11 @@
 
     text-align: center;
     font-family: 'Times New Roman', serif;
-    font-size: 14px;
+    font-size: 1em;
 
     font-style: italic;
-    letter-spacing: 0.08rem;
+    letter-spacing: 0.06em;
+    line-height: 1.8em;
     color: c.$light-blue;
 }
 
@@ -46,10 +47,9 @@ blockquote {
     p {
         font-family: 'Times New Roman', serif;
         font-style: italic;
-        font-size: 22px;
-        font-size: 1.4rem;
-        letter-spacing: 0.1rem;
-        line-height: 60px;
+        font-size: 1.1em;
+        letter-spacing: 0.07em;
+        line-height: 2.7em;
 
         display: inline;
         width: 100%;
