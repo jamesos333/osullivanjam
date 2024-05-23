@@ -138,9 +138,9 @@ table tr {
   border-radius: 5px;
   text-align: center;
   font-family: "Times New Roman", serif;
-  font-size: 15px;
+  font-size: 14.5px;
   font-style: italic;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.08rem;
   color: rgb(240, 248, 255);
 }
 
@@ -152,9 +152,8 @@ blockquote {
   background: rgba(0, 0, 0, 0.5);
   border-left: 10px solid rgba(240, 248, 255, 0.8);
   border-radius: 2px;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-style: italic;
-  line-height: 1.6;
 }
 blockquote:before {
   color: aliceblue;
@@ -171,7 +170,7 @@ blockquote p {
   font-size: 22px;
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
-  line-height: 3.8rem;
+  line-height: 60px;
   display: inline;
   width: 100%;
   background-position: 0 -1000px;
