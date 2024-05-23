@@ -1,3 +1,6 @@
+<?php 
+    include_once '_config.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +53,7 @@
     <a href="/">
         <div class="content">
             <h1>404</h1>
-            <img src="/files/img/404/smiledog.gif" alt="smiledog">
+            <img src="<?= IMAGE_PATH_404 . 'smiledog.gif'; ?>" alt="smiledog">
             <h2>looking for something?</h2>
         </div>
     </a>
