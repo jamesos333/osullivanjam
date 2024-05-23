@@ -22,6 +22,10 @@ $background_path: $image_path + "background/";
     @include wrapper;
 }
 
+html {
+    font-size: 14px;
+}
+
 body {
     margin: 0px 40px;
     padding-bottom: 5px;
