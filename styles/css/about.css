@@ -12,9 +12,10 @@
 body {
   margin: 0px 40px;
   padding-bottom: 5px;
-  font: 90% Roboto, Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   background-image: url("/files/img/background/6.gif");
   background-repeat: repeat;
+  font-size: 14px;
   font-weight: 300;
 }
 
@@ -108,7 +109,7 @@ table tr {
   font-family: "Times New Roman", serif;
   font-weight: bold;
   font-style: italic;
-  font-size: 95%;
+  font-size: 14px;
   letter-spacing: 1px;
 }
 .navbar .description img {
@@ -138,7 +139,7 @@ table tr {
   border-radius: 5px;
   text-align: center;
   font-family: "Times New Roman", serif;
-  font-size: 14.5px;
+  font-size: 14px;
   font-style: italic;
   letter-spacing: 0.08rem;
   color: rgb(240, 248, 255);
@@ -152,7 +153,7 @@ blockquote {
   background: rgba(0, 0, 0, 0.5);
   border-left: 10px solid rgba(240, 248, 255, 0.8);
   border-radius: 2px;
-  font-size: 1.3em;
+  font-size: 20px;
   font-style: italic;
 }
 blockquote:before {

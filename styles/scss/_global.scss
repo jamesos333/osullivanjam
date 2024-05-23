@@ -25,9 +25,10 @@ $background_path: $image_path + "background/";
 body {
     margin: 0px 40px;
     padding-bottom: 5px;
-    font: 90% Roboto, Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     background-image: url($background_path + '6.gif');
     background-repeat: repeat;
+    font-size: 14px;
     font-weight: 300;
 }
 
@@ -133,7 +134,7 @@ table {
         font-family: 'Times New Roman', serif;
         font-weight: bold;
         font-style: italic;
-        font-size: 95%;
+        font-size: 14px;
         letter-spacing: 1px;
         img {
             height: 25px;
