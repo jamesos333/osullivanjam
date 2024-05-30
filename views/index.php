@@ -8,6 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="osullivanjam.es">
+    <meta name="viewport" content="width=100%, initial-scale=1">
     <link rel="stylesheet" href="<?= CSS_PATH . 'index.css'; ?>">
     <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH . 'icon.png'; ?>">
     <title>osullivanjam.es</title>

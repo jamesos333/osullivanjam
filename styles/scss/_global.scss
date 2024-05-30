@@ -24,6 +24,7 @@ $background_path: $image_path + "background/";
 
 html {
     font-size: 14px;
+    min-width: fit-content;
 }
 
 body {
