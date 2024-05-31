@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="osullivanjam.es">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, target-densityDpi=device-dpi">
     <link rel="stylesheet" href="<?= CSS_PATH . 'index.css?nocache'; ?>">
     <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH . 'icon.png'; ?>">
     <title>osullivanjam.es</title>
