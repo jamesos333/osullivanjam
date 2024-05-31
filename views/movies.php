@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="osullivanjam.es">
-    <meta name="viewport" content="width=100%, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= CSS_PATH . 'movies.css'; ?>">
     <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH . 'icon.png'; ?>">
     <title><?= 'osullivanjam.es: ' . $pageName; ?></title>
