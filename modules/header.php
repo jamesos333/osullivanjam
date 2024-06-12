@@ -4,7 +4,6 @@
     }
 ?>
 
-<script>0</script>
 <div class="container">
     <div class="header">
         <a href="/">

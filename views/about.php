@@ -14,6 +14,7 @@
             </p>
         </div>
     </div>
+    
     <div class="wrapper">
         <div class="textcontainer">
             <h1><em>Notes from the Field</em>: Cluster of Design Philosophies and Miscellaneous Thoughts from osullivanjam.es webpage - New York, December-March 2024</h1>

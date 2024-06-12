@@ -1,4 +1,5 @@
 <?php
+    $antiCache = '?' . rand(0, 1000);
     $isIndex = strcmp($pageName, 'index') == 0;
     $title = 'osullivanjam.es';
     if(!$isIndex) {
@@ -13,11 +14,12 @@
     <meta charset="UTF-8">
     <meta name="description" content="osullivanjam.es">
     <link rel="icon" type="image/x-icon" href="<?=IMAGE_PATH . 'icon.png';?>">
-    <link rel="stylesheet" href="<?= CSS_PATH . $pageName . '.css'; ?>">
+    <link rel="stylesheet" href="<?= CSS_PATH . $pageName . '.css' . $antiCache; ?>">
     <title><?= $title; ?></title>
 </head>
 
 <body>
+    <script>0</script>
     <?php include ELEMENTS_PATH . 'header.php'; ?>
     <?php if($isIndex){ include ELEMENTS_PATH_INDEX . 'scrollingtext.php'; }?>
     <div id="content">
