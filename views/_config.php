@@ -7,6 +7,8 @@ define('IMAGE_PATH', '/files/img/');
 define('ELEMENTS_PATH', 'modules/');
 define('MSCL_PATH', 'files/txt/');
 
+define('ELEMENTS_PATH_TEMPLATES', ELEMENTS_PATH . 'template/');
+
 // variables for page-specific paths
 define('IMAGE_PATH_404', IMAGE_PATH . '404/');
 define('IMAGE_PATH_INDEX', IMAGE_PATH . 'index/');

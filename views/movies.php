@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <?php include ELEMENTS_PATH . 'header.php'; ?>
+    <?php include ELEMENTS_PATH . 'nameHeader.php'; ?>
     <div id="content">
         <?php include ELEMENTS_PATH . 'navbar.php'; ?>
 
