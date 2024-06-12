@@ -14,7 +14,7 @@
             </p>
         </div>
     </div>
-    
+
     <div class="wrapper">
         <div class="textcontainer">
             <h1><em>Notes from the Field</em>: Cluster of Design Philosophies and Miscellaneous Thoughts from osullivanjam.es webpage - New York, December-March 2024</h1>
@@ -25,7 +25,7 @@
                     <p>osullivanjam.es is a continuously evolving programming project which serves as a home for the personal projects of its creator. The exact contents of this website are vast and remain subject to contant changes and development.</p>
 
                     <p class="summaryTitle"><strong>What is added by this report?</strong></p>
-                    <p>The osullivanjam.es website has not yet had its purpose and objectives explicitly outlined; I believe it stands to benefit from this analysis. In this document we will investigate its broder aims and design philosophy.</p>
+                    <p>The osullivanjam.es website has not yet had its purpose and objectives explicitly outlined; I believe it stands to benefit from this analysis. In this document we will investigate its broader aims and design philosophy.</p>
                 </div>
                 <div class="investigationBox">
                     <h3>Investigations and Outcomes</h3>

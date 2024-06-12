@@ -1,5 +1,4 @@
 <?php
-    $antiCache = '?' . rand(0, 1000);
     $isIndex = strcmp($pageName, 'index') == 0;
     $title = 'osullivanjam.es';
     if(!$isIndex) {
@@ -14,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="osullivanjam.es">
     <link rel="icon" type="image/x-icon" href="<?=IMAGE_PATH . 'icon.png';?>">
-    <link rel="stylesheet" href="<?= CSS_PATH . $pageName . '.css' . $antiCache; ?>">
+    <link rel="stylesheet" href="<?= CSS_PATH . $pageName . '.css?v=1'?>">
     <title><?= $title; ?></title>
 </head>
 
