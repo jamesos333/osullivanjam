@@ -5,7 +5,7 @@
 
 <div class="scrollingtext">
     <p class="marquee">
-        <span class="marqueetext"><?php echo $scrollingText;?></span>
-        <span aria-hidden="true" class="marqueetext"><?php echo $scrollingText;?></span>
+        <span class="marqueetext"><?=$scrollingText?></span>
+        <span aria-hidden="true" class="marqueetext"><?=$scrollingText?></span>
     </p>
 </div>

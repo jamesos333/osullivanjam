@@ -7,5 +7,5 @@
 ?>
 
 <div class="copyright">
-    <?php echo $copyrightString;?>
+    <?=$copyrightString?>
 </div>

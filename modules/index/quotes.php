@@ -13,7 +13,7 @@ $smallQuoteArray = array (
     "consumers of illusions",
     "united in isolation",
     "in the depth of winter",
-    "has he got lost?",
+    "have they got lost?",
     "is he afraid of us?",
     "or is he hiding?",
     "made in my own image"

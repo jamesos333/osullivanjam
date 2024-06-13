@@ -8,13 +8,13 @@
     <table>
         <tr>
             <th>
-                <p class="subquote" style="border-width: 10px;"><?php echo $smallQuoteArray[0]?></p>
+                <p class="subquote" style="border-width: 10px;"><?=$smallQuoteArray[0]?></p>
             </th>
             <th>
-                <p class="subquote" style="border-width: 5px;"><?php echo $quoteArray[0]?></p>
+                <p class="subquote" style="border-width: 5px;"><?=$quoteArray[0]?></p>
             </th>
             <th>
-                <p class="subquote" style="border-width: 10px;"><?php echo $smallQuoteArray[1]?></p>
+                <p class="subquote" style="border-width: 10px;"><?=$smallQuoteArray[1]?></p>
             </th>
         </tr>
     </table>

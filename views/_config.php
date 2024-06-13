@@ -1,4 +1,5 @@
 <?php
+define('VERSION', '2');
 // variables for basic paths
 define('CSS_PATH', '/styles/css/');
 define('JS_PATH', '/files/js/');

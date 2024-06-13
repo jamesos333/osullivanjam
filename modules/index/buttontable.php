@@ -17,24 +17,24 @@
         $imgSrc = IMAGE_PATH_BUTTONS . $buttonParameters[1];
         $imgAlt = $buttonParameters[2];
         $imgClass = $buttonParameters[3];
-        echo "<a href='$linkHref'><img src='$imgSrc' alt='$imgAlt' class='$imgClass'></a>";
+        return "<a href='$linkHref'><img src='$imgSrc' alt='$imgAlt' class='$imgClass'></a>";
     }
 ?>
 
 <table class="buttontable">
     <tr>
-        <th><?php getButton($aboutButton)?></th>
-        <th><?php getButton($buttonArray[0])?></th>
-        <th><?php getButton($buttonArray[1])?></th>
+        <th><?=getButton($aboutButton)?></th>
+        <th><?=getButton($buttonArray[0])?></th>
+        <th><?=getButton($buttonArray[1])?></th>
     </tr>
     <tr>
-        <th><?php getButton($buttonArray[2])?></th>
-        <th><img src= "<?php echo IMAGE_PATH_INDEX . 'eye.gif';?>" alt="eye" style="width: 84%; padding: 0.5em 0px"></th>
-        <th><?php getButton($buttonArray[3])?></th>
+        <th><?=getButton($buttonArray[2])?></th>
+        <th><img src= "<?=IMAGE_PATH_INDEX . 'eye.gif'?>" alt="eye" style="width: 84%; padding: 0.5em 0px"></th>
+        <th><?=getButton($buttonArray[3])?></th>
     </tr>
     <tr>
-        <th><?php getButton($buttonArray[4])?></th>
-        <th><?php getButton($buttonArray[5])?></th>
-        <th><?php getButton($buttonArray[6])?></th>
+        <th><?=getButton($buttonArray[4])?></th>
+        <th><?=getButton($buttonArray[5])?></th>
+        <th><?=getButton($buttonArray[6])?></th>
     </tr>
 </table>

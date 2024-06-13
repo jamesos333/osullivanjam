@@ -5,7 +5,7 @@
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES . 'top.php'; ?>
 
-    <?php echo getLinkTable() ?>
+    <?=getLinkTable()?>
     <blockquote>
         <p class="darkcloudsquote">I am not nothing in the sense of emptiness, but I am the creative nothing, 
             the nothing out of which I as creator create everything.</p>

@@ -13,6 +13,6 @@
         the channel are available for viewing via 
         <a href="https://www.youtube.com/@TheWhattetyWhaters"><span class="youtubeLink">YouTube</span></a>, or through the links below.</p>
     </div>
-    <?php echo getMovieTable() ?>
+    <?=getMovieTable()?>
 
 <?php include ELEMENTS_PATH_TEMPLATES . 'bottom.php'; ?>
