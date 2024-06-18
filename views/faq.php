@@ -1,6 +1,7 @@
 <?php 
     include_once '_config.php';
     $pageName = 'faq';
+    $cssName = $pageName;
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES . 'top.php'; ?>
 

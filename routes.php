@@ -10,6 +10,9 @@ require_once __DIR__ . '/router.php';
 	// experiences
 	get('/experience', '/views/experience.php');
 
+	// loading 
+	get('/loading', '/views/loading.php');
+
 	// 404
 	any('/404', '/views/404.php');
 ?>

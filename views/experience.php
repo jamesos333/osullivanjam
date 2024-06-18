@@ -2,6 +2,7 @@
     include_once '_config.php';
     include_once ELEMENTS_PATH_EXPERIENCE . 'experienceTable.php';
     $pageName = "experience";
+    $cssName = $pageName;
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES . 'top.php'; ?>
 

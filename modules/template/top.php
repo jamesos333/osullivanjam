@@ -13,8 +13,8 @@
     <meta charset="UTF-8">
     <meta name="description" content="osullivanjam.es">
     <link rel="icon" type="image/x-icon" href="<?=IMAGE_PATH . 'icon.png';?>">
-    <link rel="stylesheet" href="<?= CSS_PATH . $pageName . '.css?v=' . VERSION?>">
-    <title><?= $title ?></title>
+    <link rel="stylesheet" href="<?= CSS_PATH . $cssName . '.css?v=' . VERSION?>">
+    <title><?= $title?></title>
 </head>
 
 <body>
