@@ -1,5 +1,5 @@
 <?php
-    include_once $_SERVER['DOCUMENT_ROOT'] . '\views\_config.php';
+    include_once $_SERVER['DOCUMENT_ROOT'] . '/views/_config.php';
     // file IDs
     //       adjectives: 0
     //            nouns: 1
