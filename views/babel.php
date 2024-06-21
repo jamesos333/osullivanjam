@@ -2,16 +2,17 @@
     include_once '_config.php';
     $pageName = "contact";
     $cssName = $pageName;
+    $useHtmx = true;
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES . 'top.php'; ?>
 
-    <script type="module" src="<?=JS_PATH . 'babel.js'; ?>"></script>
     <p class="title">SPEAK TO THE WIZARD, BEHOLD YOUR FATE!</p>
     <div class="chat-container">
         <div id="wizardcontainer" style="min-height: 110px">
             <?php include ELEMENTS_PATH_CONTACT . 'chatbox.php';?>
         </div>
-        <img src="<?=IMAGE_PATH_CONTACT . 'emerald.gif'; ?>" alt="seeingstone" id="stone" class="center" style="width: 10%; margin-top: 20px">
+            <img id="fade-in" hx-get="/contact/chatbox" hx-target="#wizardcontainer" hx-swap="beforeend settle:1s" 
+                src="<?=IMAGE_PATH_CONTACT . 'emerald.gif'; ?>" alt="seeingstone" id="stone" class="center" style="width: 10%; margin-top: 20px">
     </div>
 
     <table>
