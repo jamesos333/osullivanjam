@@ -5,28 +5,28 @@
 ?>
 
 <div class="container">
-    <div class="header">
+    <div class="header" alt="header for osullivanjam.es">
         <a href="/">
             <div class="name">
                 <div class="row">
-                    <img src="<?=letterPath('j')?>" alt="j">
-                    <img src="<?=letterPath('a')?>" alt="a">
-                    <img src="<?=letterPath('m')?>" alt="m">
-                    <img src="<?=letterPath('e')?>" alt="e">
-                    <img src="<?=letterPath('s')?>" alt="s">
+                    <img src="<?=letterPath('j')?>" alt="">
+                    <img src="<?=letterPath('a')?>" alt="">
+                    <img src="<?=letterPath('m')?>" alt="">
+                    <img src="<?=letterPath('e')?>" alt="">
+                    <img src="<?=letterPath('s')?>" alt="">
                 </div>
             </div>
             <div class="name">
                 <div class="row">
-                    <img src="<?=letterPath('o')?>" alt="o">
-                    <img src="<?=letterPath('s')?>" alt="s">
-                    <img src="<?=letterPath('u')?>" alt="u">
-                    <img src="<?=letterPath('l')?>" alt="l">
-                    <img src="<?=letterPath('l')?>" alt="l">
-                    <img src="<?=letterPath('i')?>" alt="i">
-                    <img src="<?=letterPath('v')?>" alt="v">
-                    <img src="<?=letterPath('a')?>" alt="a">
-                    <img src="<?=letterPath('n')?>" alt="n">
+                    <img src="<?=letterPath('o')?>" alt="">
+                    <img src="<?=letterPath('s')?>" alt="">
+                    <img src="<?=letterPath('u')?>" alt="">
+                    <img src="<?=letterPath('l')?>" alt="">
+                    <img src="<?=letterPath('l')?>" alt="">
+                    <img src="<?=letterPath('i')?>" alt="">
+                    <img src="<?=letterPath('v')?>" alt="">
+                    <img src="<?=letterPath('a')?>" alt="">
+                    <img src="<?=letterPath('n')?>" alt="">
                 </div>
             </div>
         </a>

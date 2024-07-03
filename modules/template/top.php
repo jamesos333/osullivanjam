@@ -13,9 +13,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="osullivanjam.es">
+    <meta name="theme-color" content="black" />
     <link rel="icon" type="image/x-icon" href="<?=IMAGE_PATH . 'icon.png';?>">
     <link rel="stylesheet" href="<?= CSS_PATH . $cssName . '.css?v=' . VERSION?>">
-    <?php if($useHtmx){ echo $htmxLink; }?>
+    <?php if(isset($useHtmx) && $useHtmx){ echo $htmxLink; }?>
     <title><?= $title?></title>
 </head>
 

@@ -1,5 +1,5 @@
 <?php
-    $scrollingTextPath = MSCL_PATH . 'scrollingtext.txt';
+    $scrollingTextPath = HTML_PATH_INDEX . 'scrollingtext.html';
     $scrollingText = getFileTextContent($scrollingTextPath);
 ?>
 

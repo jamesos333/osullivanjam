@@ -6,7 +6,9 @@ $quoteArray = array(
     "i no longer look for meaning in things. it's not my responsibility",
     "bitch you're not real, you're in my system",
     "they're trying to take us away from me",
-    "i will send them without wings so no one suspects they are angels"
+    "i will send them without wings so no one suspects they are angels",
+    "i will pour out my thoughts to you, i will make my words known to you",
+    "and you will know the truth, and the truth will make you free"
 );
 
 $smallQuoteArray = array (

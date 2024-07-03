@@ -5,7 +5,8 @@ define('CSS_PATH', '/styles/css/');
 define('JS_PATH', '/files/js/');
 define('IMAGE_PATH', '/files/img/');
 define('ELEMENTS_PATH', $_SERVER['DOCUMENT_ROOT'] . '/modules/');
-define('MSCL_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/txt/');
+define('TXT_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/txt/');
+define('HTML_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/html/');
 
 // variables for page-specific paths
 define('IMAGE_PATH_404', IMAGE_PATH . '404/');
@@ -30,15 +31,15 @@ define('ELEMENTS_PATH_INDEX', ELEMENTS_PATH . 'index/');
 define('ELEMENTS_PATH_MOVIES', ELEMENTS_PATH . 'movies/');
 define('ELEMENTS_PATH_EXPERIENCE', ELEMENTS_PATH . 'experience/');
 define('ELEMENTS_PATH_CONTACT', ELEMENTS_PATH . 'contact/');
-define('WORDLIST_PATH_CONTACT', MSCL_PATH . 'wordlists/');
+
+define('HTML_PATH_INDEX', HTML_PATH . 'index/');
+
+define('WORDLIST_PATH_CONTACT', TXT_PATH . 'wordlists/');
 
 
 // some basic functions
 function getFileTextContent($path) {
-    $file = fopen($path, "r") or die("Unable to open file!");
-    $text = fread($file, filesize($path));
-    fclose($file);
-    return $text;
+    return file_get_contents($path);
 }
 
 // will return true if the users device is a phone

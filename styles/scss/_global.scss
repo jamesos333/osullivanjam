@@ -67,18 +67,6 @@ table {
     border-radius: 25px;
 }
 
-.leftpane {
-    float: left;
-    display: inline;
-    width: 30%;
-}
-
-.rightpane {
-    float: right;
-    display: inline;
-    width: 70%;
-}
-
 .title {
     padding: 8px 40px;
     margin: 1em 20px;
@@ -133,7 +121,7 @@ table {
         margin: 10px 5px 20px;
         padding: 0.6em 10px;
         border: 5px double c.$main-purple;
-        border-radius: 2px;
+        border-radius: 12px 12px 2px 2px;
         height: 25px;
     
         font-family: 'Times New Roman', serif;
@@ -145,6 +133,18 @@ table {
             height: 25px;
         }
     }
+}
+
+.leftpane {
+    float: left;
+    display: inline;
+    width: 30%;
+}
+
+.rightpane {
+    float: right;
+    display: inline;
+    width: 70%;
 }
 
 .copyright {
