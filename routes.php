@@ -6,6 +6,7 @@ require_once __DIR__ . '/router.php';
 	get('/faq', '/views/faq.php');
 	get('/movies', '/views/movies.php');
 	get('/contact', '/views/babel.php');
+	get('/links', '/views/links.php');
 
 	// babel chatbox
 	get('/contact/chatbox', '/modules/contact/chatbox.php');

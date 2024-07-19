@@ -63,7 +63,7 @@ table {
     background: c.$dark-purple;
     background-image: linear-gradient(180deg, c.$dark-purple, c.$dark-purple-offset);
     color: c.$light-blue;
-    border: 3px inset blueviolet;
+    border: 3px inset c.$blue-violet;
     border-radius: 25px;
 }
 
@@ -131,7 +131,7 @@ table {
 }
 
 .copyright {
-    @include center;
+    display: block;
     text-align: center;
     font-size: 0.9rem;
     margin: 0 auto;

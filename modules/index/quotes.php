@@ -8,7 +8,8 @@ $quoteArray = array(
     "they're trying to take us away from me",
     "i will send them without wings so no one suspects they are angels",
     "i will pour out my thoughts to you, i will make my words known to you",
-    "and you will know the truth, and the truth will make you free"
+    "and you will know the truth, and the truth will make you free",
+    "i am nothing. but i must be everything"
 );
 
 $smallQuoteArray = array (
@@ -18,7 +19,8 @@ $smallQuoteArray = array (
     "have they got lost?",
     "is he afraid of us?",
     "or is he hiding?",
-    "made in my own image"
+    "made in my own image",
+    "pandoras box"
 );
 
 shuffle($quoteArray);

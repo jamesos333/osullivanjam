@@ -31,6 +31,7 @@ define('ELEMENTS_PATH_INDEX', ELEMENTS_PATH . 'index/');
 define('ELEMENTS_PATH_MOVIES', ELEMENTS_PATH . 'movies/');
 define('ELEMENTS_PATH_EXPERIENCE', ELEMENTS_PATH . 'experience/');
 define('ELEMENTS_PATH_CONTACT', ELEMENTS_PATH . 'contact/');
+define('ELEMENTS_PATH_LINKS', ELEMENTS_PATH . 'links/');
 
 define('HTML_PATH_INDEX', HTML_PATH . 'index/');
 

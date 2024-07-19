@@ -217,67 +217,55 @@ blockquote p {
   background-image: url("/files/img/background/quotes/explosion.gif");
 }
 
-.buttontable {
-  padding: 1em 2em;
-  padding-top: 10px;
+.decoder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px 80px;
+  margin-top: 50px;
 }
-.buttontable .button {
-  width: 84%;
-  box-shadow: 0 0 2px 2px black;
-  border-radius: 30px;
-}
-.buttontable .button:hover {
-  box-shadow: 0 0 3px 3px plum;
-  border-radius: 25px;
-}
-.buttontable .button.comingsoon {
-  box-shadow: 0 0 2px 2px black;
-  border-radius: 25px;
-  filter: grayscale(95%) blur(6px);
+.decoder .decoder-element {
+  font-size: 18px;
+  padding: 5px 15px;
+  margin: 4px;
+  border: 2px;
+  border-radius: 10px;
+  border-style: solid;
 }
 
-/* scrolling text on homepage */
-div.scrollingtext {
-  max-width: 1050px;
-  background: rgb(27, 14, 24);
-  color: aliceblue;
-  margin: 2px auto 15px auto;
-  border-radius: 8px;
-  border: 2px solid rgba(137, 43, 226, 0.521);
-}
-div.scrollingtext .marquee {
-  display: flex;
-  margin: 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  user-select: none;
-  gap: 0.1rem;
-}
-div.scrollingtext .marquee .marqueetext {
-  display: inline-block;
-  font-size: 16px;
-  animation: scroll 10s linear infinite;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: space-around;
-  gap: 0.1rem;
-  min-width: 100%;
-  flex: 0 0 auto;
-  margin: 2px;
-  padding: 0rem 0.1rem;
+.linkContainer {
+  display: block;
+  padding: 40px 60px;
+  padding-top: 0px;
+  margin: 0px 20px;
   text-align: center;
 }
-div.scrollingtext .marquee .marqueetext span {
-  padding: 0 0.2%;
+.linkContainer a {
+  font-size: 16px;
+  padding: 20px;
+  text-decoration: underline;
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100% - 0.1rem));
-  }
+.tech {
+  color: rgb(240, 248, 255);
+}
+
+.news {
+  color: orange;
+}
+
+.art {
+  color: hotpink;
+}
+
+.books {
+  color: yellow;
+}
+
+.media {
+  color: green;
+}
+
+.download {
+  color: red;
 }
