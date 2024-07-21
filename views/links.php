@@ -22,7 +22,7 @@ $cssName = $pageName;
         <div class="decoder-element download">download</div>
     </div>
 
-    <?php include ELEMENTS_PATH_LINKS . 'linktable.php';?>
+    <?php include ELEMENTS_PATH_LINKS . 'linkTable.php';?>
 
     <blockquote>
         <p class="darkcloudsquote">we can never be after anything because it Always Exists now and even in a world without history

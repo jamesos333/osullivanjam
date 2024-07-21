@@ -28,5 +28,5 @@
 ?>
 
 <div class="linkContainer">
-    <?= getLinks()?>
+    <?=getLinks()?>
 </div>
