@@ -7,6 +7,7 @@ define('IMAGE_PATH', '/files/img/');
 define('ELEMENTS_PATH', $_SERVER['DOCUMENT_ROOT'] . '/modules/');
 define('TXT_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/txt/');
 define('HTML_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/html/');
+define('JSON_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/json/');
 
 // variables for page-specific paths
 define('IMAGE_PATH_404', IMAGE_PATH . '404/');
@@ -34,7 +35,7 @@ define('ELEMENTS_PATH_CONTACT', ELEMENTS_PATH . 'contact/');
 define('ELEMENTS_PATH_LINKS', ELEMENTS_PATH . 'links/');
 
 define('HTML_PATH_INDEX', HTML_PATH . 'index/');
-
+define('JSON_PATH_LINKS', JSON_PATH . 'links/');
 define('WORDLIST_PATH_CONTACT', TXT_PATH . 'wordlists/');
 
 
