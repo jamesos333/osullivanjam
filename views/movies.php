@@ -4,7 +4,7 @@
     $pageName = "movies";
     $cssName = $pageName;
 ?>
-<?php include ELEMENTS_PATH_TEMPLATES . 'top.php'; ?>
+<?php include ELEMENTS_PATH_TEMPLATES_TOP?>
 
     <div class="infoHeader">
         <h1>Archive of the <span class="pink">TWW Films</span> Project</h1>
@@ -16,4 +16,4 @@
     </div>
     <?=getMovieTable()?>
 
-<?php include ELEMENTS_PATH_TEMPLATES . 'bottom.php'; ?>
+    <?php include ELEMENTS_PATH_TEMPLATES_BOTTOM?>

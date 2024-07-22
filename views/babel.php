@@ -4,7 +4,7 @@
     $cssName = $pageName;
     $useHtmx = true;
 ?>
-<?php include ELEMENTS_PATH_TEMPLATES . 'top.php'; ?>
+<?php include ELEMENTS_PATH_TEMPLATES_TOP?>
 
     <p class="title">SPEAK TO THE WIZARD, BEHOLD YOUR FATE!</p>
     <div class="chat-container">
@@ -26,4 +26,4 @@
         </tr>
     </table>
 
-<?php include ELEMENTS_PATH_TEMPLATES . 'bottom.php'; ?>
+    <?php include ELEMENTS_PATH_TEMPLATES_BOTTOM?>

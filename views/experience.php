@@ -4,7 +4,7 @@
     $pageName = "experience";
     $cssName = $pageName;
 ?>
-<?php include ELEMENTS_PATH_TEMPLATES . 'top.php'; ?>
+<?php include ELEMENTS_PATH_TEMPLATES_TOP?>
 
     <?=getLinkTable()?>
     <blockquote>
@@ -12,4 +12,4 @@
             the nothing out of which I as creator create everything.</p>
     </blockquote>
 
-<?php include ELEMENTS_PATH_TEMPLATES . 'bottom.php'; ?>
+    <?php include ELEMENTS_PATH_TEMPLATES_BOTTOM?>

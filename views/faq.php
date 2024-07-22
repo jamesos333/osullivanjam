@@ -3,7 +3,7 @@
     $pageName = 'faq';
     $cssName = $pageName;
 ?>
-<?php include ELEMENTS_PATH_TEMPLATES . 'top.php'; ?>
+<?php include ELEMENTS_PATH_TEMPLATES_TOP?>
 
     <div class="wrapper">
         <div class="leftpane">
@@ -100,4 +100,4 @@
         </div>
     </div>
 
-<?php include ELEMENTS_PATH_TEMPLATES . 'bottom.php'; ?>
+    <?php include ELEMENTS_PATH_TEMPLATES_BOTTOM?>

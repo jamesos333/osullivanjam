@@ -3,7 +3,7 @@
     $pageName = "about";
     $cssName = $pageName;
 ?>
-<?php include ELEMENTS_PATH_TEMPLATES . 'top.php'; ?>
+<?php include ELEMENTS_PATH_TEMPLATES_TOP?>
 
     <div class="warning">
         <div class="warning-left">
@@ -59,4 +59,4 @@
         </div>
     </div>
 
-<?php include ELEMENTS_PATH_TEMPLATES . 'bottom.php'; ?>
+    <?php include ELEMENTS_PATH_TEMPLATES_BOTTOM?>

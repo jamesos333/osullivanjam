@@ -4,7 +4,7 @@
     $pageName = 'index';
     $cssName = $pageName;
 ?>
-<?php include ELEMENTS_PATH_TEMPLATES . 'top.php'; ?>
+<?php include ELEMENTS_PATH_TEMPLATES_TOP?>
 
     <table>
         <tr>
@@ -43,4 +43,4 @@
             are corroded. Their corrosion will testify against you and eat your flesh like fire.</p>
     </blockquote>
 
-<?php include ELEMENTS_PATH_TEMPLATES . 'bottom.php'; ?>
+<?php include ELEMENTS_PATH_TEMPLATES_BOTTOM?>

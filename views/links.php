@@ -3,7 +3,7 @@ include_once '_config.php';
 $pageName = 'links';
 $cssName = $pageName;
 ?>
-<?php include ELEMENTS_PATH_TEMPLATES . 'top.php'; ?>
+<?php include ELEMENTS_PATH_TEMPLATES_TOP?>
 
     <div class="disclaimer">
         <h1>WARNING</h1>
@@ -20,4 +20,4 @@ $cssName = $pageName;
         history will appear of its own accord cuz theres a need for it greater than most of the things we pretend are real.</p>
     </blockquote>
 
-<?php include ELEMENTS_PATH_TEMPLATES . 'bottom.php'; ?>
+<?php include ELEMENTS_PATH_TEMPLATES_BOTTOM?>
