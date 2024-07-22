@@ -27,10 +27,10 @@
     {
         "title": "[2021 no-intro/tosec clean romset] Hearto's rom collection",
         "url": "https://archive.org/details/hearto-1g1r-collection",
-        "category": "download"
+        "category": "mscl"
     },
     {
-        "title": "Best Privacy Tools & Software Guide in 2024",
+        "title": "privacytools.io: Best Privacy Tools & Software Guide",
         "url": "https://www.privacytools.io/",
         "category": "tech"
     },
@@ -83,5 +83,15 @@
         "title": "Gigaminx method summary Jan.2023",
         "url": "https://docs.google.com/document/d/1A7L1qMoftZt3d6pWoWDV5z1-94eXcc6Dx3PiePM-mXY/",
         "category": "mscl"
+    },
+    {
+        "title": "coolhostsite",
+        "url": "https://coolhostsite.neocities.org/",
+        "category": "art"
+    },
+    {
+        "title": "why why why why why why why- Nervewing",
+        "url": "https://nervewing.blogspot.com/",
+        "category": "info"
     }
 ]

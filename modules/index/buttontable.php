@@ -4,7 +4,7 @@
     $buttonArray = array(
         array("contact"     , "button_contact.png"      , "contact"     , "button"),
         array("cooking"     , "button_cooking.png"      , "cooking"     , "button comingsoon"),
-        array("links"       , "button_links.png"        , "links"       , "button comingsoon"),
+        array("links"       , "button_links.png"        , "links"       , "button"),
         array("movies"      , "button_movies.png"       , "movies"      , "button"),
         array("experience"  , "button_experience.png"   , "experience"  , "button"),
         array($githubLink   , "button_github.png"       , "github"      , "button"),

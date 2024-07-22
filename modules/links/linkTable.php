@@ -1,23 +1,45 @@
 <?php
     function getLinks() {
-        // keywords denotes the structure of the array in reference to the template
-        $keywords = array("%TEXT%", "%URL%", "%CATEGORY%", "%SIZE%");
-        $linkTemplate = "<a href='%URL%' class='%CATEGORY%' style='font-size:%SIZE%'>%TEXT%</a>";
-        $linkArray = getAndDecodeJson();
+        $linkArray = getAndDecodeLinksJson();
         shuffle($linkArray);
-        return generateLinkTable($linkTemplate, $keywords, $linkArray); 
-    }
-
-    function generateLinkTable($linkTemplate, $keywords, $linkArray) {
         $allLinks = "";
         foreach ($linkArray as $currentLink) {
-            array_push($currentLink, randomFontSize());
-            $allLinks .= str_replace($keywords, $currentLink, $linkTemplate);
+            $allLinks .= createLinkHtml($currentLink);
         }
         return $allLinks;
     }
 
-    function getAndDecodeJson(){
+    function createLinkHtml($currentLink) {
+        $keywords = array("%TEXT%", "%URL%", "%CATEGORY%", "%SIZE%");
+        $linkTemplate = "<a href='%URL%' class='%CATEGORY%' style='font-size:%SIZE%'>%TEXT%</a>";
+        array_push($currentLink, randomFontSize());
+        return str_replace(
+            $keywords, 
+            $currentLink, 
+            $linkTemplate
+        );
+    }
+
+    function getDecoder() {
+        $categories = array("tech", "info", "art", "books", "mscl");
+        $countedCategories = array_count_values(array_column(getAndDecodeLinksJson(), 'category'));
+        $allLinks = createDecoderHtml('all', array_sum($countedCategories));
+        foreach ($categories as $current) {
+            $allLinks .= createDecoderHtml($current, $countedCategories[$current]);
+        }
+        return $allLinks;
+    }
+
+    function createDecoderHtml($category, $count) {
+        $template = "<div class='decoder-element %CATEGORY%'>%CATEGORY% (%COUNT%)</div>";
+        return str_replace(
+            array('%CATEGORY%', '%COUNT%'), 
+            array($category, $count), 
+            $template
+        );
+    }
+
+    function getAndDecodeLinksJson(){
         $json = getFileTextContent(JSON_PATH_LINKS . 'links.json');
         return json_decode($json, true);
     }
@@ -26,6 +48,10 @@
         return random_int(30, 40) . "px";
     }
 ?>
+
+<div class="decoder">
+    <?=getDecoder()?>
+</div>
 
 <div class="linkContainer">
     <?=getLinks()?>
