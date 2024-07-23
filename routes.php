@@ -7,12 +7,13 @@ require_once __DIR__ . '/router.php';
 	get('/movies', '/views/movies.php');
 	get('/contact', '/views/babel.php');
 	get('/links', '/views/links.php');
+	get('/experience', '/views/experience.php');
 
 	// babel chatbox
 	get('/contact/chatbox', '/modules/contact/chatbox.php');
 
-	// experiences
-	get('/experience', '/views/experience.php');
+	// links section
+	get('/links/filter', '/modules/links/linkTable.php');
 
 	// loading 
 	get('/loading', '/views/loading.php');

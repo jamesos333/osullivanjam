@@ -44,7 +44,7 @@ blockquote {
     padding: 0.5em 1.5em;
     margin: 1.5em 30px;
     position: relative;
-    text-align: justify;
+    //text-align: justify;
 
     background: rgba(0, 0, 0, 0.5);
     border-left: 10px solid rgba(c.$light-blue, 0.8);
@@ -108,4 +108,9 @@ blockquote {
 /* explosion image background for blockquote */
 .explosionquote {
     background-image: url(g.$background_path + "quotes/explosion.gif");
+}
+
+/* wavy rainbow static image background for blockquote */
+.rainbowstaticquote {
+    background-image: url(g.$background_path + "quotes/wavyrainbow.gif");
 }

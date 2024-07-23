@@ -10,7 +10,8 @@ $quoteArray = array(
     "i will pour out my thoughts to you, i will make my words known to you",
     "and you will know the truth, and the truth will make you free",
     "i am nothing. but i must be everything",
-    "weakness, self-destruction, tip of a flame of hell piercing the floor"
+    "weakness, self-destruction, tip of a flame of hell piercing the floor",
+    "if there was an answer, would it make you any happier?"
 );
 
 $smallQuoteArray = array (

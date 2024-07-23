@@ -38,7 +38,10 @@ define('ELEMENTS_PATH_CONTACT', ELEMENTS_PATH . 'contact/');
 define('ELEMENTS_PATH_LINKS', ELEMENTS_PATH . 'links/');
 
 define('HTML_PATH_INDEX', HTML_PATH . 'index/');
+define('HTML_PATH_LINKS', HTML_PATH . 'links/');
+
 define('JSON_PATH_LINKS', JSON_PATH . 'links/');
+
 define('WORDLIST_PATH_CONTACT', TXT_PATH . 'wordlists/');
 
 
