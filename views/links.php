@@ -7,7 +7,7 @@ $useHtmx = true;
 <?php include ELEMENTS_PATH_TEMPLATES_TOP ?>
 
 <div id="links-container">
-    <?php include ELEMENTS_PATH_LINKS . 'link-table.php'; ?>
+    <?php include ELEMENTS_PATH_LINKS . 'linktable.php'; ?>
 </div>
 
 <blockquote>

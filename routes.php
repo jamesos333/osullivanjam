@@ -13,7 +13,7 @@ require_once __DIR__ . '/router.php';
 	get('/contact/chatbox', '/modules/contact/chatbox.php');
 
 	// links section
-	get('/links/filter', '/modules/links/link-table.php');
+	get('/links/filter', '/modules/links/linktable.php');
 
 	// loading 
 	get('/loading', '/views/loading.php');
