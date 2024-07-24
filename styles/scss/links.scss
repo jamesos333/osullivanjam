@@ -1,9 +1,9 @@
 // imports
-@use 'colors' as c;
-@use 'global' as g;
+@use "colors" as c;
+@use "global" as g;
 
 // used stylesheets
-@use '_quotes';
+@use "_quotes";
 
 .disclaimer {
     display: block;
@@ -39,6 +39,7 @@
     border-style: solid;
     border-color: rgba(c.$main-purple, 0.8);
     .decoder-element {
+        cursor: pointer;
         font-size: 18px;
         padding: 5px 15px;
         margin: 4px;
@@ -55,9 +56,15 @@
     margin-bottom: 70px;
     text-align: center;
     a {
-        font-size: 16px;
-        padding: 0px 20px;
+        font-size: 30px;
+        margin: 0px 12px;
         text-decoration: underline;
+        &:hover {
+            text-decoration: double;
+        }
+    }
+    .simplified {
+        padding-bottom: 4px;
     }
 }
 

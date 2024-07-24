@@ -17,10 +17,10 @@
     {
         "title": "lipu nimi",
         "url": "https://nimi.pona.la/",
-        "category": "art"
+        "category": "mscl"
     },
     {
-        "title": "An Oral History of Goosebumps: The Television Series - Conventional Relations",
+        "title": "An Oral History of Goosebumps: The Television Series",
         "url": "https://conventionalrelations.net/2020/08/20/an-oral-history-of-goosebumps-the-television-series/",
         "category": "mscl"
     },
@@ -92,6 +92,32 @@
     {
         "title": "why why why why why why why- Nervewing",
         "url": "https://nervewing.blogspot.com/",
+        "category": "info"
+    },
+    {
+        "title": "Frederick Engels: The Principles of Communism",
+        "url": "https://www.marxists.org/archive/marx/works/1847/11/prin-com.htm",
+        "category": "books"
+    },
+
+    {
+        "title": "REVENGE OF THE SUNFISH.COM",
+        "url": "https://www.revengeofthesunfish.com/",
+        "category": "art"
+    },
+    {
+        "title": "iPad Baby",
+        "url": "https://walkedoutneimans.itch.io/ipad-baby",
+        "category": "art"
+    },
+    {
+        "title": "Erowid: Documenting the Complex Relationship Between Humans & Psychoactives",
+        "url": "https://www.erowid.org/",
+        "category": "info"
+    },
+    {
+        "title": "BADMOVIES.ORG",
+        "url": "https://www.badmovies.org/",
         "category": "info"
     }
 ]

@@ -11,10 +11,11 @@ $quoteArray = array(
     "and you will know the truth, and the truth will make you free",
     "i am nothing. but i must be everything",
     "weakness, self-destruction, tip of a flame of hell piercing the floor",
-    "if there was an answer, would it make you any happier?"
+    "i want my god to use me, humbly, as one of his tools",
+    "it takes strength to be gentle and kind"
 );
 
-$smallQuoteArray = array (
+$smallQuoteArray = array(
     "consumers of illusions",
     "united in isolation",
     "in the depth of winter",
@@ -22,10 +23,9 @@ $smallQuoteArray = array (
     "is he afraid of us?",
     "or is he hiding?",
     "made in my own image",
-    "pandoras box",
+    "weaponized nanomagic",
     "nothing, nothing, nothing"
 );
 
 shuffle($quoteArray);
 shuffle($smallQuoteArray);
-?>
