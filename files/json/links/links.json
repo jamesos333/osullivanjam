@@ -119,5 +119,20 @@
         "title": "BADMOVIES.ORG",
         "url": "https://www.badmovies.org/",
         "category": "info"
+    },
+    {
+        "title": "Neocities - Browse",
+        "url": "https://neocities.org/browse",
+        "category": "art"
+    },
+    {
+        "title": "Explore the Mandelbrot Set",
+        "url": "https://math.hws.edu/eck/js/mandelbrot/MB.html",
+        "category": "mscl"
+    },
+    {
+        "title": "Doomworld -- The Cacowards",
+        "url": "https://www.doomworld.com/cacowards/",
+        "category": "mscl"
     }
 ]
