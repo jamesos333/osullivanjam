@@ -134,5 +134,10 @@
         "title": "Doomworld -- The Cacowards",
         "url": "https://www.doomworld.com/cacowards/",
         "category": "mscl"
+    },
+    {
+        "title": "htmx ~ htmx sucks",
+        "url": "https://htmx.org/essays/htmx-sucks/",
+        "category": "tech"
     }
 ]

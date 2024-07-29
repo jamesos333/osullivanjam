@@ -1,5 +1,5 @@
 <?php
-define('VERSION', '4');
+define('VERSION', '5');
 // variables for basic paths
 define('CSS_PATH', '/styles/css/');
 define('JS_PATH', '/files/js/');
@@ -16,6 +16,7 @@ define('IMAGE_PATH_ABOUT', IMAGE_PATH . 'about/');
 define('IMAGE_PATH_FAQ', IMAGE_PATH . 'faq/');
 define('IMAGE_PATH_CONTACT', IMAGE_PATH . 'contact/');
 define('IMAGE_PATH_LOADING', IMAGE_PATH . 'loading/');
+define('IMAGE_PATH_LINKS', IMAGE_PATH . 'links/');
 
 define('IMAGE_PATH_MOVIES', IMAGE_PATH . 'movies/');
 define('IMAGE_PATH_MOVIES_THUMBNAILS', IMAGE_PATH_MOVIES . 'thumbnails/');
