@@ -12,7 +12,9 @@ $quoteArray = array(
     "i am nothing. but i must be everything",
     "weakness, self-destruction, tip of a flame of hell piercing the floor",
     "i want my god to use me, humbly, as one of his tools",
-    "it takes strength to be gentle and kind"
+    "it takes strength to be gentle and kind",
+    "they don't know what we know",
+    "what you allow is what will continue"
 );
 
 $smallQuoteArray = array(
@@ -24,7 +26,10 @@ $smallQuoteArray = array(
     "or is he hiding?",
     "made in my own image",
     "weaponized nanomagic",
-    "nothing, nothing, nothing"
+    "nothing, nothing, nothing",
+    "uniquely created",
+    "the spark of the divine",
+    "and yet we rot"
 );
 
 shuffle($quoteArray);

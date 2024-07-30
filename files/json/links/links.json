@@ -99,7 +99,6 @@
         "url": "https://www.marxists.org/archive/marx/works/1847/11/prin-com.htm",
         "category": "books"
     },
-
     {
         "title": "REVENGE OF THE SUNFISH.COM",
         "url": "https://www.revengeofthesunfish.com/",
@@ -139,5 +138,20 @@
         "title": "htmx ~ htmx sucks",
         "url": "https://htmx.org/essays/htmx-sucks/",
         "category": "tech"
+    },
+    {
+        "title": "projectM Music Visualizer",
+        "url": "https://codav.itch.io/projectm",
+        "category": "art"
+    },
+    {
+        "title": "thegremlinsarecool's Channel - YouTube",
+        "url": "http://web.archive.org/web/20110908061650/youtube.com/user/thegremlinsarecool",
+        "category": "mscl"
+    },
+    {
+        "title": "lain game :: index",
+        "url": "https://laingame.net/",
+        "category": "art"
     }
 ]

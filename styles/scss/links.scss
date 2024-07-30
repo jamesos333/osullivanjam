@@ -23,7 +23,7 @@ $links_image_path: g.$image_path + "links/";
 
 .decoder {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
 
     border-radius: 20px 20px 2px 2px;
@@ -36,7 +36,7 @@ $links_image_path: g.$image_path + "links/";
         margin-top: auto;
 
         border: 0px;
-        border-bottom: 2px solid rgba(c.$main-purple, 0.8);
+        border-bottom: 2px solid c.$main-purple;
         border-style: solid;
 
         &.selected {
@@ -68,12 +68,12 @@ $links_image_path: g.$image_path + "links/";
 
 .linkContainer {
     display: block;
-    padding: 25px 20px 30px 20px;
+    padding: 30px 20px 30px 20px;
     text-align: center;
 
     background-color: c.$transparent-black;
     border: 2px solid rgba(c.$main-purple, 0.8);
-    border-radius: 0px 2px 2px 2px;
+    border-radius: 0px 0px 8px 8px;
     border-top: 0;
 
     a {
@@ -82,12 +82,26 @@ $links_image_path: g.$image_path + "links/";
         text-decoration: underline;
 
         &:hover {
-            text-decoration: double;
+            text-decoration: none;
         }
     }
 
     .simplified {
-        padding-bottom: 4px;
+        text-align: left;
+        padding-left: 14px;
+
+        a {
+            margin: 0;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &::before {
+                content:"• ";
+            }
+        }
     }
 }
 
