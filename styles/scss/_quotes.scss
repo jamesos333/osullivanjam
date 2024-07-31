@@ -1,6 +1,6 @@
 // imports
-@use 'colors' as c;
-@use 'global' as g;
+@use "colors" as c;
+@use "global" as g;
 
 /* a much smaller and differently styled quote */
 .subquote {
@@ -12,7 +12,7 @@
     border-radius: 5px;
 
     text-align: center;
-    font-family: 'Times New Roman', serif;
+    font-family: "Times New Roman", serif;
     font-size: 1rem;
 
     font-style: italic;
@@ -53,8 +53,8 @@ blockquote {
     font-style: italic;
 
     &:before {
-        color: rgba(c.$light-blue, 1);
-        font-family: 'Arial', serif;
+        color: c.$light-blue;
+        font-family: "Arial", serif;
         content: "\201C";
         font-size: 4em;
         line-height: 0.1em;
@@ -63,7 +63,7 @@ blockquote {
     }
 
     p {
-        font-family: 'Times New Roman', serif;
+        font-family: "Times New Roman", serif;
         font-style: italic;
         font-size: 1.1em;
         letter-spacing: 0.07em;

@@ -31,6 +31,8 @@ $links_image_path: g.$image_path + "links/";
     .decoder-element {
         @include fire-background();
         cursor: pointer;
+        user-select: none;
+
         font-size: 18px;
         padding: 0.5em 1.2em;
         margin-top: auto;
@@ -99,7 +101,7 @@ $links_image_path: g.$image_path + "links/";
             }
 
             &::before {
-                content:"• ";
+                content: "• ";
             }
         }
     }

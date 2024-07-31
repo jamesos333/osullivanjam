@@ -14,7 +14,7 @@ $quoteArray = array(
     "i want my god to use me, humbly, as one of his tools",
     "it takes strength to be gentle and kind",
     "they don't know what we know",
-    "what you allow is what will continue"
+    "i have stitched life into me like a rare organ"
 );
 
 $smallQuoteArray = array(
