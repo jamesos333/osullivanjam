@@ -160,13 +160,23 @@
         "category": "info"
     },
     {
-        "title": "What is my viewport",
-        "url": "https://whatismyviewport.com/",
-        "category": "mscl"
-    },
-    {
         "title": "Winamp Skin Museum",
         "url": "https://skins.webamp.org/",
         "category": "art"
+    },
+    {
+        "title": "VS Code Themes",
+        "url": "https://vscodethemes.com",
+        "category": "tech"
+    },
+    {
+        "title": "Apple Rankings",
+        "url": "https://applerankings.com/",
+        "category": "mscl"
+    },
+    {
+        "title": "Fielding Dissertation: Representational State Transfer (REST)",
+        "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+        "category": "tech"
     }
 ]
