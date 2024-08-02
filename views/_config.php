@@ -33,12 +33,14 @@ define('ELEMENTS_PATH_TEMPLATES_TOP', ELEMENTS_PATH_TEMPLATES . 'top.php');
 define('ELEMENTS_PATH_TEMPLATES_BOTTOM', ELEMENTS_PATH_TEMPLATES . 'bottom.php');
 
 define('ELEMENTS_PATH_INDEX', ELEMENTS_PATH . 'index/');
+define('ELEMENTS_PATH_ABOUT', ELEMENTS_PATH . 'about/');
 define('ELEMENTS_PATH_MOVIES', ELEMENTS_PATH . 'movies/');
 define('ELEMENTS_PATH_EXPERIENCE', ELEMENTS_PATH . 'experience/');
 define('ELEMENTS_PATH_CONTACT', ELEMENTS_PATH . 'contact/');
 define('ELEMENTS_PATH_LINKS', ELEMENTS_PATH . 'links/');
 
 define('HTML_PATH_INDEX', HTML_PATH . 'index/');
+define('HTML_PATH_ABOUT', HTML_PATH . 'about/');
 define('HTML_PATH_LINKS', HTML_PATH . 'links/');
 
 define('JSON_PATH_LINKS', JSON_PATH . 'links/');
