@@ -15,7 +15,8 @@ $quoteArray = array(
     "it takes strength to be gentle and kind",
     "they don't know what we know",
     "i have stitched life into me like a rare organ",
-    "walking along the edge of time"
+    "walking along the edge of time",
+    "should i over explain myself or remain misunderstood"
 );
 
 $smallQuoteArray = array(
