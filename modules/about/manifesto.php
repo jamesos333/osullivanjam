@@ -9,7 +9,7 @@ function getManifesto() {
 
 function getManifestoVersion() {
     $urlVersion = isset($_GET['version']) ? (int)$_GET['version'] : 0;
-    return $urlVersion <= MANIFESTO_VERSIONS && $urlVersion != 0 ? $urlVersion : MANIFESTO_VERSIONS;
+    return $urlVersion <= MANIFESTO_VERSIONS && $urlVersion > 0 ? $urlVersion : MANIFESTO_VERSIONS;
 }
 ?>
 
