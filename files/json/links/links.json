@@ -178,5 +178,15 @@
         "title": "Fielding Dissertation: Representational State Transfer (REST)",
         "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
         "category": "tech"
+    },
+    {
+        "title": "Drug Effect Taxonomy Mk.III",
+        "url": "https://transrightsactivist.medium.com/drug-effect-taxonomy-mk-iii-fe6f604c5dd3",
+        "category": "info"
+    },
+    {
+        "title": "Web Demo of the Voxel Space Engine",
+        "url": "https://github.com/s-macke/VoxelSpace",
+        "category": "tech"
     }
 ]
