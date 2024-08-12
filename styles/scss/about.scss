@@ -8,6 +8,7 @@
 body {
     height: 100%
 }
+
 /* for the warning at the top of the page */
 .warning {
     display: flex;
@@ -139,16 +140,18 @@ p {
     flex-flow: column wrap;
     overflow: hidden;
 
-    max-height: 1532px;
+    max-height: 2080px;
+
     h3 {
         padding: 7px 10px;
         padding-bottom: 10px;
+        margin-bottom: 10px;
         background-color: c.$transparent-black;
     }
 
     img {
-        //display: block;
         width: 75%;
         margin: 10px 12.5%;
+        aspect-ratio: 1 / 1;
     }
 }

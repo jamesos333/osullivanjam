@@ -17,24 +17,7 @@ $cssName = $pageName;
 </div>
 
 <div class="wrapper">
-    <div class="textcontainer">
-        
-        <?php include ELEMENTS_PATH_ABOUT . 'manifesto.php'; ?>
-
-        <div class="rightbox">
-            <h3>Powered By</h3>
-            <img src="<?= IMAGE_PATH_ABOUT . 'ampmolecule.png'; ?>" alt="spinning molecule">
-            <img src="<?= IMAGE_PATH_ABOUT . 'apachelogo.png'; ?>" alt="spinning apache logo">
-            <img src="<?= IMAGE_PATH_ABOUT . 'spinningglobe3.gif'; ?>" alt="spinning globe">
-            <img src="<?= IMAGE_PATH_ABOUT . 'phplogo.gif'; ?>" alt="spinning php logo">
-            <img src="<?= IMAGE_PATH_ABOUT . 'esdomain.png'; ?>" alt="es domain logo">
-            <img src="<?= IMAGE_PATH_ABOUT . 'sasslogo.png'; ?>" alt="sass logo">
-            <img src="<?= IMAGE_PATH_ABOUT . 'html5logo.png'; ?>" alt="html 5 logo">
-            <img src="<?= IMAGE_PATH_ABOUT . 'csslogo.png'; ?>" alt="css 3 logo">
-            <img src="<?= IMAGE_PATH_ABOUT . 'noscriptlogo.png'; ?>" alt="no script logo">
-        </div>
-
-    </div>
+    <?php include ELEMENTS_PATH_ABOUT . 'manifesto.php' ?>
 </div>
 
 <?php include ELEMENTS_PATH_TEMPLATES_BOTTOM ?>

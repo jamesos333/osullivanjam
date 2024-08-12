@@ -11,6 +11,46 @@ function getManifestoVersion() {
     $urlVersion = isset($_GET['version']) ? (int)$_GET['version'] : 0;
     return $urlVersion <= MANIFESTO_VERSIONS && $urlVersion > 0 ? $urlVersion : MANIFESTO_VERSIONS;
 }
+
+function getLogoPanel() {
+    $reallogos = array(
+        "apachelogo.png",
+        "phplogo.gif",
+        "sasslogo.png"
+    );
+    $funlogos = array(
+        "ampmolecule.png",
+        "spinningglobe3.gif",
+        "esdomain.png",
+        "html5logo.png",
+        "csslogo.png",
+        "noscriptlogo.png",
+        "htmxlogo.png",
+        "gimplogo.png",
+        "sabotabby.png",
+        "hatchetman.gif",
+        "tux.gif",
+        "archlogo.gif",
+        "vscodelogo.png",
+        "comintern.png",
+        "gnu.png",
+        "dodecahedron.gif"
+    );
+    shuffle($funlogos);
+    $fullimages = array_merge($reallogos, $funlogos);
+    $result = "";
+    foreach ($fullimages as $imageName) {
+        $result .= "<img src=" .  IMAGE_PATH_ABOUT . $imageName . " alt=''>";
+    }
+    return $result;
+}
 ?>
 
-<?= getManifesto() ?>
+<div class="textcontainer">
+    <?= getManifesto() ?>
+
+    <div class="rightbox">
+        <h3>Powered By</h3>
+        <?= getLogoPanel() ?>
+    </div>
+</div>
