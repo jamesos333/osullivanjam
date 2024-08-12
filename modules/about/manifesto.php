@@ -20,7 +20,7 @@ function getLogoPanel() {
     );
     $funlogos = array(
         "ampmolecule.png",
-        "spinningglobe3.gif",
+        "spinningglobe.gif",
         "esdomain.png",
         "html5logo.png",
         "csslogo.png",
@@ -33,13 +33,12 @@ function getLogoPanel() {
         "archlogo.gif",
         "vscodelogo.png",
         "comintern.png",
-        "gnu.png",
-        "dodecahedron.gif"
+        //"dodecahedron.gif",
+        "gnu.png"
     );
     shuffle($funlogos);
-    $fullimages = array_merge($reallogos, $funlogos);
     $result = "";
-    foreach ($fullimages as $imageName) {
+    foreach (array_merge($reallogos, $funlogos) as $imageName) {
         $result .= "<img src=" .  IMAGE_PATH_ABOUT . $imageName . " alt=''>";
     }
     return $result;
