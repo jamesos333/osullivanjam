@@ -45,6 +45,11 @@
         "category": "info"
     },
     {
+        "title": "Cluster of Severe Illness from Neptune's Fix | MMWR",
+        "url": "https://www.cdc.gov/mmwr/volumes/73/wr/mm7304a5.htm",
+        "category": "info"
+    },
+    {
         "title": "Drug Stats",
         "url": "http://drugstats.net",
         "category": "info"
@@ -105,7 +110,7 @@
         "category": "art"
     },
     {
-        "title": "iPad Baby",
+        "title": "iPad Baby: A downloadable game for Windows",
         "url": "https://walkedoutneimans.itch.io/ipad-baby",
         "category": "art"
     },
@@ -188,5 +193,45 @@
         "title": "Web Demo of the Voxel Space Engine",
         "url": "https://github.com/s-macke/VoxelSpace",
         "category": "tech"
+    },
+    {
+        "title": "3D-Text Logo Creator",
+        "url": "https://de.flamingtext.com/Logo/Design-3D-Text",
+        "category": "mscl"
+    },
+    {
+        "title": "GifCities: Animated GIF Search Engine",
+        "url": "https://gifcities.org/",
+        "category": "art"
+    },
+    {
+        "title": "ODDITYCOMMODDITY",
+        "url": "https://odditycommoddity.neocities.org/",
+        "category": "art"
+    },
+    {
+        "title": "Beyond Good and Evil, by Friedrich Nietzsche",
+        "url": "https://archive.org/embed/friedrich-nietzsche-trans.-walter-kaufmann-beyond-good-and-evil-prelude-to-a-phi",
+        "category": "books"
+    },
+    {
+        "title": "The Revolt of the Angels, by ANATOLE FRANCE",
+        "url": "https://www.gutenberg.org/files/32596/32596-h/32596-h.htm",
+        "category": "books"
+    },
+    {
+        "title": "waifu2x: Single-Image Super-Resolution for Anime-Style Art",
+        "url": "https://www.waifu2x.net/",
+        "category": "tech"
+    },
+    {
+        "title": "csTimer - Professional Rubik's Cube Speedsolving Timer",
+        "url": "https://cstimer.net/",
+        "category": "mscl"
+    },
+    {
+        "title": "Incarceration in Real Numbers",
+        "url": "https://mkorostoff.github.io/incarceration-in-real-numbers/",
+        "category": "info"
     }
 ]

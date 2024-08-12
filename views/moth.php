@@ -6,11 +6,11 @@ include_once '_config.php';
 
 <head>
     <meta charset="UTF-8">
-    <meta name="404" content="osullivanjam.es">
     <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH . 'icon.png'; ?>">
+    <meta name="description" content="osullivanjam.es">
     <meta name="theme-color" content="black" />
     <meta http-equiv="refresh" content="4; url=/">
-    <title>404</title>
+    <title>moth</title>
     <style>
         body {
             background-color: black;
@@ -36,19 +36,6 @@ include_once '_config.php';
             animation: fadeIn 3s;
         }
 
-        .content h1 {
-            text-align: center;
-            font-size: 5vw;
-            margin: 0px;
-            color: red;
-        }
-
-        .content h2 {
-            text-align: center;
-            color: white;
-            font-size: 2vw;
-        }
-
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -64,9 +51,7 @@ include_once '_config.php';
 <body>
     <a href="/">
         <div class="content">
-            <h1>404</h1>
-            <img src="<?= IMAGE_PATH_404 . 'smiledog.gif'; ?>" alt="smiledog">
-            <h2>looking for something?</h2>
+            <img src="<?= IMAGE_PATH_MOTH . 'moth.gif'; ?>" alt="moth">
         </div>
     </a>
 </body>

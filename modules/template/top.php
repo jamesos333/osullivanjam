@@ -10,7 +10,9 @@ $title = 'osullivanjam.es' . (!$isIndex ? ': ' . $pageName : "");
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="osullivanjam.es">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Come to me, all you that are weary and are carrying heavy burdens, and I will give you rest.">
     <meta name="theme-color" content="black" />
     <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH . 'icon.png'; ?>">
     <link rel="stylesheet" href="<?= CSS_PATH . $cssName . '.css?v=' . VERSION ?>">

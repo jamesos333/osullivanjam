@@ -50,7 +50,7 @@ $links_image_path: g.$image_path + "links/";
             background-color: c.$transparent-black;
             border: 2px solid rgba(c.$main-purple, 0.8);
             border-radius: 12px 12px 2px 2px;
-            border-bottom: 0;
+            border-bottom: 0 solid c.$transparent-black;
         }
 
         &:hover {
@@ -77,6 +77,7 @@ $links_image_path: g.$image_path + "links/";
     border: 2px solid rgba(c.$main-purple, 0.8);
     border-radius: 0px 0px 8px 8px;
     border-top: 0;
+    word-wrap: break-word;
 
     a {
         font-size: 30px;

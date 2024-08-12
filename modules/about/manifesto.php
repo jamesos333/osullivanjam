@@ -15,8 +15,8 @@ function getManifestoVersion() {
 function getLogoPanel() {
     $reallogos = array(
         "apachelogo.png",
-        "phplogo.gif",
-        "sasslogo.png"
+        "sasslogo.png",
+        "phplogo.gif"
     );
     $funlogos = array(
         "ampmolecule.png",
@@ -34,7 +34,8 @@ function getLogoPanel() {
         "vscodelogo.png",
         "comintern.png",
         //"dodecahedron.gif",
-        "gnu.png"
+        "gnu.png",
+        "digitalocean.png"
     );
     shuffle($funlogos);
     $result = "";

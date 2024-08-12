@@ -1,5 +1,5 @@
 <?php
-define('VERSION', '5.3');
+define('VERSION', '5.4');
 // variables for basic paths
 define('CSS_PATH', '/styles/css/');
 define('JS_PATH', '/files/js/');
@@ -11,6 +11,7 @@ define('JSON_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/json/');
 
 // variables for page-specific paths
 define('IMAGE_PATH_404', IMAGE_PATH . '404/');
+define('IMAGE_PATH_MOTH', IMAGE_PATH . 'moth/');
 define('IMAGE_PATH_INDEX', IMAGE_PATH . 'index/');
 define('IMAGE_PATH_ABOUT', IMAGE_PATH . 'about/');
 define('IMAGE_PATH_FAQ', IMAGE_PATH . 'faq/');

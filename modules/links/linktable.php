@@ -5,8 +5,10 @@ define('CATEGORIES', array("tech", "info", "art", "books", "mscl"));
 
 function getLinks() {
     $linkArray = getAndDecodeLinksJson();
-    shuffle($linkArray);
     $allLinks = "";
+    if (isCategorySelected('all')) {
+        shuffle($linkArray);
+    }
     foreach ($linkArray as $currentLink) {
         if (isCategorySelected('all') || isCategorySelected($currentLink['category'])) {
             $allLinks .= createLinkHtml($currentLink, !isCategorySelected('all'));
@@ -18,7 +20,7 @@ function getLinks() {
 // if simplify is true, it will have the link be on its own line and with default formatting
 function createLinkHtml($currentLink, $simplify) {
     $keywords = array("%TEXT%", "%URL%", "%CATEGORY%", "%STYLE%");
-    $linkTemplate = "<a href='%URL%' class='%CATEGORY%' %STYLE%>%TEXT%</a>";
+    $linkTemplate = "<a target='_blank' rel='noopener noreferrer' href='%URL%' class='%CATEGORY%' %STYLE%>%TEXT%</a> ";
     $style = "style='font-size:" . randomFontSize() . "'";
     if ($simplify) {
         $linkTemplate = '<div class="simplified">' . $linkTemplate . '</div>';
