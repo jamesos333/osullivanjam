@@ -8,8 +8,18 @@ function getManifesto() {
 }
 
 function getManifestoVersion() {
-    $urlVersion = isset($_GET['version']) ? (int)$_GET['version'] : 0;
-    return $urlVersion <= MANIFESTO_VERSIONS && $urlVersion > 0 ? $urlVersion : MANIFESTO_VERSIONS;
+    $urlVersion = isset($_GET['version']) ? intval($_GET['version']) : MANIFESTO_VERSIONS;
+    if ($urlVersion <= 0 || $urlVersion > MANIFESTO_VERSIONS) {
+        redirectTo404();
+    }
+    return $urlVersion;
+}
+
+// this implementation is crude but it works for now
+function redirectTo404() {
+    echo "\n\nManifesto version cannot be found.\n\n";
+    echo "<meta http-equiv='refresh' content='0;url=/404'>";
+    die();
 }
 
 function getLogoPanel() {

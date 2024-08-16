@@ -223,6 +223,10 @@
         "title": "waifu2x: Single-Image Super-Resolution for Anime-Style Art",
         "url": "https://www.waifu2x.net/",
         "category": "tech"
+    },    {
+        "title": "3D Gif Maker",
+        "url": "https://www.3dgifmaker.com/",
+        "category": "mscl"
     },
     {
         "title": "csTimer - Professional Rubik's Cube Speedsolving Timer",
@@ -248,5 +252,30 @@
         "title": "d3vilzee4",
         "url": "https://d3vilzee4.neocities.org/",
         "category": "art"
+    },
+    {
+        "title": "Harlan Ellison: I Have No Mouth, and I Must Scream",
+        "url": "https://talesofmytery.blogspot.com/2018/10/harlan-ellison-i-have-no-mouth-and-i.html",
+        "category": "books"
+    },
+    {
+        "title": "Value, Price and Profit: Karl Marx",
+        "url": "https://www.marxists.org/archive/marx/works/1865/value-price-profit/",
+        "category": "books"
+    },
+    {
+        "title": "Vladimir Ilyich Lenin: The State and Revolution",
+        "url": "https://www.marxists.org/archive/lenin/works/1917/staterev/",
+        "category": "books"
+    },
+    {
+        "title": "DistroWatch.com: Latest News on Linux and BSD",
+        "url": "https://distrowatch.com/",
+        "category": "tech"
+    },
+    {
+        "title": "htmx ~ HATEOAS",
+        "url": "https://htmx.org/essays/hateoas/",
+        "category": "tech"
     }
 ]

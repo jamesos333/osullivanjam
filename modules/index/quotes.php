@@ -16,8 +16,10 @@ $quoteArray = array(
     "they don't know what we know",
     "i have stitched life into me like a rare organ",
     "walking along the edge of time",
-    "should i over explain myself or remain misunderstood",
-    "have i now become your enemy by telling you the truth"
+    "should i overexplain myself or remain misunderstood",
+    "have i now become your enemy by telling you the truth",
+    "a part of me is always dreaming",
+    "only those who continue to change can remain my kin"
 );
 
 $smallQuoteArray = array(
@@ -32,7 +34,8 @@ $smallQuoteArray = array(
     "nothing, nothing, nothing",
     "uniquely created",
     "the spark of the divine",
-    "and yet we rot"
+    "and yet we rot",
+    "and yet we dance"
 );
 
 shuffle($quoteArray);
