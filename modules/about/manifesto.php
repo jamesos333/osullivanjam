@@ -35,7 +35,8 @@ function getLogoPanel() {
         "comintern.png",
         //"dodecahedron.gif",
         "gnu.png",
-        "digitalocean.png"
+        "digitalocean.png",
+        "cirno9.png"
     );
     shuffle($funlogos);
     $result = "";

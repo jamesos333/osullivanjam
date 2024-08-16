@@ -233,5 +233,20 @@
         "title": "Incarceration in Real Numbers",
         "url": "https://mkorostoff.github.io/incarceration-in-real-numbers/",
         "category": "info"
+    },
+    {
+        "title": "98.css - A design system for building faithful recreations of old UIs",
+        "url": "https://jdan.github.io/98.css/",
+        "category": "tech"
+    },
+    {
+        "title": "PCjs Machines: IBM PC emulator for browsers.",
+        "url": "https://www.pcjs.org/",
+        "category": "tech"
+    },
+    {
+        "title": "d3vilzee4",
+        "url": "https://d3vilzee4.neocities.org/",
+        "category": "art"
     }
 ]
