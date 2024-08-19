@@ -17,7 +17,7 @@ function getManifestoVersion() {
 
 // this implementation is crude but it works for now
 function redirectTo404() {
-    echo "\n\nManifesto version cannot be found.\n\n";
+    echo "Manifesto version cannot be found.";
     echo "<meta http-equiv='refresh' content='0;url=/404'>";
     die();
 }
