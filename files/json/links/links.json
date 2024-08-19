@@ -155,7 +155,7 @@
         "category": "mscl"
     },
     {
-        "title": "lain game :: index",
+        "title": "serial experiments lain game :: index",
         "url": "https://laingame.net/",
         "category": "art"
     },
@@ -277,5 +277,20 @@
         "title": "htmx ~ HATEOAS",
         "url": "https://htmx.org/essays/hateoas/",
         "category": "tech"
+    },
+    {
+        "title": "W3Techs - extensive and reliable web technology surveys",
+        "url": "https://w3techs.com/",
+        "category": "tech"
+    },
+    {
+        "title": "PageSpeed Insights",
+        "url": "https://pagespeed.web.dev/",
+        "category": "tech"
+    },
+    {
+        "title": "Marginalia Search - browse:random",
+        "url": "https://search.marginalia.nu/explore/random",
+        "category": "art"
     }
 ]
