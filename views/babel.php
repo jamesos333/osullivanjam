@@ -3,6 +3,7 @@ include_once '_config.php';
 $pageName = "contact";
 $cssName = $pageName;
 $useHtmx = true;
+$description = "speak to the wizard, behold your fate!";
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES_TOP ?>
 

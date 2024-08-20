@@ -3,6 +3,7 @@ include_once '_config.php';
 include_once ELEMENTS_PATH_INDEX . 'quotes.php';
 $pageName = 'index';
 $cssName = $pageName;
+$description = "abandon all hope ye who enter here";
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES_TOP ?>
 

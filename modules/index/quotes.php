@@ -18,8 +18,7 @@ $quoteArray = array(
     "walking along the edge of time",
     "should i overexplain myself or remain misunderstood",
     "have i now become your enemy by telling you the truth",
-    "a part of me is always dreaming",
-    "only those who continue to change can remain my kin"
+    "a part of me is always dreaming"
 );
 
 $smallQuoteArray = array(
