@@ -1,15 +1,11 @@
-// imports
-@use 'colors' as c;
-@use 'global' as g;
-
-// used stylesheets
-@use '_quotes';
+@use "colors" as c;
+@use "global" as g;
+@use "_quotes";
 
 body {
-    height: 100%
+    height: 100%;
 }
 
-/* for the warning at the top of the page */
 .warning {
     display: flex;
     margin: 0.8rem 3rem;
@@ -47,7 +43,6 @@ body {
     }
 }
 
-/* for the rest of the page */
 h1 {
     font-weight: 400;
     font-size: 2.25rem;
@@ -88,7 +83,8 @@ p {
     flex-basis: 0;
     flex-grow: 1;
     padding: 5px 30px 20px 30px;
-    font-family: "Open Sans", apple-system, blinkmacsystemfont, "Segoe UI", "Helvetica Neue", arial, sans-serif;
+    font-family: "Open Sans", apple-system, blinkmacsystemfont, "Segoe UI",
+        "Helvetica Neue", arial, sans-serif;
 }
 
 .leftbox {

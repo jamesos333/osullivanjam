@@ -1,5 +1,4 @@
-// imports
-@use 'colors' as c;
+@use "colors" as c;
 
 $image_path: "/files/img/";
 $background_path: $image_path + "background/";
@@ -24,7 +23,7 @@ $background_path: $image_path + "background/";
 
 html {
     font-size: 14px;
-    
+
     background-color: transparent !important;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
@@ -39,7 +38,7 @@ body {
     padding-bottom: 5px;
     font-family: Roboto, Arial, sans-serif;
     background-color: black;
-    background-image: url($background_path + '6.gif');
+    background-image: url($background_path + "6.gif");
     background-repeat: repeat;
     font-size: 14px;
     font-weight: 300;
@@ -52,11 +51,12 @@ a {
 p {
     padding: 0 10px;
     line-height: 1.8;
-} 
+}
 
 table {
     table-layout: fixed;
     width: 100%;
+
     th,
     tr {
         padding: 5px 0px;
@@ -69,7 +69,11 @@ table {
     padding: 5px;
 
     background: c.$dark-purple;
-    background-image: linear-gradient(180deg, c.$dark-purple, c.$dark-purple-offset);
+    background-image: linear-gradient(
+        180deg,
+        c.$dark-purple,
+        c.$dark-purple-offset
+    );
     color: c.$light-blue;
     border: 3px inset c.$blue-violet;
     border-radius: 25px;
@@ -109,9 +113,11 @@ table {
     .left {
         border-radius: 14px 2px 2px 2px;
     }
+
     .right {
         border-radius: 2px 14px 2px 2px;
     }
+
     .navbar-element {
         text-align: center;
         background: c.$transparent-black;
@@ -119,12 +125,13 @@ table {
         padding: 0.6em 10px;
         border: 5px double c.$main-purple;
         height: 25px;
-    
-        font-family: 'Times New Roman', serif;
+
+        font-family: "Times New Roman", serif;
         font-weight: bold;
         font-style: italic;
         font-size: 14px;
         letter-spacing: 1px;
+
         img {
             width: auto;
             height: 25px;

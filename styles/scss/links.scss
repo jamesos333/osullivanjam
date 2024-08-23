@@ -30,7 +30,6 @@ $links_image_path: g.$image_path + "links/";
 
     .decoder-element {
         @include fire-background();
-        cursor: pointer;
         user-select: none;
 
         font-size: 18px;

@@ -1,13 +1,9 @@
-// imports
-@use 'colors' as c;
-@use 'global' as g;
-
-// used stylesheets
-@use '_quotes';
+@use "colors" as c;
+@use "global" as g;
+@use "_quotes";
 
 $gap: 0.1rem;
 
-// the buttons
 .buttontable {
     padding: 1em 2em;
     padding-top: 10px;
@@ -15,8 +11,8 @@ $gap: 0.1rem;
     .eye {
         cursor: default;
         height: auto;
-        width: 84%; 
-        padding: 0.5em 0px
+        width: 84%;
+        padding: 0.5em 0px;
     }
 
     .button {
@@ -40,11 +36,14 @@ $gap: 0.1rem;
 
 .aligators {
     height: auto;
-    width: 70%; 
+    width: 70%;
     margin-bottom: 10px;
 }
 
-/* scrolling text on homepage */
+.earthquote {
+    color: oldlace;
+}
+
 div.scrollingtext {
     max-width: 1050px;
     background: c.$dark-purple;
