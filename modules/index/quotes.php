@@ -34,7 +34,8 @@ $smallQuoteArray = array(
     "uniquely created",
     "the spark of the divine",
     "and yet we rot",
-    "and yet we dance"
+    "and yet we dance",
+    "can i just be?"
 );
 
 shuffle($quoteArray);

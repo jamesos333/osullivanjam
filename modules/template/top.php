@@ -26,7 +26,7 @@ $title = 'osullivanjam.es' . (!$isIndex ? ': ' . $pageName : "");
     <title><?= $title ?></title>
 </head>
 
-<body style="visibility: hidden;">
+<body style="visibility: hidden; background-color: black;">
     <script>0</script>
     <?php include ELEMENTS_PATH . 'header.php'; ?>
     <?php $isIndex ? include ELEMENTS_PATH_INDEX . 'scrollingtext.php' : ''; ?>
