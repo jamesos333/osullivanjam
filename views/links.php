@@ -22,7 +22,7 @@ shuffle($disclaimerImages);
     <div class="disclaimer-text">
         <p id="disclaimer-red">DISCLAIMER</p>
         <p>All of the links contained herein will direct you to external websites- I do not assume responsibility for the accuracy,
-            completeness, or timeliness of the information contained therein.</p>
+            completeness, or timeliness of the information therein contained.</p>
     </div>
 </div>
 
