@@ -50,7 +50,8 @@ function getLogoPanel() {
     );
     shuffle($funlogos);
     $result = "";
-    foreach (array_merge($reallogos, $funlogos) as $imageName) {
+    $fullArray = array_slice(array_merge($reallogos, $funlogos), 0, 16);
+    foreach ($fullArray as $imageName) {
         $result .= "<img src=" .  IMAGE_PATH_ABOUT . $imageName . " alt=''>";
     }
     return $result;
