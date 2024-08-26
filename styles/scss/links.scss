@@ -107,6 +107,38 @@ $links_image_path: g.$image_path + "links/";
     }
 }
 
+.disclaimer {
+    display: flex;
+    margin: 0.8rem 4rem;
+
+    background-color: black;
+    border: 2px groove black;
+    flex-direction: row;
+
+    img {
+        width: 170px;
+        height: 125px;
+        margin: auto;
+        padding: 10px;
+    }
+    .disclaimer-text {
+        margin: auto;
+
+        #disclaimer-red {
+            color: c.$warning-red;
+            font-size: 26px;
+            font-style: normal;
+        }
+        p {
+            font-size: 20px;
+            line-height: normal;
+            margin: 5px 10px;
+            padding-left: 0;
+            font-style: italic;
+        }
+    }
+}
+
 .all {
     color: c.$light-blue;
 }
