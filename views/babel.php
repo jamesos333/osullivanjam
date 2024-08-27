@@ -23,10 +23,10 @@ $description = "speak to the wizard, behold your fate!";
 <table>
     <tr>
         <th>
-            <img src="<?= IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" alt="wizard" style="width: 70%">
+            <img src="<?= IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" alt="wizard" class="wizard-decoration">
         </th>
         <th>
-            <img src="<?= IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" alt="wizard" style="width: 70%">
+            <img src="<?= IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" alt="wizard" class="wizard-decoration">
         </th>
     </tr>
 </table>

@@ -5,11 +5,11 @@
 // used stylesheets
 @use '_quotes';
 
-$borderRadius: 4px;
+$borderRadius: 6px;
 
 @mixin qaItem {
     padding: 10px;
-    border: 1px solid c.$light-grey;
+    border: 2px solid c.$light-grey;
     border-radius: $borderRadius $borderRadius 0 $borderRadius;
     background-color: rgba(c.$main-purple, 0.4);
 }
