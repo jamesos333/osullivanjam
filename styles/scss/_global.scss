@@ -1,7 +1,7 @@
 @use "colors" as c;
 
 $image_path: "/files/img/";
-$background_path: $image_path + "background/";
+$background_path: $image_path + "global/background/";
 
 @mixin center {
     display: block;
