@@ -35,7 +35,8 @@ $smallQuoteArray = array(
     "the spark of the divine",
     "and yet we rot",
     "and yet we dance",
-    "can i just be?"
+    "can i just be?",
+    "the womb of creation"
 );
 
 shuffle($quoteArray);

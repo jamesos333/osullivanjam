@@ -11,7 +11,8 @@ $disclaimerImages = array(
     'tv-static2.gif',
     'ghost.gif',
     'hauntedhouse1.gif',
-    'hauntedhouse2.gif'
+    'hauntedhouse2.gif',
+    'evildeadlaugh.gif'
 );
 shuffle($disclaimerImages);
 ?>

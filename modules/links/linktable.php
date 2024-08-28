@@ -82,6 +82,6 @@ function randomFontSize() {
     <?= getDecoder() ?>
 </div>
 
-<div class="linkContainer">
+<div class="link-container">
     <?= getLinks() ?>
 </div>
