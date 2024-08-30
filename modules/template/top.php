@@ -4,8 +4,9 @@
 // --cssName
 // optional parameters
 // --useHtmx
+// --description
 // --additionalHeader
-$htmxLink = "<script src='https://unpkg.com/htmx.org@2.0.0' integrity='sha384-wS5l5IKJBvK6sPTKa2WZ1js3d947pvWXbPJ1OmWfEuxLgeHcEbjUUA5i9V5ZkpCw' crossorigin='anonymous' defer></script>";
+$htmxLink = "<script src='https://unpkg.com/htmx.org@2.0.2' integrity='sha384-Y7hw+L/jvKeWIRRkqWYfPcvVxHzVzn5REgzbawhxAuQGwX1XWe70vji+VSeHOThJ' crossorigin='anonymous' defer></script>";
 $isIndex = strcmp($pageName, 'index') == 0;
 $title = 'osullivanjam.es' . (!$isIndex ? ': ' . $pageName : "");
 ?>
@@ -26,7 +27,7 @@ $title = 'osullivanjam.es' . (!$isIndex ? ': ' . $pageName : "");
     <title><?= $title ?></title>
 </head>
 
-<body style="visibility: hidden; background-color: black;">
+<body style="background-color: black;">
     <script>0</script>
     <?php include ELEMENTS_PATH . 'header.php'; ?>
     <?php $isIndex ? include ELEMENTS_PATH_INDEX . 'scrollingtext.php' : ''; ?>

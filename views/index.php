@@ -38,7 +38,7 @@ $description = "abandon all hope ye who enter here";
     </tr>
 </table>
 <p class="subquote earthquote">"i descended beneath the earth and became hypoxic from the fumes"</p>
-<img src="<?= IMAGE_PATH_INDEX . 'bodywithoutorgans2.png'; ?>" alt="body without organs" class="center" style="width: 87%; height: auto; margin-top: 30px">
+<img src="<?= IMAGE_PATH_INDEX . 'bodywithoutorgans2.png'; ?>" alt="body without organs diagram" class="center" style="width: 87%; height: auto; margin-top: 30px">
 <blockquote>
     <p class="firequote">Your wealth has rotted, and moths have eaten your clothes. Your gold and silver
         are corroded. Their corrosion will testify against you and eat your flesh like fire.</p>

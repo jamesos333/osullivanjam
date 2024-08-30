@@ -63,7 +63,7 @@
 ?>
 
 <div class="chatbox">
-    <img src="<?=IMAGE_PATH_CONTACT . 'wizard2.gif';?>" alt="Wizard Profile">
+    <img src="<?=IMAGE_PATH_CONTACT . 'wizard2.gif';?>" alt="wizard profile photo">
     <p id="chatbox"><?=createCustomSentence()?></p>
     <span class="time-right">-The Wise One</span>
 </div>

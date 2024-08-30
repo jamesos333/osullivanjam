@@ -5,8 +5,8 @@ function letterPath($letter) {
 ?>
 
 <div class="container">
-    <div class="header" alt="header for osullivanjam.es">
-        <a href="/" alt="header for osullivanjam.es">
+    <div class="header">
+        <a href="/" aria-label="header">
             <div class="name">
                 <div class="row">
                     <img src="<?= letterPath('j') ?>" alt="">
