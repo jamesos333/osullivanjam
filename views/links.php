@@ -1,5 +1,4 @@
 <?php
-include_once '_config.php';
 $pageName = 'links';
 $cssName = $pageName;
 $useHtmx = true;

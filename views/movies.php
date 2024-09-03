@@ -1,5 +1,4 @@
 <?php
-include_once '_config.php';
 include_once ELEMENTS_PATH_MOVIES . 'movietable.php';
 $pageName = "movies";
 $cssName = $pageName;

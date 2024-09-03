@@ -1,5 +1,4 @@
 <?php
-include_once '_config.php';
 $pageName = 'faq';
 $cssName = $pageName;
 $description = "I am living in your walls";

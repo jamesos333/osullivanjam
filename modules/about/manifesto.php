@@ -1,6 +1,4 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . '/views/_config.php';
-
 define('MANIFESTO_VERSIONS', 2);
 
 function getManifesto() {
