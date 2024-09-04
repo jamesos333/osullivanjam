@@ -44,7 +44,8 @@ function getLogoPanel() {
         //"dodecahedron.gif",
         "gnu.png",
         "digitalocean.png",
-        "cirno9.png"
+        "cirno9.png",
+        "jokerscards.gif"
     );
     shuffle($funlogos);
     $result = "";

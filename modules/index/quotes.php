@@ -38,7 +38,8 @@ $smallQuoteArray = array(
     "can i just be?",
     "the womb of creation",
     "full of joyous whimsy",
-    "vastly superior"
+    "vastly superior",
+    "i'm scared too"
 );
 
 shuffle($quoteArray);
