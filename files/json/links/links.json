@@ -7,7 +7,7 @@
     {
         "title": "Web Design Museum - Discover old websites, apps and software",
         "url": "https://www.webdesignmuseum.org/",
-        "category": "tech"
+        "category": "art"
     },
     {
         "title": "PREQUEL - The adventures of Katia Managan",
@@ -307,5 +307,20 @@
         "title": "Real problems of socialism and some answers - Paul Cockshott's Blog",
         "url": "https://paulcockshott.wordpress.com/2017/01/31/real-problems-of-socialism-and-some-answers/",
         "category": "info"
+    },
+    {
+        "title": "Using a Markov chain to generate readable nonsense",
+        "url": "https://benhoyt.com/writings/markov-chain/",
+        "category": "tech"
+    },
+    {
+        "title": "Simple And Complete PHP Routing Library",
+        "url": "https://phprouter.com/",
+        "category": "tech"
+    },
+    {
+        "title": "SBC Handheld Guide",
+        "url": "https://docs.google.com/spreadsheets/d/1irg60f9qsZOkhp0cwOU7Cy4rJQeyusEUzTNQzhoTYTU/",
+        "category": "mscl"
     }
 ]

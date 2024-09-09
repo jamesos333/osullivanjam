@@ -42,10 +42,10 @@ function getLogoPanel() {
         "vscodelogo.png",
         "comintern.png",
         //"dodecahedron.gif",
+        //"jokerscards.gif",
         "gnu.png",
         "digitalocean.png",
-        "cirno9.png",
-        "jokerscards.gif"
+        "cirno9.png"
     );
     shuffle($funlogos);
     $result = "";
