@@ -1,0 +1,51 @@
+@use "colors" as c;
+@use "global" as g;
+@use "_quotes";
+
+$height: 12rem;
+.recipe-list-item {
+    @include g.center;
+    background-color: rgba(c.$main-purple, 0.5);
+    border: 3px solid rgba(c.$main-purple, 0.8);
+    border-radius: 6px;
+    margin: 20px 60px;
+    padding: 0px;
+    height: $height;
+
+    &:hover {
+        background-color: rgba(c.$main-purple, 1);
+    }
+
+    .recipe-details {
+        padding-left: 20px;
+        height: $height;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .name {
+            font-size: 48px;
+            font-family: 'Brush Script MT', cursive;
+            color: #f00000;
+            padding-bottom: 12px;
+        }
+        .time {
+            font-size: 20px;
+            font-family: "Times New Roman";
+            color: aliceblue;
+        }
+        .tags {
+            font-size: 17px;
+            font-family: "Times New Roman";
+            color: aliceblue;
+            font-style: italic;
+        }
+    }
+
+    .recipe-thumbnail {
+        height: $height;
+        width: 18rem;
+        float: left;
+        border-right: 2px solid rgba(c.$main-purple, 0.8);
+    }
+}
