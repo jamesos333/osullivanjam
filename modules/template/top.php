@@ -21,7 +21,6 @@ $htmxLink = "<script src='https://unpkg.com/htmx.org@2.0.2' integrity='sha384-Y7
     <meta name="theme-color" content="black" />
     <meta property="og:type" content="website">
     <meta property="og:title" content="osullivanjam.es">
-    <meta property="og:url" content="https://osullivanjam.es">
     <meta property="og:image" content="<?= "https://osullivanjam.es" . IMAGE_PATH_GLOBAL . "scaryface.jpg" ?>">
     <meta property="og:description" content="<?= $descriptionText ?>">
     <meta name='description' content='<?= $descriptionText ?>'>
