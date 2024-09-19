@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="404" content="osullivanjam.es">
-    <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH . 'icon.png'; ?>">
+    <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH_GLOBAL . 'icon.png' ?>">
     <meta name="theme-color" content="black" />
+    <meta name="robots" content="noindex">
     <meta http-equiv="refresh" content="4; url=/">
     <title>404</title>
     <style>

@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH . 'icon.png'; ?>">
+    <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH_GLOBAL . 'icon.png' ?>">
     <meta name="description" content="osullivanjam.es">
     <meta name="theme-color" content="black" />
+    <meta name="robots" content="noindex">
     <meta http-equiv="refresh" content="4; url=/">
     <title>moth</title>
     <style>

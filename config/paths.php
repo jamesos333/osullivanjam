@@ -49,14 +49,3 @@ define('HTML_PATH_LINKS', HTML_PATH . 'links/');
 define('JSON_PATH_LINKS', JSON_PATH . 'links/');
 
 define('WORDLIST_PATH_CONTACT', TXT_PATH . 'wordlists/');
-
-
-// some basic functions
-function getFileTextContent($path) {
-    return file_get_contents($path);
-}
-
-// will return true if the users device is a phone
-function isMobile() {
-    return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
-}

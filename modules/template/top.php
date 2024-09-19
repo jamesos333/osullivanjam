@@ -25,7 +25,7 @@ $htmxLink = "<script src='https://unpkg.com/htmx.org@2.0.2' integrity='sha384-Y7
     <meta property="og:image" content="<?= "https://osullivanjam.es" . IMAGE_PATH_GLOBAL . "scaryface.jpg" ?>">
     <meta property="og:description" content="<?= $descriptionText ?>">
     <meta name='description' content='<?= $descriptionText ?>'>
-    <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH . 'icon.png' ?>">
+    <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH_GLOBAL . 'icon.png' ?>">
     <link rel="stylesheet" href="<?= CSS_PATH . $cssName . '.css?v=' . VERSION ?>">
     <meta name='robots' content='<?= count($_GET) == 0 ? 'index, follow' : 'noindex' ?>'>
     <?= isset($useHtmx) && $useHtmx ? $htmxLink : "" ?>

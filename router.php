@@ -1,5 +1,6 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . '/views/_config.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/config/paths.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/config/functions.php';
 function get($route, $path_to_include)
 {
 	if ($_SERVER['REQUEST_METHOD'] == 'GET') {
