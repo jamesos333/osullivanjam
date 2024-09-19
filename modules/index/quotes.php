@@ -39,7 +39,10 @@ $smallQuoteArray = array(
     "the womb of creation",
     "full of joyous whimsy",
     "vastly superior",
-    "i'm scared too"
+    "i'm scared too",
+    "what i loved, i love",
+    "a swan song",
+    "we don't struggle"
 );
 
 shuffle($quoteArray);

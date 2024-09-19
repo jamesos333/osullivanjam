@@ -304,7 +304,7 @@
         "category": "tech"
     },
     {
-        "title": "Real problems of socialism and some answers - Paul Cockshott's Blog",
+        "title": "Real problems of socialism and some answers",
         "url": "https://paulcockshott.wordpress.com/2017/01/31/real-problems-of-socialism-and-some-answers/",
         "category": "info"
     },
@@ -332,5 +332,20 @@
         "title": "My Immortal Wiki",
         "url": "https://myimmortal.fandom.com/wiki/My_Immortal_Wiki",
         "category": "art"
+    },
+    {
+        "title": "ROMs Megathread",
+        "url": "https://r-roms.github.io",
+        "category": "mscl"
+    },
+    {
+        "title": "FiveThirtyEight 2024 Election Forecast",
+        "url": "https://projects.fivethirtyeight.com/2024-election-forecast/",
+        "category": "info"
+    },
+    {
+        "title": "The people: A terrible abstraction | GegenStandpunkt",
+        "url": "https://en.gegenstandpunkt.com/article/people-terrible-abstraction",
+        "category": "info"
     }
 ]
