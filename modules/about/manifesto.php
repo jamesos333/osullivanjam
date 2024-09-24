@@ -1,16 +1,18 @@
 <?php
-define('MANIFESTO_VERSIONS', 2);
-
 function getManifesto() {
-    return getFileTextContent(HTML_PATH_ABOUT . "manifesto" . getManifestoVersion() . ".html");
+    return getFileTextContent(HTML_PATH_ABOUT . getManifestoDetails()["title"]);
 }
 
-function getManifestoVersion() {
-    $urlVersion = isset($_GET['version']) ? intval($_GET['version']) : MANIFESTO_VERSIONS;
-    if ($urlVersion <= 0 || $urlVersion > MANIFESTO_VERSIONS) {
+function getManifestoDetails() {
+    $manifestos = array(
+        array("title" => "manifesto1.html", "height" => "100em"),
+        array("title" => "manifesto2.html", "height" => "155em")
+    );
+    $urlVersion = isset($_GET['version']) ? intval($_GET['version']) : count($manifestos);
+    if ($urlVersion <= 0 || $urlVersion > count($manifestos)) {
         redirectTo404();
     }
-    return $urlVersion;
+    return  $manifestos[$urlVersion - 1];
 }
 
 // this implementation is crude but it works for now
@@ -55,12 +57,16 @@ function getLogoPanel() {
     }
     return $result;
 }
+
+function getRightboxStyle() {
+    return "style='max-height:" . getManifestoDetails()["height"] . ";'";
+}
 ?>
 
 <div class="textcontainer">
     <?= getManifesto() ?>
 
-    <div class="rightbox">
+    <div class="rightbox" <?= getRightboxStyle() ?>>
         <h3>Powered By</h3>
         <?= getLogoPanel() ?>
     </div>
