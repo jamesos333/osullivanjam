@@ -44,6 +44,31 @@ $gap: 0.1rem;
     color: oldlace;
 }
 
+.image-of-the-day {
+    @include g.center;
+    margin-top: 30px;
+    width: 87%;
+
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid c.$main-purple;
+    border-radius: 2px;
+
+    p {
+        text-align: center;
+        border-top: 2px solid c.$main-purple;
+        margin: -3px 0px 0px 0px;
+        padding: 7px;
+    }
+
+    img {
+        // aspect-ratio: 1.26/1;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        filter: hue-rotate(90deg);
+    }
+}
+
 div.scrollingtext {
     max-width: 1050px;
     background: c.$dark-purple;

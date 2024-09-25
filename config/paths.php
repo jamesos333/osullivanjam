@@ -1,5 +1,5 @@
 <?php
-define('VERSION', '5.9');
+define('VERSION', '5.10');
 // variables for basic paths
 define('CSS_PATH', '/styles/css/');
 define('JS_PATH', '/files/js/');
@@ -30,6 +30,7 @@ define('IMAGE_PATH_EXPERIENCE', IMAGE_PATH . 'experience/');
 define('IMAGE_PATH_EXPERIENCE_ICONS', IMAGE_PATH_EXPERIENCE . 'icons/');
 
 define('IMAGE_PATH_BUTTONS', IMAGE_PATH_INDEX . 'buttons/');
+define('IMAGE_PATH_INDEX_DAILY', IMAGE_PATH_INDEX . 'imageoftheday/');
 
 define('ELEMENTS_PATH_TEMPLATES', ELEMENTS_PATH . 'template/');
 define('ELEMENTS_PATH_TEMPLATES_TOP', ELEMENTS_PATH_TEMPLATES . 'top.php');
