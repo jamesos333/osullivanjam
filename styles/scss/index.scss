@@ -46,8 +46,8 @@ $gap: 0.1rem;
 
 .image-of-the-day {
     @include g.center;
-    margin-top: 30px;
-    width: 87%;
+    margin: 1.5em auto;
+    width: 82%;
 
     background: rgba(0, 0, 0, 0.4);
     border: 2px solid c.$main-purple;
