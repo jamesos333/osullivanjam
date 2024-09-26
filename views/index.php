@@ -42,6 +42,5 @@ $description = "abandon all hope ye who enter here";
     <p class="firequote">Your wealth has rotted, and moths have eaten your clothes. Your gold and silver
         are corroded. Their corrosion will testify against you and eat your flesh like fire.</p>
 </blockquote>
-<?php include ELEMENTS_PATH_INDEX . 'imageoftheday.php'; ?>
 
 <?php include ELEMENTS_PATH_TEMPLATES_BOTTOM ?>

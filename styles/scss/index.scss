@@ -45,27 +45,20 @@ $gap: 0.1rem;
 }
 
 .image-of-the-day {
-    @include g.center;
+    display: block;
     margin: 1.5em auto;
-    width: 82%;
+    width: 92%;
 
     background: rgba(0, 0, 0, 0.4);
-    border: 2px solid c.$main-purple;
-    border-radius: 2px;
-
-    p {
-        text-align: center;
-        border-top: 2px solid c.$main-purple;
-        margin: -3px 0px 0px 0px;
-        padding: 7px;
-    }
+    border-radius: 16px;
 
     img {
         // aspect-ratio: 1.26/1;
-        width: 100%;
+        display: block;
+        width: 92%;
         height: auto;
-        margin: 0;
-        filter: hue-rotate(90deg);
+        margin: auto;
+        padding: 35px 0;
     }
 }
 
