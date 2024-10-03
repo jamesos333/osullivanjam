@@ -18,7 +18,9 @@ $quoteArray = array(
     "walking along the edge of time",
     "should i overexplain myself or remain misunderstood",
     "have i now become your enemy by telling you the truth",
-    "a part of me is always dreaming"
+    "a part of me is always dreaming",
+    "i want to explain how exhausted i am- even in my dreams",
+    "my soul bleeds... and the blood steadily, silently, swallows me whole"
 );
 
 $smallQuoteArray = array(
@@ -42,7 +44,13 @@ $smallQuoteArray = array(
     "i'm scared too",
     "what i loved, i love",
     "a swan song",
-    "we don't struggle"
+    "we don't struggle",
+    "i am too far away",
+    "can you understand?",
+    "someone somewhere",
+    "a museum of things",
+    //"my soul bleeds...",
+    "and i dream too much"
 );
 
 shuffle($quoteArray);
