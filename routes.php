@@ -9,6 +9,7 @@ get('/movies', '/views/movies.php');
 get('/contact', '/views/babel.php');
 get('/links', '/views/links.php');
 get('/experience', '/views/experience.php');
+
 get('/cooking', '/views/cooking.php');
 
 get('/loading', '/views/loading.php');
