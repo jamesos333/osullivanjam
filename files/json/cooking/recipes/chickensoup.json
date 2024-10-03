@@ -1,0 +1,28 @@
+{
+    "id": "chickensoup",
+    "title": "Chicken Soup",
+    "time": "3~ Hours",
+    "image": "chickensoup.webp",
+    "tags": "easy, one pot, stovetop",
+    "ingredients": [
+        "2 pounds lean ground beef",
+        "3 bell peppers",
+        "4 gloves of garlic- minced",
+        "1 onion",
+        "1 jalapeño"
+    ],
+    "steps": [
+        {
+            "description": "step 1"
+        },
+        {
+            "description": "step 2"
+        },
+        {
+            "description": "step 3"
+        },
+        {
+            "description": "step 4"
+        }
+    ]
+}

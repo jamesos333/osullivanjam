@@ -1,26 +1,31 @@
 <?php
 function createAndPopulateList() {
-    $htmlListElement = getRecipeListElement();
-    $recipes = getRecipeListJson();
-    $recipeList = "";
+    $listElementTemplate = getRecipeListElement();
+    $recipeFiles = array_column(getRecipeListJson(), "file");
+    $recipeListHtml = "";
 
-    foreach ($recipes as $current) {
-        $image = IMAGE_PATH_COOKING . $current["image"];
-        $time = $current["time"] . " hours";
-        $recipeList .= str_replace(
-            array("%ID%", "%TITLE%", "%TIME%", "%TAGS%", "%IMAGE%", "%FILE%"),
+    foreach ($recipeFiles as $currentFile) {
+        $fullRecipe = getFullRecipeJson($currentFile);
+        $image = IMAGE_PATH_COOKING . $fullRecipe["image"];
+        $recipeListHtml .= str_replace(
+            array("%ID%", "%FILE%", "%TITLE%", "%TIME%", "%TAGS%", "%IMAGE%"),
             array(
-                $current["id"],
-                $current["title"],
-                $time,
-                $current["tags"],
-                $image,
-                $current["file"]
+                $fullRecipe["id"],
+                $currentFile,
+                $fullRecipe["title"],
+                $fullRecipe["time"],
+                $fullRecipe["tags"],
+                $image
             ),
-            $htmlListElement
+            $listElementTemplate
         );
     }
-    return $recipeList;
+    return $recipeListHtml;
+}
+
+function getFullRecipeJson($fileName) {
+    $json = getFileTextContent(JSON_PATH_COOKING_RECIPES . $fileName);
+    return json_decode($json, true);
 }
 
 function getRecipeListJson() {

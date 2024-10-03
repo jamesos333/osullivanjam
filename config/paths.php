@@ -52,5 +52,6 @@ define('HTML_PATH_COOKING', HTML_PATH . 'cooking/');
 
 define('JSON_PATH_LINKS', JSON_PATH . 'links/');
 define('JSON_PATH_COOKING', JSON_PATH . 'cooking/');
+define('JSON_PATH_COOKING_RECIPES', JSON_PATH_COOKING . 'recipes/');
 
 define('WORDLIST_PATH_CONTACT', TXT_PATH . 'wordlists/');

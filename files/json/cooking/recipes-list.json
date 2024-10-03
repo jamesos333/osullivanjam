@@ -1,18 +1,10 @@
 [
     {
         "id": "chili",
-        "title": "World Famous Chili",
-        "time": 1,
-        "tags": "easy, fast, one pot, pressure cooker",
-        "image": "chili.webp",
         "file": "chili.json"
     },
     {
         "id": "chickensoup",
-        "title": "Chicken Soup",
-        "time": 3,
-        "tags": "easy, one pot, stovetop",
-        "image": "chickensoup.webp",
-        "file": "chicken-soup.json"
+        "file": "chickensoup.json"
     }
 ]
