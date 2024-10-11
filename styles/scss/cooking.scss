@@ -2,8 +2,8 @@
 @use "global" as g;
 @use "_quotes";
 
-$height: 12rem;
 .recipe-list-item {
+    $height: 12rem;
     @include g.center;
     background-color: rgba(c.$main-purple, 0.5);
     border: 3px solid rgba(c.$main-purple, 0.8);
@@ -25,7 +25,7 @@ $height: 12rem;
         justify-content: center;
         .name {
             font-size: 48px;
-            font-family: 'Brush Script MT', cursive;
+            font-family: "Brush Script MT", cursive;
             color: #f00000;
             padding-bottom: 12px;
         }
@@ -47,5 +47,62 @@ $height: 12rem;
         width: 18rem;
         float: left;
         border-right: 2px solid rgba(c.$main-purple, 0.8);
+    }
+}
+
+.recipe-main-display {
+    display: flex;
+
+    .left {
+        float: left;
+        display: inline;
+        width: 35%;
+
+        img {
+            @include g.center;
+            width: 84%;
+            padding: 20px;
+        }
+
+        .ingredient-container {
+            padding-left: 30px;
+            list-style: none;
+        }
+    }
+
+    .right {
+        float: right;
+        display: inline;
+        width: 65%;
+
+        @mixin stepItem() {
+            padding: 10px;
+            border: 2px solid c.$light-grey;
+            border-radius: 6px 6px 0 6px;
+            background-color: rgba(c.$main-purple, 0.4);
+        }
+
+        .steps-container {
+            padding-right: 10px;
+        }
+
+        .step-item {
+            margin-bottom: 20px;
+        }
+
+        .step-title {
+            @include stepItem();
+            padding-left: 14px;
+            font-weight: bold;
+            background-color: c.$transparent-black;
+        }
+
+        .step-description {
+            @include stepItem();
+            margin-left: 14px;
+            border-top: 0;
+            border-radius: 0 0 6px 6px;
+            text-align: justify;
+        }
     }
 }

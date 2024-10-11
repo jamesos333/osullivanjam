@@ -11,7 +11,7 @@ get('/links', '/views/links.php');
 get('/experience', '/views/experience.php');
 
 get('/cooking', '/views/cooking.php');
-get('/cooking/$urlRecipeId', '/views/cooking.php');
+get('/cooking/recipe/$urlRecipeId', '/views/cooking.php');
 
 get('/loading', '/views/loading.php');
 get('/moth', '/views/moth.php');

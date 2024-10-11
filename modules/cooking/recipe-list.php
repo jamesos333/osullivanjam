@@ -1,17 +1,17 @@
 <?php
 function createAndPopulateList() {
     $listElementTemplate = getRecipeListElement();
-    $recipeFiles = array_column(getRecipeListJson(), "file");
+    $recipeList = getRecipeListJson();
     $recipeListHtml = "";
 
-    foreach ($recipeFiles as $currentFile) {
-        $fullRecipe = getFullRecipeJson($currentFile);
+    foreach ($recipeList as $currentListItem) {
+        $fullRecipe = getFullRecipeJson($currentListItem["file"]);
         $image = IMAGE_PATH_COOKING . $fullRecipe["image"];
         $recipeListHtml .= str_replace(
             array("%ID%", "%FILE%", "%TITLE%", "%TIME%", "%TAGS%", "%IMAGE%"),
             array(
-                $fullRecipe["id"],
-                $currentFile,
+                $currentListItem["id"],
+                $currentListItem["file"],
                 $fullRecipe["title"],
                 $fullRecipe["time"],
                 $fullRecipe["tags"],
