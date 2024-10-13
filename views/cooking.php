@@ -2,7 +2,8 @@
 $pageName = "cooking";
 $cssName = $pageName;
 
-$displayElementFilename = isset($urlRecipeId) ? "recipe-display.php" : "recipe-list.php";
+$displayElementFilename = isset($id) ? "recipe-display.php" : "recipe-list.php";
+define('RECIPE_ID', $id);
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES_TOP ?>
 

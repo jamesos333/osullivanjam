@@ -1,6 +1,6 @@
 <?php
 function createAndPopulateList() {
-    $listElementTemplate = getRecipeListElement();
+    $listElementTemplate = getRecipeListTemplate();
     $recipeList = getRecipeListJson();
     $recipeListHtml = "";
 
@@ -33,9 +33,9 @@ function getRecipeListJson() {
     return json_decode($json, true);
 }
 
-function getRecipeListElement() {
-    $json = getFileTextContent(HTML_PATH_COOKING . "recipe-list-element.html");
-    return $json;
+function getRecipeListTemplate() {
+    $html = getFileTextContent(HTML_PATH_COOKING . "recipe-list-element.html");
+    return $html;
 }
 ?>
 

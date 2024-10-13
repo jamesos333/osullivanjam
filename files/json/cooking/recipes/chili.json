@@ -8,22 +8,29 @@
     "ingredients": [
         "2 pounds lean ground beef",
         "3 bell peppers",
-        "4 gloves of garlic- minced",
         "1 onion",
-        "1 jalapeño"
+        "1 jalapeño",
+        "4 gloves of garlic- minced",
+        "2 ½ tablespoons chili powder",
+        "1 teaspoon cumin",
+        "14.5 ounces crushed tomatoes",
+        "19 ounces canned red kidney beans",
+        "14.5 ounces canned diced tomatoes",
+        "1 ½ cups beef broth",
+        "1 tablespoon tomato paste"
     ],
     "steps": [
         {
-            "description": "step 1"
+            "description": "Combine ground beef and 1 ½ tablespoons chili powder."
         },
         {
-            "description": "step 2"
+            "description": "In a large pot, brown ground beef, onion, jalapeno, and garlic. Drain any fat."
         },
         {
-            "description": "step 3"
+            "description": "Add in remaining ingredients and bring to a boil. Reduce heat and simmer uncovered 45-60 minutes or until chili has reached desired thickness."
         },
         {
-            "description": "step 4"
+            "description": "Top with cheddar cheese, green onions, cilantro or other favorite toppings."
         }
     ]
 }
