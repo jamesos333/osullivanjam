@@ -357,5 +357,20 @@
         "title": "Ashton Manual - Benzodiazepine Information Coalition",
         "url": "https://www.benzoinfo.com/ashtonmanual/",
         "category": "info"
+    },
+    {
+        "title": "The Collection Chamber: THE MUSEUM OF ANYTHING GOES",
+        "url": "https://collectionchamber.blogspot.com/2017/11/the-museum-of-anything-goes.html",
+        "category": "art"
+    },
+    {
+        "title": "The Inner JSON Effect",
+        "url": "https://thedailywtf.com/articles/the-inner-json-effect",
+        "category": "tech"
+    },
+    {
+        "title": "12ft: Remove popups, banners, and ads from any website",
+        "url": "https://12ft.io/",
+        "category": "mscl"
     }
 ]
