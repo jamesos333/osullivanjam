@@ -53,7 +53,7 @@ function populateStepTemplate($recipe) {
 
 function getAndValidateRecipeJson() {
     // validating
-    $recipeList = getRecipeListJson();
+    $recipeList = json_decode(getFileTextContent(JSON_PATH_COOKING . "recipes-list.json"), true);
     $index = array_search(RECIPE_ID, array_column($recipeList, "id"));
     if (is_null(RECIPE_ID) || ($index === false)) {
         redirectTo404();
@@ -61,11 +61,6 @@ function getAndValidateRecipeJson() {
     // getting
     $filename = $recipeList[$index]["file"];
     $json = getFileTextContent(JSON_PATH_COOKING_RECIPES . $filename);
-    return json_decode($json, true);
-}
-
-function getRecipeListJson() {
-    $json = getFileTextContent(JSON_PATH_COOKING . "recipes-list.json");
     return json_decode($json, true);
 }
 ?>

@@ -16,7 +16,7 @@
         background-color: rgba(c.$main-purple, 1);
     }
 
-    .recipe-details {
+    .recipe-list-details {
         padding-left: 20px;
         height: $height;
 
@@ -25,19 +25,19 @@
         justify-content: center;
         .name {
             font-size: 48px;
-            font-family: "Brush Script MT", cursive;
-            color: #f00000;
+            font-family: "Times New Roman", Times, serif;
+            color: c.$light-blue;
             padding-bottom: 12px;
         }
         .time {
             font-size: 20px;
             font-family: "Times New Roman";
-            color: aliceblue;
+            color: c.$light-grey;
         }
         .tags {
             font-size: 17px;
             font-family: "Times New Roman";
-            color: aliceblue;
+            color: c.$light-grey;
             font-style: italic;
         }
     }
@@ -67,7 +67,54 @@
 
         .ingredient-container {
             padding-left: 30px;
-            list-style: none;
+            $size: 16px;
+
+            .checkbox-container {
+                cursor: pointer;
+                display: block;
+                position: relative;
+                padding-left: calc($size + 10px);
+                margin-bottom: 12px;
+                font-size: $size;
+                &:hover input ~ .checkmark {
+                    background-color: #ccc;
+                }
+
+                input {
+                    cursor: pointer;
+                    position: absolute;
+                    opacity: 0;
+                    height: 0;
+                    width: 0;
+                    &:checked ~ .checkmark {
+                        background-color: #2196f3;
+                        &:after {
+                            display: block;
+                        }
+                    }
+                }
+
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: $size;
+                    width: $size;
+                    background-color: #eee;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                        left: calc($size / 2.7);
+                        top: calc($size / 5);
+                        width: calc($size / 5);
+                        height: calc($size / 2.5);
+                        border: solid white;
+                        border-width: 0 calc($size / 8) calc($size / 8) 0;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
         }
     }
 
@@ -77,19 +124,17 @@
         width: 65%;
 
         .info-container {
-            height: 240px;
-
             h1 {
                 font-size: 3rem;
                 font-family: "Times New Roman", Times, serif;
                 margin: 0;
                 margin-top: 20px;
             }
-
-            h2 {
-                font-size: 1.5rem;
+            .description {
+                font-size: 1.4rem;
                 font-family: "Times New Roman", Times, serif;
-                margin-top: 30px;
+                margin-top: 20px;
+                margin-bottom: 30px;
                 padding: 12px 12px 12px 0px;
             }
         }
