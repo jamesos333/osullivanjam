@@ -41,4 +41,9 @@ function getRecipeListTemplate() {
 
 <div class="recipe-list-container">
     <?= createAndPopulateList() ?>
+    <blockquote>
+        <p class="lavaquote">i'm afraid they'll take pieces of me, and i'll be too scared to say 
+            no. bit by bit i'll disappear until there's nothing left to give.
+        </p>
+    </blockquote>
 </div>

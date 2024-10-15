@@ -1,6 +1,7 @@
 <?php
 $pageName = "cooking";
 $cssName = $pageName;
+$description = "desire is so different when god bore you hungry";
 
 $displayElementFilename = isset($id) ? "recipe-display.php" : "recipe-list.php";
 define('RECIPE_ID', $id ?? "");

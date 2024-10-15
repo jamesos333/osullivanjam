@@ -101,6 +101,11 @@ blockquote {
 }
 
 /* stormy image background for blockquote */
+.lavaquote {
+    background-image: url(g.$background_path + "quotes/lava.gif");
+}
+
+/* stormy image background for blockquote */
 .darkcloudsquote {
     background-image: url(g.$background_path + "quotes/darkclouds.gif");
 }
