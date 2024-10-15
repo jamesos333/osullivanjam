@@ -20,7 +20,9 @@ $quoteArray = array(
     "have i now become your enemy by telling you the truth",
     "a part of me is always dreaming",
     "i want to explain how exhausted i am- even in my dreams",
-    "my soul bleeds... and the blood steadily, silently, swallows me whole"
+    "my soul bleeds... and the blood steadily, silently, swallows me whole",
+    "am i suffering beautifully? is my agony lovable",
+    "those who hear not the music think the dancers mad"
 );
 
 $smallQuoteArray = array(
@@ -49,8 +51,9 @@ $smallQuoteArray = array(
     "can you understand?",
     "someone somewhere",
     "a museum of things",
-    //"my soul bleeds...",
-    "and i dream too much"
+    "and i dream too much",
+    "i know, i know",
+    "beyond creation"
 );
 
 shuffle($quoteArray);
