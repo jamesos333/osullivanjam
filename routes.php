@@ -9,6 +9,9 @@ get('/contact', '/views/babel.php');
 get('/links', '/views/links.php');
 get('/experience', '/views/experience.php');
 
+get('/cooking', '/views/cooking/cooking-list.php');
+get('/cooking/recipe/$id', '/views/cooking/cooking-display.php');
+
 get('/loading', '/views/loading.php');
 get('/moth', '/views/moth.php');
 

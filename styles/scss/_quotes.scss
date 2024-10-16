@@ -100,7 +100,17 @@ blockquote {
     background-image: url(g.$background_path + "quotes/stormy.gif");
 }
 
-/* stormy image background for blockquote */
+/* static image background for blockquote */
+.staticquote {
+    background-image: url(g.$background_path + "quotes/static2.gif");
+}
+
+/* static image background for blockquote */
+.soupquote {
+    background-image: url(g.$background_path + "quotes/soup.gif");
+}
+
+/* dark cloud image background for blockquote */
 .darkcloudsquote {
     background-image: url(g.$background_path + "quotes/darkclouds.gif");
 }

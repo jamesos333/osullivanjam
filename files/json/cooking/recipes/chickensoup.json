@@ -1,0 +1,48 @@
+{
+    "title": "Chicken Soup",
+    "description": "An antioxidant rich chicken soup that I have created as an amalgamation of two other recipes. Also the roasted garlic is very important, if you don't know how to do that I have a seperate page explaining it.",
+    "time": "3 Hours",
+    "image": "chickensoup.webp",
+    "tags": "easy, one pot, stovetop",
+    "ingredients": [
+        "1 tablespoon olive oil",
+        "1 onion, diced",
+        "4 carrots, peeled and chopped",
+        "4 ribs celery, chopped",
+        "1 head of garlic- roasted",
+        "1 tablespoon freshly grated ginger",
+        "1 tablespoon minced lemongrass",
+        "1 tablespoon chopped fresh thyme leaves",
+        "1 tablespoon chopped fresh rosemary",
+        "5 cups chicken stock",
+        "2 bay leaves",
+        "1 pound boneless, skinless chicken thighs",
+        "¾ cup ditalini pasta",
+        "3 tablespoons freshly squeezed lemon juice",
+        "Salt and freshly ground black pepper, to taste"
+    ],
+    "steps": [
+        {
+            "description": "Roast the garlic in the oven at 400° for 30-40 minutes, for more detailed instructions see the roasted garlic page."
+        },
+        {
+            "description": "Heat 1 tablespoon olive oil in a large stockpot or Dutch oven over medium heat. Add onion, carrots and celery. Cook, stirring occasionally, until tender, about 3-4 minutes."
+        },
+        {
+            "description": "Stir in garlic, ginger, lemongrass, thyme and rosemary until fragrant, about 1-2 minutes."
+        },
+        {
+            "description": "Stir in chicken stock, bay leaves and 1 cup water. Add chicken and bring to boil; reduce heat and simmer, covered, until the chicken is cooked through, about 10-12 minutes. Remove chicken and shred, using two forks; set aside."
+        },
+        {
+            "description": "Stir in pasta and cook until tender, about 8-10 minutes."
+        },
+        {
+            "description": "Stir in chicken and lemon juice; season with salt and pepper, to taste."
+        }
+    ],
+    "sources": [
+        "https://damndelicious.net/2018/09/30/cold-fighting-chicken-noodle-soup/",
+        "https://www.culinaryhill.com/how-to-roast-garlic/"
+    ]
+}

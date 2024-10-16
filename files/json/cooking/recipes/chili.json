@@ -1,0 +1,33 @@
+{
+    "title": "World Famous Chili",
+    "description": "The recipe for my world famous chili, this splendid recipe has been aggregated from many different websites and family traditions. Some additional tips- feel free to ad-lib whatever vegetables you want; the more the better!",
+    "time": "1 Hour",
+    "image": "chili.webp",
+    "tags": "easy, fast, one pot, pressure cooker",
+    "ingredients": [
+        "2 pounds lean ground beef",
+        "3 bell peppers",
+        "1 onion",
+        "1 jalapeño",
+        "4 gloves of garlic- minced",
+        "2 ½ tablespoons chili powder",
+        "1 teaspoon cumin",
+        "14.5 ounces crushed tomatoes",
+        "3 cans of beans- any kind",
+        "14.5 ounces canned diced tomatoes",
+        "1 ½ cups beef broth",
+        "1 tablespoon tomato paste"
+    ],
+    "steps": [
+        {
+            "description": "Combine ground beef and 1 ½ tablespoons chili powder."
+        },
+        {
+            "description": "In a large pot, brown ground beef, onion, jalapeno, and garlic. Drain any fat."
+        },
+        {
+            "description": "Add in remaining ingredients and bring to a boil. Reduce heat and simmer uncovered 45-60 minutes or until chili has reached desired thickness."
+        }
+    ],
+    "sources": []
+}

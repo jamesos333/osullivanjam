@@ -3,7 +3,7 @@ $githubLink = "https://github.com/jamesos333/osullivanjam";
 $aboutButton =  array("about", "button_about.png", "about", "button");
 $buttonArray = array(
     array("contact"     , "button_contact.png"      , "contact"     , "button"),
-    array("cooking"     , "button_cooking.png"      , "cooking"     , "button comingsoon"),
+    array("cooking"     , "button_cooking.png"      , "cooking"     , "button"),
     array("links"       , "button_links.png"        , "links"       , "button"),
     array("movies"      , "button_movies.png"       , "movies"      , "button"),
     array("experience"  , "button_experience.png"   , "experience"  , "button"),

@@ -1,0 +1,194 @@
+@use "colors" as c;
+@use "global" as g;
+@use "_quotes";
+
+.recipe-list-container {
+    .recipe-list-item {
+        $height: 12rem;
+        @include g.center;
+        background-color: rgba(c.$main-purple, 0.5);
+        border: 3px solid rgba(c.$main-purple, 0.8);
+        border-radius: 6px;
+        margin: 20px 60px;
+        padding: 0px;
+        height: $height;
+
+        &:hover {
+            background-color: rgba(c.$main-purple, 1);
+        }
+
+        .recipe-list-details {
+            padding-left: 20px;
+            height: $height;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .name {
+                font-size: 48px;
+                font-family: "Times New Roman", Times, serif;
+                color: c.$light-blue;
+                padding-bottom: 12px;
+            }
+            .time {
+                font-size: 20px;
+                font-family: "Times New Roman";
+                color: c.$light-grey;
+            }
+            .tags {
+                font-size: 17px;
+                font-family: "Times New Roman";
+                color: c.$light-grey;
+                font-style: italic;
+            }
+        }
+
+        .recipe-thumbnail {
+            height: $height;
+            width: 18rem;
+            float: left;
+            border-right: 2px solid rgba(c.$main-purple, 0.8);
+        }
+    }
+}
+
+.recipe-main-display {
+    color: c.$light-blue;
+    display: flex;
+
+    .left {
+        float: left;
+        display: inline;
+        width: 35%;
+
+        img {
+            @include g.center;
+            width: 84%;
+            padding: 20px;
+        }
+
+        .ingredient-container {
+            padding-left: 30px;
+            $size: 16px;
+
+            .checkbox-container {
+                cursor: pointer;
+                display: block;
+                position: relative;
+                padding-left: calc($size + 10px);
+                margin-bottom: 12px;
+                font-size: $size;
+                &:hover input ~ .checkmark {
+                    background-color: #ccc;
+                }
+
+                input {
+                    cursor: pointer;
+                    position: absolute;
+                    opacity: 0;
+                    height: 0;
+                    width: 0;
+                    &:checked ~ .checkmark {
+                        background-color: #2196f3;
+                        &:after {
+                            display: block;
+                        }
+                    }
+                }
+
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: $size;
+                    width: $size;
+                    background-color: #eee;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                        left: calc($size / 2.7);
+                        top: calc($size / 5);
+                        width: calc($size / 5);
+                        height: calc($size / 2.5);
+                        border: solid white;
+                        border-width: 0 calc($size / 8) calc($size / 8) 0;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .right {
+        float: right;
+        display: inline;
+        width: 65%;
+
+        .info-container {
+            h1 {
+                font-size: 3rem;
+                font-family: "Times New Roman", Times, serif;
+                margin: 0;
+                margin-top: 20px;
+            }
+            .subtitle {
+                font-size: 17px;
+                font-family: "Times New Roman";
+                color: c.$light-grey;
+                .tags {
+                    font-style: italic;
+                }
+            }
+            .description {
+                font-size: 1.4rem;
+                font-family: "Times New Roman", Times, serif;
+                margin-top: 20px;
+                margin-bottom: 24px;
+                padding: 12px 12px 12px 0px;
+            }
+        }
+        .sources {
+            margin: 10px;
+            margin-right: 14px;
+            font-size: 16px;
+            font-family: "Times New Roman";
+            text-align: right;
+            color: c.$light-grey;
+            .source-link {
+                display: inline-block;
+                font-style: italic;
+                &:visited {
+                    text-decoration: none;
+                    color: c.$light-grey;
+                }
+            }
+        }
+
+        .steps-container {
+            padding-right: 10px;
+            @mixin stepItem() {
+                padding: 10px;
+                border: 2px solid c.$light-grey;
+                border-radius: 6px 6px 0 6px;
+                background-color: rgba(c.$main-purple, 0.4);
+            }
+            .step-title {
+                @include stepItem();
+                padding-left: 14px;
+                font-weight: bold;
+                background-color: c.$transparent-black;
+            }
+            .step-description {
+                @include stepItem();
+                margin-left: 14px;
+                border-top: 0;
+                border-radius: 0 0 6px 6px;
+                text-align: justify;
+            }
+            .step-item {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
