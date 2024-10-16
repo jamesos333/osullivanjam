@@ -1,0 +1,22 @@
+{
+    "title": "Roasted Garlic",
+    "description": "While this is probably not something to be eaten alone, it can be used as an ingredient in many things including my chicken soup recipe.",
+    "time": "40-60 Minutes",
+    "image": "roastedgarlic.webp",
+    "tags": "easy, oven, ingredient",
+    "ingredients": [
+        "Olive oil",
+        "Garlic"
+    ],
+    "steps": [
+        {
+            "description": "Preheat oven to 400 degrees. Remove outer papery layers of garlic bulb, leaving the skins in tact and cloves attached. Using a sharp knife, trim about ¼ inch to a ½ inch off the top of the bulb to expose the cloves. Drizzle with olive oil."
+        },
+        {
+            "description": "Wrap the individual heads of garlic tightly in foil and place on a baking sheet. Or, place the individual heads in a muffin tin and wrap tightly in foil. Roast for 30 to 60 minutes depending on your preference, checking the cloves at 30 minutes. The roasted garlic is done when it caramelized in color and the cloves are very soft and can be pieced easily with a knife."
+        }
+    ],
+    "sources": [
+        "https://www.culinaryhill.com/how-to-roast-garlic/"
+    ]
+}

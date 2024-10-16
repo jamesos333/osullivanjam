@@ -111,6 +111,9 @@ table {
 .navbar {
     .left {
         border-radius: 14px 2px 2px 2px;
+        a {
+            display: inline-block;
+        }
     }
 
     .right {
