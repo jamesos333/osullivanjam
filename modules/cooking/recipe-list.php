@@ -1,6 +1,8 @@
 <?php
+include ELEMENTS_PATH_COOKING . "recipe-shared.php";
+
 function createAndPopulateList() {
-    $listElementTemplate = getRecipeListTemplate();
+    $template = getFileTextContent(HTML_PATH_COOKING . "recipe-list-element.html");
     $recipeList = getRecipeListJson();
     $recipeListHtml = "";
 
@@ -17,33 +19,8 @@ function createAndPopulateList() {
                 $fullRecipe["tags"],
                 $image
             ),
-            $listElementTemplate
+            $template
         );
     }
     return $recipeListHtml;
 }
-
-function getFullRecipeJson($fileName) {
-    $json = getFileTextContent(JSON_PATH_COOKING_RECIPES . $fileName);
-    return json_decode($json, true);
-}
-
-function getRecipeListJson() {
-    $json = getFileTextContent(JSON_PATH_COOKING . "recipes-list.json");
-    return json_decode($json, true);
-}
-
-function getRecipeListTemplate() {
-    $html = getFileTextContent(HTML_PATH_COOKING . "recipe-list-element.html");
-    return $html;
-}
-?>
-
-<div class="recipe-list-container">
-    <?= createAndPopulateList() ?>
-    <blockquote>
-        <p class="lavaquote">i'm afraid they'll take pieces of me, and i'll be too scared to say 
-            no. bit by bit i'll disappear until there's nothing left to give.
-        </p>
-    </blockquote>
-</div>

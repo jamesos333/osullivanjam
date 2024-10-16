@@ -4,6 +4,7 @@
 // --cssName
 // optional parameters
 // --useHtmx
+// --backLink
 // --description
 // --additionalHeader
 $isIndex = strcmp($pageName, 'index') == 0;

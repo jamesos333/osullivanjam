@@ -1,13 +1,14 @@
 <?php
-function createAndPopulateRecipe() {
-    $recipe = getAndValidateRecipeJson();
-    $steps = populateStepTemplate($recipe);
-    $ingredients = populateIngredientTemplate($recipe);
+include ELEMENTS_PATH_COOKING . "recipe-shared.php";
+
+function createRecipeDisplay($recipe) {
+    $steps = getAndPopulateStepTemplate($recipe);
+    $ingredients = getAndPopulateIngredientTemplate($recipe);
     return populateRecipeTemplate($recipe, $steps, $ingredients);
 }
 
 function populateRecipeTemplate($recipe, $steps, $ingredients) {
-    $template = getFileTextContent(HTML_PATH_COOKING . "recipe-main-display.html");
+    $template = getFileTextContent(HTML_PATH_COOKING . "recipe-display-main.html");
     $image = IMAGE_PATH_COOKING . $recipe["image"];
     return str_replace(
         array("%TITLE%", "%DESCRIPTION%", "%IMAGE%", "%INGREDIENTS%", "%STEPS%"),
@@ -22,8 +23,8 @@ function populateRecipeTemplate($recipe, $steps, $ingredients) {
     );
 }
 
-function populateIngredientTemplate($recipe) {
-    $template = getFileTextContent(HTML_PATH_COOKING . "recipe-main-ingredient.html");
+function getAndPopulateIngredientTemplate($recipe) {
+    $template = getFileTextContent(HTML_PATH_COOKING . "recipe-display-ingredient.html");
     $element = "";
     foreach ($recipe["ingredients"] as $ingredient) {
         $element .= str_replace(
@@ -35,8 +36,8 @@ function populateIngredientTemplate($recipe) {
     return $element;
 }
 
-function populateStepTemplate($recipe) {
-    $template = getFileTextContent(HTML_PATH_COOKING . "recipe-main-step.html");
+function getAndPopulateStepTemplate($recipe) {
+    $template = getFileTextContent(HTML_PATH_COOKING . "recipe-display-step.html");
     $element = "";
     $counter = 1;
     foreach ($recipe["steps"] as $step) {
@@ -51,18 +52,14 @@ function populateStepTemplate($recipe) {
     return $element;
 }
 
-function getAndValidateRecipeJson() {
+function getAndValidateRecipeJson($recipe_id) {
     // validating
-    $recipeList = json_decode(getFileTextContent(JSON_PATH_COOKING . "recipes-list.json"), true);
-    $index = array_search(RECIPE_ID, array_column($recipeList, "id"));
-    if (is_null(RECIPE_ID) || ($index === false)) {
+    $recipe_list = getRecipeListJson();
+    $index = array_search($recipe_id, array_column($recipe_list, "id"));
+    if (is_null($recipe_id) || $index === false) {
         redirectTo404();
     }
     // getting
-    $filename = $recipeList[$index]["file"];
-    $json = getFileTextContent(JSON_PATH_COOKING_RECIPES . $filename);
-    return json_decode($json, true);
+    $filename = $recipe_list[$index]["file"];
+    return getFullRecipeJson($filename);
 }
-?>
-
-<?= createAndPopulateRecipe() ?>
