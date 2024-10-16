@@ -1,6 +1,5 @@
 <?php
 require_once __DIR__ . '/router.php';
-if (preg_match('/\.php$/', $_SERVER["REQUEST_URI"]) || !pathinfo($_SERVER["REQUEST_URI"], PATHINFO_EXTENSION)) {
 // basic page paths
 get('/', '/views/index.php');
 get('/about', '/views/about.php');
@@ -24,6 +23,3 @@ get('/links/filter', '/modules/links/linktable.php');
 
 // 404
 any('/404', '/views/404.php');
-} else {
-	return false;
-}
