@@ -69,52 +69,54 @@
 
         .ingredient-container {
             padding-left: 30px;
+            margin-bottom: 26px;
+        }
+
+        .checkbox-container {
             $size: 16px;
-
-            .checkbox-container {
+            cursor: pointer;
+            display: block;
+            position: relative;
+            padding-left: calc($size + 10px);
+            margin-bottom: 12px;
+            font-size: $size;
+            &:hover input ~ .checkmark {
+                background-color: #ccc;
+            }
+            input {
                 cursor: pointer;
-                display: block;
-                position: relative;
-                padding-left: calc($size + 10px);
-                margin-bottom: 12px;
-                font-size: $size;
-                &:hover input ~ .checkmark {
-                    background-color: #ccc;
-                }
-
-                input {
-                    cursor: pointer;
-                    position: absolute;
-                    opacity: 0;
-                    height: 0;
-                    width: 0;
-                    &:checked ~ .checkmark {
-                        background-color: #2196f3;
-                        &:after {
-                            display: block;
-                        }
-                    }
-                }
-
-                .checkmark {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: $size;
-                    width: $size;
-                    background-color: #eee;
+                position: absolute;
+                opacity: 0;
+                height: 0;
+                width: 0;
+                &:checked ~ .checkmark {
+                    background-color: #2196f3;
                     &:after {
-                        content: "";
-                        position: absolute;
-                        display: none;
-                        left: calc($size / 2.7);
-                        top: calc($size / 5);
-                        width: calc($size / 5);
-                        height: calc($size / 2.5);
-                        border: solid white;
-                        border-width: 0 calc($size / 8) calc($size / 8) 0;
-                        transform: rotate(45deg);
+                        display: block;
                     }
+                    & ~ .name {
+                        text-decoration: line-through;
+                    }
+                }
+            }
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: $size;
+                width: $size;
+                background-color: #eee;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    left: calc($size / 2.7);
+                    top: calc($size / 5);
+                    width: calc($size / 5);
+                    height: calc($size / 2.5);
+                    border: solid white;
+                    border-width: 0 calc($size / 8) calc($size / 8) 0;
+                    transform: rotate(45deg);
                 }
             }
         }

@@ -2,7 +2,7 @@
 include ELEMENTS_PATH_COOKING . "recipe-display.php";
 $recipe = getAndValidateRecipeJson($id ?? "");
 
-$pageName = $recipe["title"] . " Recipe";
+$pageName = strtolower($recipe["title"]) . " recipe";
 $cssName = "cooking";
 $backLink = "/cooking";
 $description = $recipe["description"];
