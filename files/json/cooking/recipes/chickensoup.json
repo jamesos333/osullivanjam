@@ -1,6 +1,6 @@
 {
     "title": "Chicken Soup",
-    "description": "An antioxidant rich chicken soup that I have created as an unholy amalgamation of a bazillion other recipes that i've found over the years.",
+    "description": "An antioxidant rich chicken soup that I have created as an amalgamation of two other recipes. Also the roasted garlic is very important, if you don't know how to do that I have a seperate page explaining it.",
     "time": "3 Hours",
     "image": "chickensoup.webp",
     "tags": "easy, one pot, stovetop",
@@ -42,6 +42,7 @@
         }
     ],
     "sources": [
-        "https://damndelicious.net/2018/09/30/cold-fighting-chicken-noodle-soup/"
+        "https://damndelicious.net/2018/09/30/cold-fighting-chicken-noodle-soup/",
+        "https://www.culinaryhill.com/how-to-roast-garlic/"
     ]
 }

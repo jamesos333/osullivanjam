@@ -9,8 +9,8 @@ $description = "desire is so different when god bore you hungry";
 <div class="recipe-list-container">
     <?= createAndPopulateList() ?>
     <blockquote>
-        <p class="staticquote">i'm afraid they'll take pieces of me, and i'll be too scared to say
-            no. bit by bit i'll disappear until there's nothing left to give.
+        <p class="soupquote">I'm afraid they'll take Pieces of me, and I'll be too scared To say
+            no. Bit by bit I'll disappear Until there's nothing left to give.
         </p>
     </blockquote>
 </div>

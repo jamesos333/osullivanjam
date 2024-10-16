@@ -13,7 +13,7 @@
         "2 ½ tablespoons chili powder",
         "1 teaspoon cumin",
         "14.5 ounces crushed tomatoes",
-        "3 cans of beans, you pick what kind",
+        "3 cans of beans- any kind",
         "14.5 ounces canned diced tomatoes",
         "1 ½ cups beef broth",
         "1 tablespoon tomato paste"
@@ -27,9 +27,7 @@
         },
         {
             "description": "Add in remaining ingredients and bring to a boil. Reduce heat and simmer uncovered 45-60 minutes or until chili has reached desired thickness."
-        },
-        {
-            "description": "Top with cheddar cheese, green onions, cilantro or other favorite toppings."
         }
-    ]
+    ],
+    "sources": []
 }

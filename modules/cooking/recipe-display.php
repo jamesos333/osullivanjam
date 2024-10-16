@@ -4,17 +4,21 @@ include ELEMENTS_PATH_COOKING . "recipe-shared.php";
 function createRecipeDisplay($recipe) {
     $steps = getAndPopulateStepTemplate($recipe);
     $ingredients = getAndPopulateIngredientTemplate($recipe);
-    return populateRecipeTemplate($recipe, $steps, $ingredients);
+    $sources = getAndPopulateSourcesTemplate($recipe);
+    return populateRecipeTemplate($recipe, $sources, $steps, $ingredients);
 }
 
-function populateRecipeTemplate($recipe, $steps, $ingredients) {
+function populateRecipeTemplate($recipe, $sources, $steps, $ingredients) {
     $template = getFileTextContent(HTML_PATH_COOKING . "recipe-display-main.html");
     $image = IMAGE_PATH_COOKING . $recipe["image"];
     return str_replace(
-        array("%TITLE%", "%DESCRIPTION%", "%IMAGE%", "%INGREDIENTS%", "%STEPS%"),
+        array("%TITLE%", "%DESCRIPTION%", "%TIME%", "%TAGS%", "%SOURCES%", "%IMAGE%", "%INGREDIENTS%", "%STEPS%"),
         array(
             $recipe["title"],
             $recipe["description"],
+            $recipe["time"],
+            $recipe["tags"],
+            $sources,
             $image,
             $ingredients,
             $steps
@@ -48,6 +52,23 @@ function getAndPopulateStepTemplate($recipe) {
             $template
         );
         $counter++;
+    }
+    return $element;
+}
+
+function getAndPopulateSourcesTemplate($recipe) {
+    $template = "<a class='source-link' href='%SOURCE-LINK%'>%SOURCE-NAME%</a> ";
+    $element = "";
+    if (sizeof($recipe["sources"]) == 0) {
+        $element = "<a class='source-link'>[none]</a> ";
+    }
+    foreach ($recipe["sources"] as $source) {
+        $source_name = '[' . $source . ']';
+        $element .= str_replace(
+            array("%SOURCE-LINK%", "%SOURCE-NAME%"),
+            array($source, $source_name),
+            $template
+        );
     }
     return $element;
 }
