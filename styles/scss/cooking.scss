@@ -4,14 +4,13 @@
 
 .recipe-list-container {
     .recipe-list-item {
-        $height: 12rem;
+        $height: 11rem;
         @include g.center;
         background-color: rgba(c.$main-purple, 0.5);
         border: 3px solid rgba(c.$main-purple, 0.8);
         border-radius: 6px;
-        margin: 20px 60px;
+        margin: 14px 34px;
         padding: 0px;
-        height: $height;
 
         &:hover {
             background-color: rgba(c.$main-purple, 1);
@@ -25,10 +24,10 @@
             flex-direction: column;
             justify-content: center;
             .name {
-                font-size: 48px;
+                font-size: 3em;
                 font-family: "Times New Roman", Times, serif;
                 color: c.$light-blue;
-                padding-bottom: 12px;
+                padding-bottom: 6px;
             }
             .time {
                 font-size: 20px;
@@ -65,10 +64,11 @@
             @include g.center;
             width: 84%;
             padding: 20px;
+            padding-bottom: 17px;
         }
 
         .ingredient-container {
-            padding-left: 30px;
+            padding-left: 31px;
             margin-bottom: 26px;
         }
 

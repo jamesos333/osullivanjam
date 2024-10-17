@@ -2,7 +2,7 @@
 include ELEMENTS_PATH_COOKING . "recipe-list.php";
 $pageName = "cooking";
 $cssName = $pageName;
-$description = "desire is so different when god bore you hungry";
+$description = "cooking - desire is so different when god bore you hungry";
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES_TOP ?>
 
