@@ -23,6 +23,7 @@ $background_path: $image_path + "global/background/";
 
 html {
     font-size: 14px;
+    min-width: 600px;
 
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
@@ -82,7 +83,6 @@ table {
 .header {
     margin: 0 auto;
     max-width: 1100px;
-    min-width: 600px;
     padding: 5px;
 
     padding-top: 2%;

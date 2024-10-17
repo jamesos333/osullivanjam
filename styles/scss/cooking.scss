@@ -160,7 +160,10 @@
             .source-link {
                 display: inline-block;
                 font-style: italic;
-                &:visited {
+                &:visited,
+                &:hover,
+                &:focus,
+                &:active {
                     text-decoration: none;
                     color: c.$light-grey;
                 }
