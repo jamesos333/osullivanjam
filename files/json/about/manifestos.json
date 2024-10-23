@@ -1,0 +1,15 @@
+{
+    "default": 2,
+    "versions": [
+        {
+            "version": 1,
+            "file": "manifesto1.html",
+            "height": "100em"
+        },
+        {
+            "version": 2,
+            "file": "manifesto2.html",
+            "height": "155em"
+        }
+    ]
+}

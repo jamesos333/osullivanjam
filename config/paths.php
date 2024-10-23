@@ -51,6 +51,7 @@ define('HTML_PATH_LINKS', HTML_PATH . 'links/');
 define('HTML_PATH_COOKING', HTML_PATH . 'cooking/');
 
 define('JSON_PATH_LINKS', JSON_PATH . 'links/');
+define('JSON_PATH_ABOUT', JSON_PATH . 'about/');
 define('JSON_PATH_COOKING', JSON_PATH . 'cooking/');
 define('JSON_PATH_COOKING_RECIPES', JSON_PATH_COOKING . 'recipes/');
 

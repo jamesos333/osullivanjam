@@ -67,8 +67,7 @@ function isCategorySelected($category) {
 }
 
 function getAndDecodeLinksJson() {
-    $json = getFileTextContent(JSON_PATH_LINKS . 'links.json');
-    return json_decode($json, true);
+    return getFileJsonContent(JSON_PATH_LINKS . 'links.json');
 }
 
 function randomFontSize() {
