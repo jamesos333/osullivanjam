@@ -77,6 +77,17 @@ p {
     color: c.$transparent-grey;
 }
 
+.version-disclaimer a {
+    color: c.$light-grey;
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        color: c.$light-grey;
+    }
+}
+
 .textcontainer {
     color: c.$light-blue;
     position: relative;

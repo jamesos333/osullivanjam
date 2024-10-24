@@ -70,6 +70,7 @@
         .ingredient-container {
             padding-left: 31px;
             margin-bottom: 26px;
+            margin-right: 16px;
         }
 
         .checkbox-container {
@@ -160,6 +161,7 @@
             .source-link {
                 display: inline-block;
                 font-style: italic;
+                color: c.$light-grey;
                 &:visited,
                 &:hover,
                 &:focus,

@@ -22,7 +22,9 @@ $quoteArray = array(
     "i want to explain how exhausted i am- even in my dreams",
     "my soul bleeds... and the blood steadily, silently, swallows me whole",
     "am i suffering beautifully? is my agony lovable",
-    "those who hear not the music think the dancers mad"
+    "those who hear not the music think the dancers mad",
+    "they muddy the water to make it seem deep",
+    "a siren wails in the distance. but between us? only loving silence"
 );
 
 $smallQuoteArray = array(
@@ -53,7 +55,11 @@ $smallQuoteArray = array(
     "a museum of things",
     "and i dream too much",
     "i know, i know",
-    "beyond creation"
+    "beyond creation",
+    "endless noise",
+    "handle with care",
+    "i'm not shy",
+    "emptier and simpler"
 );
 
 shuffle($quoteArray);
