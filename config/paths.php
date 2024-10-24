@@ -1,9 +1,8 @@
 <?php
 define('VERSION', '6.4');
 // variables for basic paths
-define('CSS_PATH', '/styles/css/');
-define('JS_PATH', '/files/js/');
 define('IMAGE_PATH', '/files/img/');
+define('CSS_PATH', '/styles/css/');
 define('ELEMENTS_PATH', $_SERVER['DOCUMENT_ROOT'] . '/modules/');
 define('TXT_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/txt/');
 define('HTML_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/html/');

@@ -21,7 +21,7 @@ function getButton($buttonParameters) {
 }
 ?>
 
-<table class="buttontable">
+<table preload="mousedown" preload-images="true" class="buttontable">
     <tr>
         <th><?= getButton($aboutButton) ?></th>
         <th><?= getButton($buttonArray[0]) ?></th>

@@ -1,7 +1,6 @@
 <?php
 $pageName = "contact";
 $cssName = $pageName;
-$useHtmx = true;
 $description = "speak to the wizard, behold your fate!";
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES_TOP ?>
@@ -15,8 +14,14 @@ $description = "speak to the wizard, behold your fate!";
     <div id="wizardcontainer">
         <?php include ELEMENTS_PATH_CONTACT . 'chatbox.php'; ?>
     </div>
-    <img hx-get="/contact/chatbox" hx-target="#wizardcontainer" hx-swap="beforeend"
-        src="<?= IMAGE_PATH_CONTACT . 'emerald.gif'; ?>" alt="seeingstone" id="stone">
+    <img
+        preload="mouseover"
+        hx-get="/contact/chatbox"
+        hx-target="#wizardcontainer"
+        hx-swap="beforeend"
+        src="<?= IMAGE_PATH_CONTACT . 'emerald.gif'; ?>"
+        alt="seeingstone"
+        id="stone">
 </div>
 
 <table>

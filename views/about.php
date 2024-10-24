@@ -15,7 +15,7 @@ $cssName = $pageName;
     </div>
 </div>
 
-<div class="wrapper">
+<div preload="mouseover" preload-images="true" class="wrapper">
     <?php include ELEMENTS_PATH_ABOUT . 'manifesto.php' ?>
 </div>
 

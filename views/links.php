@@ -1,7 +1,6 @@
 <?php
 $pageName = 'links';
 $cssName = $pageName;
-$useHtmx = true;
 
 $disclaimerImages = array(
     'abandonallhope.gif',
