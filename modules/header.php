@@ -6,7 +6,7 @@ function letterPath($letter) {
 
 <div class="container">
     <div class="header">
-        <a preload="mousedown" href="/" aria-label="header">
+        <a preload="mousedown" preload-images="true" href="/" aria-label="header">
             <div class="name">
                 <div class="row">
                     <img src="<?= letterPath('j') ?>" alt="">
