@@ -24,7 +24,8 @@ $quoteArray = array(
     "am i suffering beautifully? is my agony lovable",
     "those who hear not the music think the dancers mad",
     "they muddy the water to make it seem deep",
-    "a siren wails in the distance. but between us? only loving silence"
+    "a siren wails in the distance. but between us? only loving silence",
+    "innocence and divinity in your eyes"
 );
 
 $smallQuoteArray = array(

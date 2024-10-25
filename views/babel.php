@@ -2,6 +2,7 @@
 $pageName = "contact";
 $cssName = $pageName;
 $description = "speak to the wizard, behold your fate!";
+$additionalHeader = "<noscript><style>#stone{display: none !important;}</style></noscript>";
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES_TOP ?>
 

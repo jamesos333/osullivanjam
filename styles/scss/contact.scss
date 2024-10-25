@@ -1,9 +1,6 @@
-// imports
-@use 'colors' as c;
-@use 'global' as g;
-
-// used stylesheets
-@use '_quotes';
+@use "colors" as c;
+@use "global" as g;
+@use "_quotes";
 
 .wizard-decoration {
     width: 70%;
@@ -39,8 +36,9 @@
 
     #stone {
         @include g.center;
+        cursor: pointer;
         width: 10%;
-        margin-top: 20px
+        margin-top: 20px;
     }
 }
 
@@ -51,7 +49,7 @@
     background: rgba(0, 0, 0, 0.5);
     color: c.$light-blue;
     border-radius: 5px;
-    font-family: 'Times New Roman', serif;
+    font-family: "Times New Roman", serif;
     font-size: 22px;
     letter-spacing: 2px;
     margin: 0.5em 30px;
