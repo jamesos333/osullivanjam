@@ -25,7 +25,9 @@ $quoteArray = array(
     "those who hear not the music think the dancers mad",
     "they muddy the water to make it seem deep",
     "a siren wails in the distance. but between us? only loving silence",
-    "innocence and divinity in your eyes"
+    "innocence and divinity in their eyes",
+    "i want to go home. i want to go back. but back where?",
+    "part of who i am, the only thing i am"
 );
 
 $smallQuoteArray = array(
@@ -60,7 +62,8 @@ $smallQuoteArray = array(
     "endless noise",
     "handle with care",
     "i'm not shy",
-    "emptier and simpler"
+    "emptier and simpler",
+    "plagued by concepts"
 );
 
 shuffle($quoteArray);
