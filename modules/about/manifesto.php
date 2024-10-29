@@ -1,9 +1,12 @@
 <?php
+define("MANIFESTO_FULL_JSON", getFileJsonContent(JSON_PATH_ABOUT . "manifestos.json"));
+
 function getManifestoHtml() {
     $current = getCurrentManifesto();
     $version = $current["version"];
+    $default = MANIFESTO_FULL_JSON["default"];
     $content = "";
-    if ($version != getFullManifestoJson()["default"]) {
+    if ($version != $default) {
         $content = getFileTextContent(HTML_PATH_ABOUT . "about-disclaimer.html");
     }
     $content .= getFileTextContent(HTML_PATH_ABOUT . $current["file"]);
@@ -11,7 +14,7 @@ function getManifestoHtml() {
 }
 
 function getCurrentManifesto() {
-    $full_json = getFullManifestoJson();
+    $full_json = MANIFESTO_FULL_JSON;
     $manifestos = $full_json["versions"];
     $version = $_GET['version'] ?? $full_json["default"];
     $current_key = array_search($version, array_column($manifestos, "version"));
@@ -20,14 +23,6 @@ function getCurrentManifesto() {
         redirectTo404();
     }
     return $manifestos[$current_key];
-}
-
-function getFullManifestoJson() {
-    return getFileJsonContent(JSON_PATH_ABOUT . "manifestos.json");
-}
-
-function getLogoPanelHeight() {
-    return getCurrentManifesto()["height"];
 }
 
 function getLogoPanel() {
@@ -40,6 +35,10 @@ function getLogoPanel() {
         $result .= "<img src=" .  IMAGE_PATH_ABOUT . $image_name . " alt=''>";
     }
     return $result;
+}
+
+function getLogoPanelHeight() {
+    return getCurrentManifesto()["height"];
 }
 ?>
 
