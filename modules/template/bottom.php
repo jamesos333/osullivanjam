@@ -9,6 +9,5 @@
     <div class="copyright">
         <?=$copyrightString?>
     </div>
-    <script>0</script>
 </body>
 </html>

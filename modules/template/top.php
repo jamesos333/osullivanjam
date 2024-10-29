@@ -23,6 +23,7 @@ $descriptionText = isset($description) ? $description : $title;
     <meta property="og:description" content="<?= $descriptionText ?>">
     <meta name='description' content='<?= $descriptionText ?>'>
     <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH_GLOBAL . 'icon.png' ?>">
+    <link rel="preload" href="<?= CSS_PATH . $cssName . '.css?v=' . VERSION ?>" as="style">
     <link rel="stylesheet" href="<?= CSS_PATH . $cssName . '.css?v=' . VERSION ?>">
     <meta name='robots' content='<?= count($_GET) == 0 ? 'index, follow' : 'noindex' ?>'>
     <script src='https://unpkg.com/htmx.org@2.0.2' integrity='sha384-Y7hw+L/jvKeWIRRkqWYfPcvVxHzVzn5REgzbawhxAuQGwX1XWe70vji+VSeHOThJ' crossorigin='anonymous' defer></script>

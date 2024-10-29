@@ -10,5 +10,9 @@
     {
         "id": "roastedgarlic",
         "file": "roastedgarlic.json"
+    },
+    {
+        "id": "cabbagesoup",
+        "file": "cabbagesoup.json"
     }
 ]
