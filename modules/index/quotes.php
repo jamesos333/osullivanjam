@@ -26,8 +26,8 @@ $quoteArray = array(
     "they muddy the water to make it seem deep",
     "a siren wails in the distance. but between us? only loving silence",
     "innocence and divinity in their eyes",
-    "i want to go home. i want to go back. but back where?",
-    "part of who i am, the only thing i am"
+    "part of who i am, the only thing i am",
+    "my nerves go out past my body, embedding within the asphalt"
 );
 
 $smallQuoteArray = array(
@@ -60,10 +60,9 @@ $smallQuoteArray = array(
     "i know, i know",
     "beyond creation",
     "endless noise",
-    "handle with care",
-    "i'm not shy",
+    "plagued by concepts",
     "emptier and simpler",
-    "plagued by concepts"
+    "many worlds i've known"
 );
 
 shuffle($quoteArray);

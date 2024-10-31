@@ -10,7 +10,12 @@ $disclaimerImages = array(
     'ghost.gif',
     'hauntedhouse1.gif',
     'hauntedhouse2.gif',
-    'evildeadlaugh.gif'
+    'evildeadlaugh.gif',
+    'devil.gif',
+    'devil2.gif',
+    'nosferatu.gif',
+    'nosferatu2.gif',
+    'shadowspin.gif'
 );
 shuffle($disclaimerImages);
 ?>

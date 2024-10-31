@@ -372,5 +372,25 @@
         "title": "12ft: Remove popups, banners, and ads from any website",
         "url": "https://12ft.io/",
         "category": "mscl"
+    },
+    {
+        "title": "fluffmoth's identity buttons",
+        "url": "https://idbuttons.neocities.org/database/",
+        "category": "mscl"
+    },
+    {
+        "title": "Web Badges World | The ultimate archive of 80x15 pixel button art",
+        "url": "https://web.badges.world/",
+        "category": "mscl"
+    },
+    {
+        "title": "Letters: Marx-Engels Correspondence 1863",
+        "url": "https://marxists.architexturez.net/archive/marx/works/1863/letters/63_09_12.htm",
+        "category": "info"
+    },
+    {
+        "title": "htmx ~ Is htmx Just Another JavaScript Framework?",
+        "url": "https://htmx.org/essays/is-htmx-another-javascript-framework/",
+        "category": "tech"
     }
 ]
