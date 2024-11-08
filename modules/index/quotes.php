@@ -27,7 +27,8 @@ $quoteArray = array(
     "a siren wails in the distance. but between us? only loving silence",
     "innocence and divinity in their eyes",
     "part of who i am, the only thing i am",
-    "my nerves go out past my body, embedding within the asphalt"
+    "my nerves go out past my body, embedding within the asphalt",
+    "many worlds i've known"
 );
 
 $smallQuoteArray = array(
@@ -61,8 +62,7 @@ $smallQuoteArray = array(
     "beyond creation",
     "endless noise",
     "plagued by concepts",
-    "emptier and simpler",
-    "many worlds i've known"
+    "emptier and simpler"
 );
 
 shuffle($quoteArray);
