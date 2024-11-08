@@ -1,6 +1,6 @@
 <?php
-include_once ELEMENTS_PATH_EXPERIENCE . 'experienceTable.php';
-$pageName = "experience";
+include_once ELEMENTS_PATH_PROJECTS . 'projects-list.php';
+$pageName = "projects";
 $cssName = $pageName;
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES_TOP ?>

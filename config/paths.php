@@ -26,8 +26,8 @@ define('IMAGE_PATH_NAVBAR', IMAGE_PATH_GLOBAL . 'navbar/');
 define('IMAGE_PATH_MOVIES', IMAGE_PATH . 'movies/');
 define('IMAGE_PATH_MOVIES_THUMBNAILS', IMAGE_PATH_MOVIES . 'thumbnails/');
 
-define('IMAGE_PATH_EXPERIENCE', IMAGE_PATH . 'experience/');
-define('IMAGE_PATH_EXPERIENCE_ICONS', IMAGE_PATH_EXPERIENCE . 'icons/');
+define('IMAGE_PATH_PROJECTS', IMAGE_PATH . 'projects/');
+define('IMAGE_PATH_PROJECTS_ICONS', IMAGE_PATH_PROJECTS . 'icons/');
 
 define('IMAGE_PATH_BUTTONS', IMAGE_PATH_INDEX . 'buttons/');
 define('IMAGE_PATH_INDEX_DAILY', IMAGE_PATH_INDEX . 'imageoftheday/');
@@ -39,7 +39,7 @@ define('ELEMENTS_PATH_TEMPLATES_BOTTOM', ELEMENTS_PATH_TEMPLATES . 'bottom.php')
 define('ELEMENTS_PATH_INDEX', ELEMENTS_PATH . 'index/');
 define('ELEMENTS_PATH_ABOUT', ELEMENTS_PATH . 'about/');
 define('ELEMENTS_PATH_MOVIES', ELEMENTS_PATH . 'movies/');
-define('ELEMENTS_PATH_EXPERIENCE', ELEMENTS_PATH . 'experience/');
+define('ELEMENTS_PATH_PROJECTS', ELEMENTS_PATH . 'projects/');
 define('ELEMENTS_PATH_CONTACT', ELEMENTS_PATH . 'contact/');
 define('ELEMENTS_PATH_LINKS', ELEMENTS_PATH . 'links/');
 define('ELEMENTS_PATH_COOKING', ELEMENTS_PATH . 'cooking/');
