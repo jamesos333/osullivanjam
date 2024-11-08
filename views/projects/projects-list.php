@@ -1,5 +1,5 @@
 <?php
-include_once ELEMENTS_PATH_PROJECTS . 'projects-display-list.php';
+include_once ELEMENTS_PATH_PROJECTS . 'projects-grid.php';
 $pageName = "projects";
 $cssName = $pageName;
 ?>
