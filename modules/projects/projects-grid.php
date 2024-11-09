@@ -3,8 +3,8 @@ function getLinkTable() {
     // the last element specifies if it is available for mobile or not
     $projectArray = array(
         array("https://www.youtube.com/watch?v=3zLBkHz1QOs",   "safarisnapshot.png", "Safari Snapshot",         "unreal",  true),
-        array("/projects/damned/damned.html",                  "damned.png",         "Savior of the Damned",    "godot",   false),
-        array("/projects/cyberjellies/index.html",             "cyberjellies.png",   "Cyberjellies",            "p5js",    true)
+        array("/projects/cyberjellies/index.html",             "cyberjellies.png",   "Cyberjellies",            "p5js",    true),
+        array("/projects/damned/damned.html",                  "damned.png",         "Savior of the Damned",    "godot",   false)
     );
     return populateAndCreateLinkTable($projectArray);
 }
