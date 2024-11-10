@@ -3,8 +3,7 @@ define("MANIFESTO_FULL_JSON", getFileJsonContent(JSON_PATH_ABOUT . "manifestos.j
 
 function getManifestoHtmlByVersion($version) {
     $manifestoJson = getManifestoJsonByVersion($version);
-    $content = getFileTextContent(HTML_PATH_ABOUT . $manifestoJson["file"]);
-    return $content;
+    return getFileTextContent(HTML_PATH_ABOUT . $manifestoJson["file"]);
 }
 
 function getManifestoJsonByVersion($version) {

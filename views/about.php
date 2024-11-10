@@ -4,7 +4,7 @@ $version = $id ?? MANIFESTO_FULL_JSON["default"];
 $isDefault = $version == MANIFESTO_FULL_JSON["default"];
 
 $pageName = "about";
-$cssName = "about";
+$cssName = $pageName;
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES_TOP ?>
 
