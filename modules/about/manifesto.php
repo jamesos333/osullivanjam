@@ -1,22 +1,14 @@
 <?php
 define("MANIFESTO_FULL_JSON", getFileJsonContent(JSON_PATH_ABOUT . "manifestos.json"));
 
-function getManifestoHtml() {
-    $current = getCurrentManifesto();
-    $version = $current["version"];
-    $default = MANIFESTO_FULL_JSON["default"];
-    $content = "";
-    if ($version != $default) {
-        $content = getFileTextContent(HTML_PATH_ABOUT . "about-disclaimer.html");
-    }
-    $content .= getFileTextContent(HTML_PATH_ABOUT . $current["file"]);
+function getManifestoHtmlByVersion($version) {
+    $manifestoJson = getManifestoJsonByVersion($version);
+    $content = getFileTextContent(HTML_PATH_ABOUT . $manifestoJson["file"]);
     return $content;
 }
 
-function getCurrentManifesto() {
-    $full_json = MANIFESTO_FULL_JSON;
-    $manifestos = $full_json["versions"];
-    $version = $_GET['version'] ?? $full_json["default"];
+function getManifestoJsonByVersion($version) {
+    $manifestos = MANIFESTO_FULL_JSON["versions"];
     $current_key = array_search($version, array_column($manifestos, "version"));
     if ($current_key === false) {
         echo "Manifesto version cannot be found.";
@@ -37,16 +29,6 @@ function getLogoPanel() {
     return $result;
 }
 
-function getLogoPanelHeight() {
-    return getCurrentManifesto()["height"];
+function getLogoPanelHeightByVersion($version) {
+    return getManifestoJsonByVersion($version)["height"];
 }
-?>
-
-<div class="textcontainer">
-    <?= getManifestoHtml() ?>
-
-    <div class="rightbox" style='max-height:<?= getLogoPanelHeight() ?>;'>
-        <h3>Powered By</h3>
-        <?= getLogoPanel() ?>
-    </div>
-</div>
