@@ -26,7 +26,7 @@ $descriptionText = isset($description) ? $description : $title;
     <link rel="preload" href="<?= CSS_PATH . $cssName . '.css?v=' . VERSION ?>" as="style">
     <link rel="stylesheet" href="<?= CSS_PATH . $cssName . '.css?v=' . VERSION ?>">
     <meta name='robots' content='<?= count($_GET) == 0 ? 'index, follow' : 'noindex' ?>'>
-    <script src='https://unpkg.com/htmx.org@2.0.2' integrity='sha384-Y7hw+L/jvKeWIRRkqWYfPcvVxHzVzn5REgzbawhxAuQGwX1XWe70vji+VSeHOThJ' crossorigin='anonymous' defer></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous" defer></script>
     <script src="https://unpkg.com/htmx-ext-preload@2.0.1/preload.js" defer></script>
     <?= isset($additionalHeader) ? $additionalHeader : "" ?>
     <title><?= $title ?></title>
@@ -36,7 +36,7 @@ $descriptionText = isset($description) ? $description : $title;
     <script>
         0
     </script>
-    <?php include ELEMENTS_PATH . 'header.php'; ?>
+    <?php include ELEMENTS_PATH_TEMPLATES . 'banner.php'; ?>
     <?php $isIndex ? include ELEMENTS_PATH_INDEX . 'scrollingtext.php' : ''; ?>
     <div id="content">
-        <?php !$isIndex ? include ELEMENTS_PATH . 'navbar.php' : ''; ?>
+        <?php !$isIndex ? include ELEMENTS_PATH_TEMPLATES . 'navbar.php' : ''; ?>
