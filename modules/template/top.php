@@ -8,7 +8,7 @@
 // --additionalHeader
 $isIndex = strcmp($pageName, 'index') == 0;
 $title = 'osullivanjam.es' . (!$isIndex ? ': ' . $pageName : "");
-$descriptionText = isset($description) ? $description : $title;
+$descriptionText = $description ?? $title;
 ?>
 
 <!DOCTYPE html>
