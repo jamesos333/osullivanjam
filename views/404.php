@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH_GLOBAL . 'icon.png' ?>">
     <meta name="theme-color" content="black">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="osullivanjam.es: 404">
+    <meta property="og:title" content="osullivanjam.es">
     <meta property="og:image" content="<?= "https://osullivanjam.es" . IMAGE_PATH_GLOBAL . "scaryface.jpg" ?>">
     <meta property="og:description" content="404 page not found">
     <meta name='description' content='404 page not found'>
