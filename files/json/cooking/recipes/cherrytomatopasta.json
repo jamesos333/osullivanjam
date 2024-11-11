@@ -1,0 +1,42 @@
+{
+    "title": "Cherry Tomato Pasta",
+    "description": "A simple pasta cooked in broth and cherry tomatoes. Can be make quickly and easily and makes for a nice refreshing weeknight meal.",
+    "time": "1 Hour",
+    "image": "cherrytomatopasta.webp",
+    "tags": "easy, fast, one pot, comfort",
+    "ingredients": [
+        "1 tbsp olive oil",
+        "1 shallot, thinly sliced",
+        "1 pint Cherry Tomatoes, sliced in half",
+        "1/4 tsp salt",
+        "4 cloves garlic, thinly sliced",
+        "1/4 tsb red pepper flakes",
+        "8oz (half box) ditalini",
+        "2 cups chicken bone broth",
+        "1/4 tsb black pepper",
+        "1/4 cup fresh basil, chopped",
+        "2 tbsp butter",
+        "1/4 cup parmesan cheese"
+    ],
+    "steps": [
+        {
+            "description": "Heat the olive oil in a large high-rimmed pan or pot over medium heat. Add the thinly sliced shallot and cook for 1 minute, stirring often. Mix in the sliced cherry tomatoes and a generous pinch of salt."
+        },
+        {
+            "description": "Cover the pan for 3-5 minutes to allow the tomatoes to burst and release their juices. Remove the lid and stir. You can gently press down on the tomatoes to help them burst. They don't need to be fully bursted at this point."
+        },
+        {
+            "description": "Mix in the thinly sliced garlic, red pepper flakes, and uncooked ditalini pasta. Pour in the chicken bone broth and bring to a boil. Once boilling, lower the heat to a simmer and cover the pan for 10 minutes. Give the pasta a stir half-way through to prevent sticking."
+        },
+        {
+            "description": "Uncover the pan and stir. There should still be plenty of liquid in the pan. Mix in the black pepper. Continue to cook the pasta uncovered, stirring often to prevent sticking."
+        },
+        {
+            "description": "Once most of the liquid is absorbed and the pasta is al dente, add the fresh basil and butter. Mix until the butter is melted and the sauce is glossy. Finally, mix in freshly grated parmesan cheese until melted and well combined."
+        },
+        {
+            "description": "Divide the pasta among bowls to serve. Top with additional freshly grated parmesan cheese, fresh basil, and a drizzle of olive oil as desired."
+        }
+    ],
+    "sources": ["https://carolbeecooks.com/one-pot-cherry-tomato-pasta/"]
+}

@@ -3,7 +3,7 @@ include ELEMENTS_PATH_COOKING . "recipe-shared.php";
 
 function createAndPopulateList() {
     $template = getFileTextContent(HTML_PATH_COOKING . "recipe-list-element.html");
-    $recipeList = getRecipeListJson();
+    $recipeList = array_reverse(getRecipeListJson());
     $recipeListHtml = "";
 
     foreach ($recipeList as $currentListItem) {

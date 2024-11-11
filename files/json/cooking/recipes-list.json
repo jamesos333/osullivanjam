@@ -14,5 +14,9 @@
     {
         "id": "cabbagesoup",
         "file": "cabbagesoup.json"
+    },
+    {
+        "id": "cherrytomatopasta",
+        "file": "cherrytomatopasta.json"
     }
 ]
