@@ -55,6 +55,12 @@
     letter-spacing: 2px;
     margin: 0.5em 30px;
     padding: 0.5em;
+    // for fade in animation
+    opacity: 1;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
 
     p {
         margin: 8px;
@@ -81,11 +87,14 @@
         color: c.$transparent-grey;
         font-style: italic;
     }
+}
 
-    // for fade in
-    opacity: 1;
-    transition: opacity 1s ease-out;
-    &.htmx-added {
+@keyframes fadeIn {
+    0% {
         opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
