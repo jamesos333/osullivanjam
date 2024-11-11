@@ -1,8 +1,10 @@
 <?php
 define('CATEGORIES', array("tech", "info", "art", "books", "mscl"));
+define('LINKS_JSON', getFileJsonContent(JSON_PATH_LINKS . 'links.json'));
+define('DECODER_TEMPLATE', getFileTextContent(HTML_PATH_LINKS . 'decodertemplate.html'));
 
 function getLinks() {
-    $linkArray = getAndDecodeLinksJson();
+    $linkArray = LINKS_JSON;
     $allLinks = "";
     if (isCategorySelected('all')) {
         shuffle($linkArray);
@@ -33,7 +35,7 @@ function createLinkHtml($currentLink, $simplify) {
 }
 
 function getDecoder() {
-    $countedCategories = array_count_values(array_column(getAndDecodeLinksJson(), 'category'));
+    $countedCategories = array_count_values(array_column(LINKS_JSON, 'category'));
     $allLinks = createDecoderHtml(
         'all',
         array_sum($countedCategories),
@@ -50,12 +52,11 @@ function getDecoder() {
 }
 
 function createDecoderHtml($category, $count, $isSelected) {
-    $template = getFileTextContent(HTML_PATH_LINKS . 'decodertemplate.html');
     $class = $isSelected ? 'selected ' . $category : $category;
     return str_replace(
         array('%CATEGORY%', '%COUNT%', '%CLASS%'),
         array($category, $count, $class),
-        $template
+        DECODER_TEMPLATE
     );
 }
 
@@ -64,10 +65,6 @@ function isCategorySelected($category) {
         return $_GET['category'] == $category;
     }
     return 'all' == $category;
-}
-
-function getAndDecodeLinksJson() {
-    return getFileJsonContent(JSON_PATH_LINKS . 'links.json');
 }
 
 function randomFontSize() {
