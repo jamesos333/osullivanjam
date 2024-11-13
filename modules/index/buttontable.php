@@ -29,7 +29,7 @@ function getButton($buttonParameters) {
     </tr>
     <tr>
         <th><?= getButton($buttonArray[2]) ?></th>
-        <th><a href='/moth'><img src="<?= IMAGE_PATH_INDEX . 'eye.gif' ?>" alt="eye" class="eye"></a></th>
+        <th><a href='/moth'><img src="<?= IMAGE_PATH_INDEX . 'eye.webp' ?>" alt="eye" class="eye"></a></th>
         <th><?= getButton($buttonArray[3]) ?></th>
     </tr>
     <tr>
