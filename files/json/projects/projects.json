@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Savior of the Damned",
+        "link": "/projects/damned/damned.html",
+        "image": "damned.png",
+        "language": "godot",
+        "mobile": false
+    },
+    {
+        "title": "Cyberjellies",
+        "link": "/projects/cyberjellies/index.html",
+        "image": "cyberjellies.png",
+        "language": "p5js",
+        "mobile": true
+    },
+    {
+        "title": "Safari Snapshot",
+        "link": "https://www.youtube.com/watch?v=3zLBkHz1QOs",
+        "image": "safarisnapshot.png",
+        "language": "unreal",
+        "mobile": true
+    }
+]

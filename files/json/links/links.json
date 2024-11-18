@@ -387,5 +387,20 @@
         "title": "htmx ~ Is htmx Just Another JavaScript Framework?",
         "url": "https://htmx.org/essays/is-htmx-another-javascript-framework/",
         "category": "tech"
+    },
+    {
+        "title": "Can I use... Support tables for HTML5, CSS3, etc",
+        "url": "https://caniuse.com/",
+        "category": "tech"
+    },
+    {
+        "title": "Frederick Engels: On Authority",
+        "url": "https://www.marxists.org/archive/marx/works/1872/10/authority.htm",
+        "category": "books"
+    },
+    {
+        "title": "The Waste Land by T. S. Eliot",
+        "url": "https://wasteland.windingway.org/",
+        "category": "books"
     }
 ]
