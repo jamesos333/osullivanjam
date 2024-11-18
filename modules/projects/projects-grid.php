@@ -7,9 +7,6 @@ function getLinkTable() {
 }
 
 function getLinkElement($element) {
-    if(isMobile() && !$element["mobile"]) {
-        return;
-    }
     $body = str_replace(
         array("%TITLE%", "%LINK%", "%IMAGE%", "%LANGUAGE%", "%LANGUAGEIMAGE%"),
         array(
@@ -25,14 +22,11 @@ function getLinkElement($element) {
 }
 
 function populateAndCreateLinkTable($elements) {
-    $fullgrid = "<table class='linkTable' style='width:100%'>";
-    for ($x = 0; $x < count($elements); $x++) {
-        $fullgrid .= "<tr>" . getLinkElement($elements[$x]);
-        if ($x != count($elements) - 1) {
-            $x++;
-            $fullgrid .= getLinkElement($elements[$x]);
+    $fullgrid = "<div class='projects-container'>";
+    foreach ($elements as $element) {
+        if (!isMobile() || $element["mobile"]) {
+            $fullgrid .= getLinkElement($element);
         }
-        $fullgrid .= "</tr>";
     }
-    return $fullgrid . "</table>";
+    return $fullgrid . "</div>";
 }
