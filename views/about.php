@@ -3,8 +3,8 @@ include ELEMENTS_PATH_ABOUT . "manifesto.php";
 $version = $id ?? MANIFESTO_FULL_JSON["default"];
 $isDefault = $version == MANIFESTO_FULL_JSON["default"];
 
-$pageName = "about";
-$cssName = $pageName;
+$pageName = $isDefault ? "about" : ("about v" . $version);
+$cssName = "about";
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES_TOP ?>
 

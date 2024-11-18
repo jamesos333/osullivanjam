@@ -16,6 +16,7 @@ $descriptionText = $description ?? $title;
 
 <head>
     <meta charset="UTF-8">
+    <meta name='robots' content='index, follow'>
     <meta name="theme-color" content="black">
     <meta property="og:type" content="website">
     <meta property="og:title" content="osullivanjam.es">
@@ -25,7 +26,6 @@ $descriptionText = $description ?? $title;
     <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH_GLOBAL . 'icon.png' ?>">
     <link rel="preload" href="<?= CSS_PATH . $cssName . '.css?v=' . VERSION ?>" as="style">
     <link rel="stylesheet" href="<?= CSS_PATH . $cssName . '.css?v=' . VERSION ?>">
-    <meta name='robots' content='<?= count($_GET) == 0 ? 'index, follow' : 'noindex' ?>'>
     <script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous" defer></script>
     <script src="https://unpkg.com/htmx-ext-preload@2.0.1/preload.js" defer></script>
     <?= isset($additionalHeader) ? $additionalHeader : "" ?>
