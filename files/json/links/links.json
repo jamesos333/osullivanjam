@@ -294,11 +294,6 @@
         "category": "art"
     },
     {
-        "title": "Skyscanner: Compare Cheap Flights",
-        "url": "https://www.skyscanner.com/",
-        "category": "mscl"
-    },
-    {
         "title": "W3C Markup Validation",
         "url": "https://validator.w3.org/",
         "category": "tech"
@@ -381,7 +376,7 @@
     {
         "title": "Letters: Marx-Engels Correspondence 1863",
         "url": "https://marxists.architexturez.net/archive/marx/works/1863/letters/63_09_12.htm",
-        "category": "info"
+        "category": "books"
     },
     {
         "title": "htmx ~ Is htmx Just Another JavaScript Framework?",
@@ -402,5 +397,15 @@
         "title": "The Waste Land by T. S. Eliot",
         "url": "https://wasteland.windingway.org/",
         "category": "books"
+    },
+    {
+        "title": "Confessions of an English Opium-Eater, by Thomas De Quincey",
+        "url": "https://www.gutenberg.org/files/2040/2040-h/2040-h.htm",
+        "category": "books"
+    },
+    {
+        "title": "The Best Markers | JetPens",
+        "url": "https://www.jetpens.com/blog/The-Best-Markers/pt/666",
+        "category": "info"
     }
 ]
