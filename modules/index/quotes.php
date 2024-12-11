@@ -30,7 +30,12 @@ $quoteArray = array(
     "my nerves go out past my body, embedding within the asphalt",
     "many worlds i've known",
     "what is beautiful is good, and who is good will be beautiful",
-    "you exist. deep in my mind, in my heart, in my dreams"
+    "you exist. deep in my mind, in my heart, in my dreams",
+    "i carried my ashes to the mountains; i overcame myself, the sufferer",
+    "i feel an unhappiness which almost dismembers me",
+    "i'm restless. things are calling me away",
+    "and i am so tired. i would like to sleep under trees; swirling ones",
+    "i'll be forgiven in my animal innocence"
 );
 
 $smallQuoteArray = array(
@@ -65,7 +70,9 @@ $smallQuoteArray = array(
     "endless noise",
     "plagued by concepts",
     "emptier and simpler",
-    "something honest"
+    "something honest",
+    "endless feeling",
+    "pure data"
 );
 
 shuffle($quoteArray);

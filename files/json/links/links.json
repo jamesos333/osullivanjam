@@ -407,5 +407,20 @@
         "title": "The Best Markers | JetPens",
         "url": "https://www.jetpens.com/blog/The-Best-Markers/pt/666",
         "category": "info"
+    },
+    {
+        "title": "Which cube should I buy? - Cuboss.com",
+        "url": "https://cuboss.com/buying-guide/",
+        "category": "info"
+    },
+    {
+        "title": "The root causes for the dev-design mismatch | by Erez Reznikov",
+        "url": "https://uxdesign.cc/the-root-causes-for-the-dev-design-mismatch-4c66e0fa6740",
+        "category": "tech"
+    },
+    {
+        "title": "Health Fraud Product Database | FDA",
+        "url": "https://www.fda.gov/consumers/health-fraud-scams/health-fraud-product-database",
+        "category": "info"
     }
 ]
