@@ -1,74 +1,80 @@
 <?php
+define('ALL', 'all');
 define('CATEGORIES', array("tech", "info", "art", "books", "mscl"));
 define('LINKS_JSON', getFileJsonContent(JSON_PATH_LINKS . 'links.json'));
 define('DECODER_TEMPLATE', getFileTextContent(HTML_PATH_LINKS . 'decodertemplate.html'));
 
 function getLinks() {
-    $linkArray = LINKS_JSON;
-    $allLinks = "";
-    if (isCategorySelected('all')) {
-        shuffle($linkArray);
+    $link_array = array_reverse(LINKS_JSON);
+    if (isCategorySelected(ALL)) {
+        shuffle($link_array);
+    } else {
+        $link_array = array_filter(
+            $link_array,
+            fn($k) => $k["category"] == getSelectedCategory()
+        );
     }
-    foreach ($linkArray as $currentLink) {
-        if (isCategorySelected('all') || isCategorySelected($currentLink['category'])) {
-            $allLinks .= createLinkHtml($currentLink, !isCategorySelected('all'));
-        }
+    $element_html = "";
+    foreach ($link_array as $current_link) {
+        $element_html .= createLinkHtml($current_link, !isCategorySelected(ALL));
     }
-    return $allLinks;
+    return $element_html;
 }
 
-// if simplify is true, it will have the link be on its own line and with default formatting
-function createLinkHtml($currentLink, $simplify) {
+function createLinkHtml($current_link, $simplify) {
     $keywords = array("%TEXT%", "%URL%", "%CATEGORY%", "%STYLE%");
-    $linkTemplate = "<a target='_blank' rel='noopener noreferrer' href='%URL%' class='%CATEGORY%' %STYLE%>%TEXT%</a> ";
-    $style = "style='font-size:" . randomFontSize() . "'";
+    $link_template = "<a target='_blank' rel='noopener noreferrer' href='%URL%' class='%CATEGORY%' %STYLE%>%TEXT%</a> ";
+    $style = "style='font-size:" . random_int(30, 46) . "px'";
     if ($simplify) {
-        $linkTemplate = '<div class="simplified">' . $linkTemplate . '</div>';
+        $link_template = '<div class="simplified">' . $link_template . '</div>';
         $style = "";
     }
-    array_push($currentLink, $style);
+    array_push($current_link, $style);
     return str_replace(
         $keywords,
-        $currentLink,
-        $linkTemplate
+        $current_link,
+        $link_template
     );
 }
 
 function getDecoder() {
-    $countedCategories = array_count_values(array_column(LINKS_JSON, 'category'));
-    $allLinks = createDecoderHtml(
-        'all',
-        array_sum($countedCategories),
-        isCategorySelected('all')
+    $counted_categories = array_count_values(array_column(LINKS_JSON, 'category'));
+    $element_html = createDecoderHtml(
+        ALL,
+        array_sum($counted_categories),
+        isCategorySelected(ALL)
     );
     foreach (CATEGORIES as $current) {
-        $allLinks .= createDecoderHtml(
+        $element_html .= createDecoderHtml(
             $current,
-            $countedCategories[$current],
+            $counted_categories[$current],
             isCategorySelected($current)
         );
     }
-    return $allLinks;
+    return $element_html;
 }
 
-function createDecoderHtml($category, $count, $isSelected) {
-    $class = $isSelected ? 'selected ' . $category : $category;
+function createDecoderHtml($category, $count, $is_selected) {
     return str_replace(
         array('%CATEGORY%', '%COUNT%', '%CLASS%'),
-        array($category, $count, $class),
+        array(
+            $category,
+            $count,
+            $is_selected ? 'selected ' . $category : $category
+        ),
         DECODER_TEMPLATE
     );
 }
 
 function isCategorySelected($category) {
-    if (isset($_GET['category']) && in_array((string)$_GET['category'], CATEGORIES)) {
-        return $_GET['category'] == $category;
-    }
-    return 'all' == $category;
+    return getSelectedCategory() == $category;
 }
 
-function randomFontSize() {
-    return random_int(30, 46) . "px";
+function getSelectedCategory() {
+    if (isset($_GET['category']) && in_array((string)$_GET['category'], CATEGORIES)) {
+        return $_GET['category'];
+    }
+    return ALL;
 }
 ?>
 
