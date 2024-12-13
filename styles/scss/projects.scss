@@ -29,24 +29,33 @@ a {
         left: 0.9em;
 
         color: c.$light-blue;
-        text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
         font-size: 1.6rem;
-        font-family: "Brush Script MT", cursive;
+        font-family: Garamond, serif;
+
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 4px;
+        padding: 2px 6px;
     }
 
     .projects-icon {
         position: absolute;
         top: 1em;
-        right: 0.7em;
-
+        right: 1em;
         width: 34px;
         height: 34px;
+        //filter: grayscale(20%);
     }
 
     .projects-image img {
+        display: block;
+        width: 480px;
+        height: auto;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+
         border-radius: 14px;
-        background-color: rgba(c.$main-purple, 0.6);
         border: 3px solid rgba(c.$main-purple, 1);
+        background-color: rgba(c.$main-purple, 0.6);
     }
 
     &:hover {
@@ -63,5 +72,10 @@ a {
 }
 
 .unavailable {
-    filter: grayscale(95%) blur(4px);
+    .projects-image {
+        filter: grayscale(95%) blur(4px);
+    }
+    .projects-title {
+        display: none;
+    }
 }

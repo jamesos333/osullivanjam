@@ -6,27 +6,27 @@ function getLinkTable() {
     return populateAndCreateLinkTable($projects);
 }
 
-function getLinkElement($element) {
-    $body = str_replace(
-        array("%TITLE%", "%LINK%", "%IMAGE%", "%LANGUAGE%", "%LANGUAGEIMAGE%"),
+function getLinkElement($element, $is_available) {
+    $icon = $is_available ? $element["language"] : "cellphone-crossed";
+    return str_replace(
+        array("%TITLE%", "%LINK%", "%IMAGE%", "%LANGUAGE%", "%LANGUAGEIMAGE%", "%CLASS%"),
         array(
-            $element["title"],
-            $element["link"],
+            $is_available ? $element["title"] : "",
+            $is_available ? $element["link"] : "",
             IMAGE_PATH_PROJECTS . $element["image"],
-            $element["language"],
-            IMAGE_PATH_PROJECTS_ICONS . $element["language"] . '.svg'
+            $is_available ? $element["language"] : "unavailable on mobile",
+            IMAGE_PATH_PROJECTS_ICONS . $icon . ".svg",
+            $is_available ? "" : "unavailable"
         ),
         PROJECTS_TEMPLATE
     );
-    return "<th>" . $body . "</th>";
 }
 
 function populateAndCreateLinkTable($elements) {
     $fullgrid = "<div class='projects-container'>";
     foreach ($elements as $element) {
-        if (!isMobile() || $element["mobile"]) {
-            $fullgrid .= getLinkElement($element);
-        }
+        $is_available = !isMobile() || $element["mobile"];
+        $fullgrid .= getLinkElement($element, $is_available);
     }
     return $fullgrid . "</div>";
 }
