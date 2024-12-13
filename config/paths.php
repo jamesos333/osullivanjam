@@ -1,5 +1,5 @@
 <?php
-define('VERSION', '6.9');
+define('VERSION', '7.1');
 // variables for basic paths
 define('IMAGE_PATH', '/files/img/');
 define('CSS_PATH', '/styles/css/');
