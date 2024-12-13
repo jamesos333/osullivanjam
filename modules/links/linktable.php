@@ -22,17 +22,20 @@ function getLinks() {
 }
 
 function createLinkHtml($current_link, $simplify) {
-    $keywords = array("%TEXT%", "%URL%", "%CATEGORY%", "%STYLE%");
     $link_template = "<a target='_blank' rel='noopener noreferrer' href='%URL%' class='%CATEGORY%' %STYLE%>%TEXT%</a> ";
     $style = "style='font-size:" . random_int(30, 46) . "px'";
     if ($simplify) {
-        $link_template = '<div class="simplified">' . $link_template . '</div>';
+        $link_template = "<div class='simplified'>" . $link_template . "</div>";
         $style = "";
     }
-    array_push($current_link, $style);
     return str_replace(
-        $keywords,
-        $current_link,
+        array("%TEXT%", "%URL%", "%CATEGORY%", "%STYLE%"),
+        array(
+            $current_link["title"],
+            $current_link["url"],
+            $current_link["category"],
+            $style
+        ),
         $link_template
     );
 }
