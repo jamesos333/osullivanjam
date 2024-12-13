@@ -1,0 +1,9 @@
+[submodule "views/projects/projects/damned"]
+	path = views/projects/projects/damned
+	url = https://github.com/jamesos333/damned.git
+[submodule "views/projects/projects/cyberjellies"]
+	path = views/projects/projects/cyberjellies
+	url = https://github.com/jamesos333/cyberjellies.git
+[submodule "views/projects/projects/twwfilms"]
+	path = views/projects/projects/twwfilms
+	url = https://github.com/jamesos333/twwfilms.git
