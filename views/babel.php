@@ -16,7 +16,7 @@ $additionalHeader = "<noscript><style>#stone{display: none !important;}</style><
         <?php include ELEMENTS_PATH_CONTACT . 'chatbox.php'; ?>
     </div>
     <img
-        preload="mouseover"
+        preload="mousedown"
         hx-get="/contact/chatbox"
         hx-target="#wizardcontainer"
         hx-swap="beforeend"

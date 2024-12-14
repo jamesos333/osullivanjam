@@ -19,7 +19,7 @@ $cssName = "about";
     </div>
 </div>
 
-<div preload="mouseover" preload-images="true" class="wrapper">
+<div preload="mousedown" preload-images="true" class="wrapper">
     <div class="textcontainer">
         <div class="subquote version-disclaimer" style="<?= $isDefault ? "display: none" : "" ?>">
             <a href="/about">this page is outdated, click here for the most recent version</a>

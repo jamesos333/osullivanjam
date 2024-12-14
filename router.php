@@ -3,6 +3,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/config/paths.php';
 include_once $_SERVER['DOCUMENT_ROOT'] . '/config/functions.php';
 function get($route, $path_to_include)
 {
+	header('Cache-Control: max-age=1');
 	if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 		route($route, $path_to_include);
 	}

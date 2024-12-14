@@ -1,7 +1,7 @@
 <div class="wrapper navbar">
     <div class="leftpane">
         <p class="navbar-element left">
-            <a preload="mouseover" preload-images="true" href="<?= $backLink ?? "/" ?>">
+            <a preload="mousedown" preload-images="true" href="<?= $backLink ?? "/" ?>">
                 <img src="<?= IMAGE_PATH_NAVBAR . 'skeletonhand.png' ?>" alt="back">
             </a>
         </p>
