@@ -17,7 +17,7 @@ function getButton($buttonParameters) {
     $imgSrc = IMAGE_PATH_BUTTONS . $buttonParameters[1];
     $imgAlt = $buttonParameters[2];
     $imgClass = $buttonParameters[3];
-    return "<a href='$linkHref'><img src='$imgSrc' alt='$imgAlt' class='$imgClass'></a>";
+    return "<a href='$linkHref'><img src='$imgSrc' width='300px' height='120px' alt='$imgAlt' class='$imgClass'></a>";
 }
 ?>
 
@@ -29,7 +29,7 @@ function getButton($buttonParameters) {
     </tr>
     <tr>
         <th><?= getButton($buttonArray[2]) ?></th>
-        <th><a href='/moth'><img src="<?= IMAGE_PATH_INDEX . 'eye.gif' ?>" alt="eye" class="eye"></a></th>
+        <th><a href='/moth'><img src="<?= IMAGE_PATH_INDEX . 'eye.gif' ?>" width="300px" height="276px" alt="eye" class="eye"></a></th>
         <th><?= getButton($buttonArray[3]) ?></th>
     </tr>
     <tr>
