@@ -29,10 +29,10 @@ $description = "abandon all hope ye who enter here";
 <table>
     <tr>
         <th>
-            <img src="<?= IMAGE_PATH_INDEX . 'alligator.gif'; ?>" alt="alligators dancing" class="aligators">
+            <img src="<?= IMAGE_PATH_INDEX . 'alligator.gif'; ?>" width="732px" height="580px" alt="alligators dancing" class="aligators">
         </th>
         <th>
-            <img src="<?= IMAGE_PATH_INDEX . 'alligator.gif'; ?>" alt="alligators dancing" class="aligators">
+            <img src="<?= IMAGE_PATH_INDEX . 'alligator.gif'; ?>" width="732px" height="580px" alt="alligators dancing" class="aligators">
         </th>
     </tr>
 </table>

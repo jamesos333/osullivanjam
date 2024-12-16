@@ -1,6 +1,10 @@
 <?php
-function letterPath($letter) {
-    return IMAGE_PATH_LETTERS . $letter . '.gif';
+function wordToElement($word) {
+    $element = "";
+    foreach (str_split($word) as $letter) {
+        $element .= "<img src='" . IMAGE_PATH_LETTERS . $letter . ".gif' width='150px' height='150px' alt=''>";
+    }
+    return $element;
 }
 ?>
 
@@ -8,26 +12,10 @@ function letterPath($letter) {
     <div class="header">
         <a preload="mousedown" preload-images="true" href="/" aria-label="header">
             <div class="name">
-                <div class="row">
-                    <img src="<?= letterPath('j') ?>" alt="">
-                    <img src="<?= letterPath('a') ?>" alt="">
-                    <img src="<?= letterPath('m') ?>" alt="">
-                    <img src="<?= letterPath('e') ?>" alt="">
-                    <img src="<?= letterPath('s') ?>" alt="">
-                </div>
+                <?= wordToElement('james') ?>
             </div>
             <div class="name">
-                <div class="row">
-                    <img src="<?= letterPath('o') ?>" alt="">
-                    <img src="<?= letterPath('s') ?>" alt="">
-                    <img src="<?= letterPath('u') ?>" alt="">
-                    <img src="<?= letterPath('l') ?>" alt="">
-                    <img src="<?= letterPath('l') ?>" alt="">
-                    <img src="<?= letterPath('i') ?>" alt="">
-                    <img src="<?= letterPath('v') ?>" alt="">
-                    <img src="<?= letterPath('a') ?>" alt="">
-                    <img src="<?= letterPath('n') ?>" alt="">
-                </div>
+                <?= wordToElement('osullivan') ?>
             </div>
         </a>
     </div>

@@ -89,21 +89,16 @@ table {
     padding-bottom: 0.75%;
 
     .name {
-        text-align: center;
+        display: flex;
         justify-content: center;
-    }
+        text-align: center;
 
-    .row {
         img {
-            padding: 8px 2px;
+            height: auto;
             width: 9.6%;
             aspect-ratio: 1;
-        }
-
-        &:after {
-            content: "";
-            clear: both;
-            display: table;
+            object-fit: fill;
+            padding: 10px 4px;
         }
     }
 }
