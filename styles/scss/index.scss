@@ -35,6 +35,19 @@ $gap: 0.1rem;
     }
 }
 
+.subquote-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin: 18px 7px 22px;
+
+    p {
+        margin: auto 0px;
+        font-weight: 700;
+        border-width: 10px
+    }
+}
+
 .diagram {
     @include g.center;
     width: 87%;
@@ -43,9 +56,17 @@ $gap: 0.1rem;
 }
 
 .aligators {
-    height: auto;
-    width: 70%;
-    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5px 0px;
+
+    img {
+        height: auto;
+        width: 74%;
+        justify-self: center;
+        margin-bottom: 10px;
+        padding-right: 5%;
+    }
 }
 
 .earthquote {

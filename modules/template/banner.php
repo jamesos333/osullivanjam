@@ -2,7 +2,7 @@
 function wordToElement($word) {
     $element = "";
     foreach (str_split($word) as $letter) {
-        $element .= "<img src='" . IMAGE_PATH_LETTERS . $letter . ".gif' width='150px' height='150px' alt=''>";
+        $element .= "<img src='" . IMAGE_PATH_LETTERS . $letter . ".gif' width='150' height='150' alt=''>";
     }
     return $element;
 }
