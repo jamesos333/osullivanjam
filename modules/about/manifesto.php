@@ -23,7 +23,7 @@ function getLogoPanel() {
     $all_logos = array_slice(array_merge($logos["real"], $fun_logos), 0, 16);
     $result = "";
     foreach ($all_logos as $image_name) {
-        $result .= "<img src=" .  IMAGE_PATH_ABOUT . $image_name . " alt=''>";
+        $result .= "<img src=" .  IMAGE_PATH_ABOUT . $image_name . " width='200' height='200' alt=''>";
     }
     return $result;
 }

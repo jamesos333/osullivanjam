@@ -18,7 +18,7 @@ shuffle($disclaimerImages);
 ?>
 
 <div class="disclaimer">
-    <img src="<?= IMAGE_PATH_LINKS . $disclaimerImages[0] ?>" alt="disclaimer image">
+    <img src="<?= IMAGE_PATH_LINKS . $disclaimerImages[0] ?>" width="250" height="180" alt="disclaimer image">
     <div class="disclaimer-text">
         <p id="disclaimer-red">DISCLAIMER</p>
         <p>All of the links contained herein will direct you to external websites- I do not assume responsibility for the accuracy,

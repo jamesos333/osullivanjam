@@ -28,10 +28,10 @@ $additionalHeader = "<noscript><style>#stone{display: none !important;}</style><
 <table>
     <tr>
         <th>
-            <img src="<?= IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" alt="wizard" class="wizard-decoration">
+            <img src="<?= IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" width="353" height="650" alt="wizard" class="wizard-decoration">
         </th>
         <th>
-            <img src="<?= IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" alt="wizard" class="wizard-decoration">
+            <img src="<?= IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" width="353" height="650" alt="wizard" class="wizard-decoration">
         </th>
     </tr>
 </table>

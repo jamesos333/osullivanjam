@@ -27,7 +27,7 @@ $description = "abandon all hope ye who enter here";
 </div>
 
 <p class="subquote earthquote">"i descended beneath the earth and became hypoxic from the fumes"</p>
-<img src="<?= IMAGE_PATH_INDEX . 'bodywithoutorgans2.png'; ?>" alt="body without organs diagram" class="diagram" width="732" height="580">
+<img src="<?= IMAGE_PATH_INDEX . 'bodywithoutorgans2.png'; ?>" width="732" height="580" alt="body without organs diagram" class="diagram">
 
 <blockquote>
     <p class="firequote">Your wealth has rotted, and moths have eaten your clothes. Your gold and silver
