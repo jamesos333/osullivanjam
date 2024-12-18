@@ -424,8 +424,13 @@
         "category": "info"
     },
     {
-        "title": "CSS Font Stack: Web Safe and Web Font Family with HTML and CSS code.",
+        "title": "CSS Font Stack: Web Safe and Web Font Families.",
         "url": "https://www.cssfontstack.com/",
+        "category": "tech"
+    },
+    {
+        "title": "The 2024 Web Almanac",
+        "url": "https://almanac.httparchive.org/en/2024/",
         "category": "tech"
     }
 ]

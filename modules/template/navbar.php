@@ -2,7 +2,7 @@
     <div class="leftpane">
         <p class="navbar-element left">
             <a preload="mousedown" preload-images="true" href="<?= $backLink ?? "/" ?>">
-                <img src="<?= IMAGE_PATH_NAVBAR . 'skeletonhand.png' ?>" alt="back">
+                <img src="<?= IMAGE_PATH_NAVBAR . 'skeletonhand.png' ?>" width="200" height="99" alt="back">
             </a>
         </p>
     </div>

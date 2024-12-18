@@ -11,7 +11,7 @@ function getLinks() {
     } else {
         $link_array = array_filter(
             $link_array,
-            fn($k) => $k["category"] == getSelectedCategory()
+            fn($k) => isCategorySelected($k["category"])
         );
     }
     $element_html = "";

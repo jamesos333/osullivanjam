@@ -3,15 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="404" content="osullivanjam.es">
-    <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH_GLOBAL . 'icon.png' ?>">
+    <meta name="robots" content="noindex">
     <meta name="theme-color" content="black">
     <meta property="og:type" content="website">
     <meta property="og:title" content="osullivanjam.es">
     <meta property="og:image" content="<?= "https://osullivanjam.es" . IMAGE_PATH_GLOBAL . "scaryface.jpg" ?>">
     <meta property="og:description" content="404 page not found">
     <meta name='description' content='404 page not found'>
-    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/x-icon" href="<?= IMAGE_PATH_GLOBAL . 'icon.png' ?>">
+    <meta name="404" content="osullivanjam.es">
     <meta http-equiv="refresh" content="4; url=/">
     <title>404</title>
     <style>
@@ -35,6 +35,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            height: auto;
             width: 30vw;
             animation: fadeIn 3s;
         }
@@ -68,7 +69,7 @@
     <a href="/">
         <div class="content">
             <h1>404</h1>
-            <img src="<?= IMAGE_PATH_404 . 'smiledog.gif'; ?>" alt="smiledog">
+            <img src="<?= IMAGE_PATH_404 . 'smiledog.gif'; ?>" width="498" height="280" alt="smiledog">
             <h2>looking for something?</h2>
         </div>
     </a>
