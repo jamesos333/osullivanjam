@@ -432,5 +432,15 @@
         "title": "The 2024 Web Almanac",
         "url": "https://almanac.httparchive.org/en/2024/",
         "category": "tech"
+    },
+    {
+        "title": "Awwwards - Website Awards",
+        "url": "https://www.awwwards.com/",
+        "category": "art"
+    },
+    {
+        "title": "Three.js - JavaScript 3D Library",
+        "url": "https://threejs.org/",
+        "category": "tech"
     }
 ]
