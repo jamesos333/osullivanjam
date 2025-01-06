@@ -16,24 +16,18 @@ $additionalHeader = "<noscript><style>#stone{display: none !important;}</style><
         <?php include ELEMENTS_PATH_CONTACT . 'chatbox.php'; ?>
     </div>
     <img
-        preload="always mousedown"
-        hx-get="/contact/chatbox"
-        hx-target="#wizardcontainer"
-        hx-swap="beforeend"
         src="<?= IMAGE_PATH_CONTACT . 'emerald.gif'; ?>"
         alt="seeingstone"
-        id="stone">
+        id="stone"
+        hx-get="/contact/chatbox"
+        hx-swap="beforeend"
+        hx-target="#wizardcontainer"
+        preload="always mousedown">
 </div>
 
-<table>
-    <tr>
-        <th>
-            <img src="<?= IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" width="353" height="650" alt="wizard" class="wizard-decoration">
-        </th>
-        <th>
-            <img src="<?= IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" width="353" height="650" alt="wizard" class="wizard-decoration">
-        </th>
-    </tr>
-</table>
+<div class="wizard-decoration">
+    <img src="<?= IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" width="353" height="650" alt="wizard">
+    <img src="<?= IMAGE_PATH_CONTACT . 'wizard.gif'; ?>" width="353" height="650" alt="wizard">
+</div>
 
 <?php include ELEMENTS_PATH_TEMPLATES_BOTTOM ?>

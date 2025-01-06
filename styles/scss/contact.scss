@@ -3,9 +3,15 @@
 @use "_quotes";
 
 .wizard-decoration {
-    width: 70%;
-    height: auto;
-    min-height: 400px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px 0px;
+
+    img {
+        width: 70%;
+        height: auto;
+        justify-self: center;
+    }
 }
 
 .wizard-title {
