@@ -9,14 +9,14 @@ a {
     text-decoration: none;
 }
 
-.fixedresize {
-    max-width: 100%;
-    height: auto;
-}
-
 .movieTable {
     border-spacing: 16px 6px;
     margin-bottom: 16px;
+}
+
+.secret {
+    background-color: transparent !important;
+    border: none !important;
 }
 
 .movieElement {
@@ -57,6 +57,8 @@ a {
     img {
         width: 650px;
         border-radius: 4px;
+        max-width: 100%;
+        height: auto;
     }
 }
 

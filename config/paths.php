@@ -47,11 +47,13 @@ define('ELEMENTS_PATH_COOKING', ELEMENTS_PATH . 'cooking/');
 define('HTML_PATH_INDEX', HTML_PATH . 'index/');
 define('HTML_PATH_ABOUT', HTML_PATH . 'about/');
 define('HTML_PATH_LINKS', HTML_PATH . 'links/');
+define('HTML_PATH_MOVIES', HTML_PATH . 'movies/');
 define('HTML_PATH_PROJECTS', HTML_PATH . 'projects/');
 define('HTML_PATH_COOKING', HTML_PATH . 'cooking/');
 
 define('JSON_PATH_LINKS', JSON_PATH . 'links/');
 define('JSON_PATH_ABOUT', JSON_PATH . 'about/');
+define('JSON_PATH_MOVIES', JSON_PATH . 'movies/');
 define('JSON_PATH_PROJECTS', JSON_PATH . 'projects/');
 define('JSON_PATH_COOKING', JSON_PATH . 'cooking/');
 define('JSON_PATH_COOKING_RECIPES', JSON_PATH_COOKING . 'recipes/');
