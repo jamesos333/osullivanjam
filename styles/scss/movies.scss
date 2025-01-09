@@ -1,13 +1,6 @@
-// imports
 @use "colors" as c;
 @use "global" as g;
-
-// used stylesheets
 @use "_quotes";
-
-a {
-    text-decoration: none;
-}
 
 .movieTable {
     display: grid;
@@ -97,7 +90,7 @@ a {
         color: #ffc4c4;
     }
 
-    .pinkI {
+    .pinkItalic {
         @extend .pink;
         font-style: italic;
     }
