@@ -1,8 +1,9 @@
 <?php
 include_once ELEMENTS_PATH_MOVIES . 'movietable.php';
-$pageName = "movies";
-$cssName = $pageName;
-$description = "Archive of the TWW Films Project";
+$cssName = "movies";
+$pageName = (isSecret() ? "secret " : "") . "movies";
+$backLink = isSecret() ? "/movies" : "/";
+$description = (isSecret() ? "Secret " : "") . "Archive of the TWW Films Project";
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES_TOP ?>
 
@@ -15,6 +16,9 @@ $description = "Archive of the TWW Films Project";
         <a href="https://www.youtube.com/@TheWhattetyWhaters"><span class="youtubeLink">YouTube</span></a>, or through the links below.
     </p>
 </div>
+
+<p class='title' style="<?= isSecret() ? "" : "display: none" ?>">Secret Videos</p>
+
 <?= getMovieTable() ?>
 
 <?php include ELEMENTS_PATH_TEMPLATES_BOTTOM ?>

@@ -1,22 +1,28 @@
 // imports
-@use 'colors' as c;
-@use 'global' as g;
+@use "colors" as c;
+@use "global" as g;
 
 // used stylesheets
-@use '_quotes';
+@use "_quotes";
 
 a {
     text-decoration: none;
 }
 
 .movieTable {
-    border-spacing: 16px 6px;
-    margin-bottom: 16px;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
 
-.secret {
-    background-color: transparent !important;
-    border: none !important;
+    margin: 16px;
+    margin-top: 24px;
+    margin-bottom: 28px;
+
+    & > :first-child {
+        grid-column: 1 / -1;
+        margin-bottom: 18px;
+    }
 }
 
 .movieElement {
@@ -37,6 +43,7 @@ a {
     .movieTitle {
         color: white;
         font-family: "Times New Roman";
+        font-weight: 700;
         text-decoration: underline;
         text-align: center;
         line-height: 20px;
@@ -47,6 +54,7 @@ a {
     .movieSubtitle {
         color: red;
         font-family: "Times New Roman";
+        font-weight: 600;
         text-align: center;
         margin-top: 12px;
         margin-bottom: 0px;
@@ -60,6 +68,11 @@ a {
         max-width: 100%;
         height: auto;
     }
+}
+
+.secret {
+    background-color: transparent !important;
+    border: none !important;
 }
 
 .infoHeader {

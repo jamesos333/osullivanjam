@@ -96,7 +96,7 @@
         "date": "October 31st, 2015"
     },
     {
-        "link": "?secret=1",
+        "link": "?secret=true",
         "img": "scrt.png",
         "title": "",
         "date": ""
