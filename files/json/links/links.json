@@ -442,5 +442,40 @@
         "title": "Three.js - JavaScript 3D Library",
         "url": "https://threejs.org/",
         "category": "tech"
+    },
+    {
+        "title": "Using retro designs from 90s websites to inspire modern UX",
+        "url": "https://blog.logrocket.com/ux-design/90s-website-design/",
+        "category": "art"
+    },
+    {
+        "title": "Ugly 90s Webpages - Adam Hammond",
+        "url": "https://www.adamhammond.com/ugly-90s-webpages/",
+        "category": "art"
+    },
+    {
+        "title": "xkcd: Earth Temperature Timeline",
+        "url": "https://xkcd.com/1732/",
+        "category": "info"
+    },
+    {
+        "title": "Lenin: L. N. Tolstoy and the Modern Labour Movement",
+        "url": "https://www.marxists.org/archive/lenin/works/1910/nov/28.htm",
+        "category": "books"
+    },
+    {
+        "title": "Learn Laravel | Laracasts",
+        "url": "https://laracasts.com/",
+        "category": "tech"
+    },
+    {
+        "title": "CSS Zen Garden: The Beauty of CSS Design",
+        "url": "https://csszengarden.com/",
+        "category": "tech"
+    },
+    {
+        "title": "The Collection Chamber: PUMPKINHEAD'S REVENGE",
+        "url": "https://collectionchamber.blogspot.com/p/bloodwings-pumpkinheads-revenge.html",
+        "category": "art"
     }
 ]

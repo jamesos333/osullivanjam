@@ -35,7 +35,10 @@ $quoteArray = array(
     "i feel an unhappiness which almost dismembers me",
     "i'm restless. things are calling me away",
     "and i am so tired. i would like to sleep under trees; swirling ones",
-    "and i'll be forgiven in my animal innocence"
+    "and i'll be forgiven in my animal innocence",
+    "the world and i: at each others fingertips",
+    "misery, blank desolation, abiding darkness",
+    "re-create yourself: and let this be your best creation"
 );
 
 $smallQuoteArray = array(

@@ -18,7 +18,7 @@ $description = (isSecret() ? "Secret " : "") . "Archive of the TWW Films Project
 </div>
 
 <div class="infoHeader" style="<?= isSecret() ? "" : "display: none" ?>">
-    <h1>Secret Movies from the <span class="pink">TWW Films</span> Project</h1>
+    <h1>Secret Archive of the <span class="pink">TWW Films</span> Project</h1>
 </div>
 
 <?= getMovieTable() ?>
