@@ -22,22 +22,19 @@ function getLinks() {
 }
 
 function createLinkHtml($current_link, $simplify) {
-    $link_template = "<a target='_blank' rel='noopener noreferrer' href='%URL%' class='%CATEGORY%' %STYLE%>%TEXT%</a> ";
-    $style = "style='font-size:" . random_int(30, 46) . "px'";
+    $title = $current_link["title"];
+    $url = $current_link["url"];
+    $category = $current_link["category"];
+    $style = $simplify ? "" : getRandomFontSizeStyleTag();
+    $link_element = "<a target='_blank' rel='noopener noreferrer' href='$url' class='$category' $style>$title</a> ";
     if ($simplify) {
-        $link_template = "<div class='simplified'>" . $link_template . "</div>";
-        $style = "";
+        return "<div class='simplified'>$link_element</div>";
     }
-    return str_replace(
-        array("%TEXT%", "%URL%", "%CATEGORY%", "%STYLE%"),
-        array(
-            $current_link["title"],
-            $current_link["url"],
-            $current_link["category"],
-            $style
-        ),
-        $link_template
-    );
+    return $link_element;
+}
+
+function getRandomFontSizeStyleTag() {
+    return "style='font-size:" . random_int(30, 46) . "px'";
 }
 
 function getDecoder() {
