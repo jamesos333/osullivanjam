@@ -1,5 +1,6 @@
 <?php
 include_once ELEMENTS_PATH_INDEX . 'quotes.php';
+include_once ELEMENTS_PATH_INDEX . 'buttontable.php';
 $pageName = 'index';
 $cssName = $pageName;
 $description = "abandon all hope ye who enter here";
@@ -12,7 +13,9 @@ $description = "abandon all hope ye who enter here";
     <p class="subquote"><?= $smallQuoteArray[1] ?></p>
 </div>
 
-<?php include ELEMENTS_PATH_INDEX . 'buttontable.php'; ?>
+<div preload="mousedown" preload-images="true" class="button-table">
+    <?= getAllButtons() ?>
+</div>
 
 <blockquote>
     <p class="cloudquote">I stood in the midst of the world, and in the flesh I manifested myself to them. I

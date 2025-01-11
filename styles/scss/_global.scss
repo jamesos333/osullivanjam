@@ -1,5 +1,4 @@
 @use "colors" as c;
-
 $image_path: "/files/img/";
 $background_path: $image_path + "global/background/";
 
@@ -55,16 +54,6 @@ a {
 p {
     padding: 0 10px;
     line-height: 1.8;
-}
-
-table {
-    table-layout: fixed;
-    width: 100%;
-
-    th,
-    tr {
-        padding: 5px 0px;
-    }
 }
 
 #content {

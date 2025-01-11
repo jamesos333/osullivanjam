@@ -1,0 +1,54 @@
+{
+    "about": [
+        {
+            "link": "about",
+            "image": "button_about.png",
+            "class": "button"
+        }
+    ],
+    "eye": [
+        {
+            "link": "moth",
+            "image": "eye.gif",
+            "class": "eye",
+            "height": "276"
+        }
+    ],
+    "all": [
+        {
+            "link": "contact",
+            "image": "button_contact.png",
+            "class": "button"
+        },
+        {
+            "link": "cooking",
+            "image": "button_cooking.png",
+            "class": "button"
+        },
+        {
+            "link": "links",
+            "image": "button_links.png",
+            "class": "button"
+        },
+        {
+            "link": "movies",
+            "image": "button_movies.png",
+            "class": "button"
+        },
+        {
+            "link": "projects",
+            "image": "button_projects.png",
+            "class": "button"
+        },
+        {
+            "link": "https://github.com/jamesos333/osullivanjam",
+            "image": "button_github.png",
+            "class": "button"
+        },
+        {
+            "link": "faq",
+            "image": "button_faq.png",
+            "class": "button"
+        }
+    ]
+}

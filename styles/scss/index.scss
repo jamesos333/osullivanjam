@@ -2,22 +2,32 @@
 @use "global" as g;
 @use "_quotes";
 
-$gap: 0.1rem;
+.button-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
 
-.buttontable {
-    padding: 1em 2em;
-    padding-top: 10px;
+    padding: 20px 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    a {
+        @include g.center;
+        width: 83.8%;
+    }
 
     .eye {
-        cursor: default;
         height: auto;
-        width: 84%;
+        width: 100%;
+        cursor: default;
         padding: 0.5em 0px;
     }
 
     .button {
         height: auto;
-        width: 84%;
+        width: 100%;
         background-color: c.$transparent-black;
         box-shadow: 0 0 2px 2px black;
         border-radius: 30px;
@@ -44,7 +54,7 @@ $gap: 0.1rem;
     p {
         margin: auto 0px;
         font-weight: 700;
-        border-width: 10px
+        border-width: 10px;
     }
 }
 
@@ -90,6 +100,8 @@ $gap: 0.1rem;
         padding: 35px 0;
     }
 }
+
+$gap: 0.1rem;
 
 div.scrollingtext {
     max-width: 1050px;
