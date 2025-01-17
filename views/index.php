@@ -8,9 +8,9 @@ $description = "abandon all hope ye who enter here";
 <?php include ELEMENTS_PATH_TEMPLATES_TOP ?>
 
 <div class="subquote-container">
-    <p class="subquote"><?= $smallQuoteArray[0] ?></p>
-    <p class="subquote" style="border-width: 5px;"><?= $quoteArray[0] ?></p>
-    <p class="subquote"><?= $smallQuoteArray[1] ?></p>
+    <p class="subquote"><?= $small_quotes[0] ?></p>
+    <p class="subquote" style="border-width: 5px;"><?= $quotes[0] ?></p>
+    <p class="subquote"><?= $small_quotes[1] ?></p>
 </div>
 
 <div preload="mousedown" preload-images="true" class="button-table">
