@@ -32,12 +32,10 @@
 
         &:hover {
             box-shadow: 0 0 3px 3px plum;
-            border-radius: 25px;
         }
 
         &.comingsoon {
             box-shadow: 0 0 2px 2px black;
-            border-radius: 25px;
             filter: grayscale(95%) blur(6px);
         }
     }
