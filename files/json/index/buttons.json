@@ -2,6 +2,7 @@
     "about": [
         {
             "link": "about",
+            "name": "about",
             "image": "button_about.png",
             "class": "button"
         }
@@ -9,6 +10,7 @@
     "eye": [
         {
             "link": "moth",
+            "name": "eye",
             "image": "eye.gif",
             "class": "eye",
             "height": "276"
@@ -17,36 +19,43 @@
     "all": [
         {
             "link": "contact",
+            "name": "contact",
             "image": "button_contact.png",
             "class": "button"
         },
         {
             "link": "cooking",
+            "name": "cooking",
             "image": "button_cooking.png",
             "class": "button"
         },
         {
             "link": "links",
+            "name": "links",
             "image": "button_links.png",
             "class": "button"
         },
         {
             "link": "movies",
+            "name": "movies",
             "image": "button_movies.png",
             "class": "button"
         },
         {
             "link": "projects",
+            "name": "projects",
             "image": "button_projects.png",
             "class": "button"
         },
         {
             "link": "https://github.com/jamesos333/osullivanjam",
+            "name": "github",
             "image": "button_github.png",
             "class": "button"
         },
         {
             "link": "faq",
+            "name": "faq",
             "image": "button_faq.png",
             "class": "button"
         }

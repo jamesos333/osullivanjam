@@ -15,8 +15,9 @@ function getAllButtons() {
 
 function getButton($button) {
     $link = $button["link"];
+    $name = $button["name"];
     $image = IMAGE_PATH_BUTTONS . $button["image"];
     $class = $button["class"];
     $height = $button["height"] ?? "120";
-    return "<a href='$link'><img src='$image' width='300' height='$height' alt='' class='$class'></a>";
+    return "<a href='$link'><img src='$image' width='300' height='$height' alt='$name' class='$class'></a>";
 }
