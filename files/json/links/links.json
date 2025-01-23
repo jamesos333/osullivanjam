@@ -482,5 +482,15 @@
         "title": "Internet Assigned Numbers Authority TLD Database",
         "url": "https://www.iana.org/domains/root/db",
         "category": "tech"
+    },
+    {
+        "title": "Welcome to BugGuide.Net! - BugGuide.Net",
+        "url": "https://bugguide.net/",
+        "category": "info"
+    },
+    {
+        "title": "Wiby - Search Engine for the Classic Web",
+        "url": "https://wiby.me/",
+        "category": "art"
     }
 ]

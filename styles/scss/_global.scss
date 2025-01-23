@@ -8,16 +8,12 @@ $background_path: $image_path + "global/background/";
     margin-right: auto;
 }
 
-@mixin wrapper {
-    display: flex;
-}
-
 .center {
     @include center;
 }
 
 .wrapper {
-    @include wrapper;
+    display: flex;
 }
 
 html {
