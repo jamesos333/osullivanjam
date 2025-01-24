@@ -19,6 +19,7 @@ define('IMAGE_PATH_CONTACT', IMAGE_PATH . 'contact/');
 define('IMAGE_PATH_LOADING', IMAGE_PATH . 'loading/');
 define('IMAGE_PATH_LINKS', IMAGE_PATH . 'links/');
 define('IMAGE_PATH_COOKING', IMAGE_PATH . 'cooking/');
+define('IMAGE_PATH_COMMUNISM', IMAGE_PATH . 'communism/');
 
 define('IMAGE_PATH_LETTERS', IMAGE_PATH_GLOBAL . 'letters/');
 define('IMAGE_PATH_NAVBAR', IMAGE_PATH_GLOBAL . 'navbar/');

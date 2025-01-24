@@ -20,4 +20,6 @@ get('/cooking/recipe/$id', '/views/cooking/cooking-display.php');
 
 get('/projects', '/views/projects/projects-list.php');
 
+get('/communism', '/views/communism.php');
+
 any('/404', '/views/404.php');
