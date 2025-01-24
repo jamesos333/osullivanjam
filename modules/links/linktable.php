@@ -60,7 +60,7 @@ function createDecoderHtml($category, $count, $is_selected) {
         array(
             $category,
             $count,
-            $is_selected ? 'selected ' . $category : $category
+            $is_selected ? "selected $category" : $category
         ),
         DECODER_TEMPLATE
     );
