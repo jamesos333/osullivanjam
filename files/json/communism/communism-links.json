@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Principles of Communism",
+        "description": "The most ideal beginner text in my opinion. It is structured as a Q&A, containing 25 questions about communism for which answers are provided. Written by Friedrich Engels in 1847.",
+        "link": "https://www.marxists.org/archive/marx/works/1847/11/prin-com.htm"
+    },
+    {
+        "title": "Manifesto of the Communist Party",
+        "description": "It requires no introduction.",
+        "link": "https://www.marxists.org/archive/marx/works/1848/communist-manifesto/"
+    },
+    {
+        "title": "The Three Sources and Three Component Parts of Marxism",
+        "description": "A short but important document. Lenin stresses in every way possible that Marxism emerged as a natural result of the entire preceding history.",
+        "link": "https://www.marxists.org/archive/lenin/works/1913/mar/x01.htm"
+    },
+    {
+        "title": "Wage Labour and Capital",
+        "description": "The predecessor to Capital, in this text Marx goes over his ideas in slightly more detail and begins to introduce more terminology.",
+        "link": "https://www.marxists.org/archive/marx/works/1847/wage-labour/"
+    },
+    {
+        "title": "Capital Volume 1",
+        "description": "A mandatory read for anyone who is really serious about Marxism. It is a big commitment though, so make sure you read slowly and do not be afraid to look for external resources to help yourself understand. An absolutely indespensable reading.",
+        "link": "https://www.marxists.org/archive/marx/works/1867-c1/"
+    }
+]

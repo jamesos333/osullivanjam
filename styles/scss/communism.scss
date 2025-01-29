@@ -6,7 +6,6 @@
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    //justify-items: center;
     padding-top: 18px;
 
     h1 {
@@ -31,31 +30,10 @@
     font-size: 16px;
     color: c.$light-grey;
     text-align: center;
-    //font-style: italic;
 }
 
 .section-container {
-    margin: 24px;
-
-    .section-links {
-        padding: 10px;
-
-        text-align: justify;
-        background-color: rgba(c.$main-purple, 0.4);
-        border: 2px solid c.$light-grey;
-        border-radius: 0 0 6px 6px;
-        border-top: 0;
-
-        .link a {
-            font-size: 30px;
-            margin: 12px 12px;
-            color: c.$light-blue;
-    
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
+    margin: 38px;
 
     .section-title {
         margin-bottom: 0;
@@ -68,5 +46,32 @@
         background-color: c.$transparent-black;
         border: 2px solid c.$light-grey;
         border-radius: 6px 6px 0 0;
+    }
+}
+
+.section-links {
+    padding: 10px;
+    background-color: rgba(c.$main-purple, 0.4);
+    border: 2px solid c.$light-grey;
+    border-radius: 0 0 6px 6px;
+    border-top: 0;
+
+    .link {
+        margin: 20px 12px;
+        max-width: 780px;
+
+        .link-title {
+            font-size: 36px;
+            text-decoration: underline;
+            color: #cc0000;
+        }
+
+        .link-description {
+            margin-top: 6px;
+            margin-bottom: 20px;
+
+            font-size: 16px;
+            color: c.$light-blue;
+        }
     }
 }
