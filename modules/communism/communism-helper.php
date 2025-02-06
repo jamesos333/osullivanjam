@@ -10,11 +10,11 @@ function createLinksList() {
 
 function createLinkElement($title, $description, $link) {
     return <<<HTML
-        <a target='_blank' rel='noopener noreferrer' href='$link'>
-            <div class="link">
-                <div class="link-title">$title</div>
-                <div class="link-description">[WEB] $description</div>
+        <div class="link">
+            <div class="link-title">
+                <a target='_blank' rel='noopener noreferrer' href='$link'>$title</a>
             </div>
-        </a>
+            <div class="link-description">$description</div>
+        </div>
     HTML;
 }

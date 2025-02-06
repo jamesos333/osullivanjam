@@ -3,12 +3,14 @@
 // --pageName
 // --cssName
 // optional parameters
+// --noRobots
 // --backLink
 // --description
 // --additionalHeader
 $isIndex = strcmp($pageName, 'index') == 0;
 $title = 'osullivanjam.es' . (!$isIndex ? ': ' . $pageName : "");
 $descriptionText = $description ?? $title;
+$robots = isset($noRobots) && $noRobots ? "noindex" : "index, follow";
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +18,7 @@ $descriptionText = $description ?? $title;
 
 <head>
     <meta charset="UTF-8">
-    <meta name='robots' content='index, follow'>
+    <meta name='robots' content='<?= $robots ?>'>
     <meta name="theme-color" content="black">
     <meta property="og:type" content="website">
     <meta property="og:title" content="osullivanjam.es">
