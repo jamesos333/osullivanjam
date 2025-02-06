@@ -223,7 +223,8 @@
         "title": "waifu2x: Single-Image Super-Resolution for Anime-Style Art",
         "url": "https://www.waifu2x.net/",
         "category": "tech"
-    },    {
+    },
+    {
         "title": "3D Gif Maker",
         "url": "https://www.3dgifmaker.com/",
         "category": "mscl"
@@ -492,5 +493,10 @@
         "title": "Wiby - Search Engine for the Classic Web",
         "url": "https://wiby.me/",
         "category": "art"
+    },
+    {
+        "title": "Annas Archive - The largest truly open library in human history.",
+        "url": "https://annas-archive.se/",
+        "category": "info"
     }
 ]
