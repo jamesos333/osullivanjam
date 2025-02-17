@@ -498,5 +498,15 @@
         "title": "Annas Archive - The largest truly open library in human history.",
         "url": "https://annas-archive.se/",
         "category": "info"
+    },
+    {
+        "title": "The Geocities Gallery",
+        "url": "https://geocities.restorativland.org/",
+        "category": "art"
+    },
+    {
+        "title": "SML Wiki - smlwiki.com",
+        "url": "https://smlwiki.com/",
+        "category": "art"
     }
 ]
