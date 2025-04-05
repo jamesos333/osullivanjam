@@ -508,5 +508,45 @@
         "title": "SML Wiki - smlwiki.com",
         "url": "https://smlwiki.com/",
         "category": "art"
+    },
+    {
+        "title": "Multiorgan dysfunction related to chronic ketamine abuse - PMC",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4059572/",
+        "category": "info"
+    },
+    {
+        "title": "Carlo Cafiero: Summary of Karl Marx's Capital",
+        "url": "https://www.marxists.org/archive/cafiero/1879/summary-of-capital.htm#i",
+        "category": "books"
+    },
+    {
+        "title": "WikiTok",
+        "url": "https://wikitok.vercel.app/",
+        "category": "info"
+    },
+    {
+        "title": "the HOLOTYPIC OCCLUPANID RESEARCH GROUP",
+        "url": "https://horg.com/",
+        "category": "mscl"
+    },
+    {
+        "title": "Library of Babel",
+        "url": "https://libraryofbabel.info/",
+        "category": "art"
+    },
+    {
+        "title": "Babel Image Archives",
+        "url": "https://babelia.libraryofbabel.info/",
+        "category": "art"
+    },
+    {
+        "title": "There Is No AI Revolution",
+        "url": "https://www.wheresyoured.at/wheres-the-money/",
+        "category": "tech"
+    },
+    {
+        "title": "About - BlueDark",
+        "url": "https://bluedark.org/",
+        "category": "info"
     }
 ]

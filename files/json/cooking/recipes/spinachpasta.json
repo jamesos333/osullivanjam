@@ -1,0 +1,35 @@
+{
+    "title": "Spinach Pasta",
+    "description": "Really tasty spinach pasta that's super easy to make and a perfect weeknight meal. I was skeptical of the anchovies at first but they add a lot to the flavor and don't taste fishy at all.",
+    "time": "1 Hour",
+    "image": "spinachpasta.webp",
+    "tags": "easy, fast, one pot, pasta",
+    "ingredients": [
+        "Salt",
+        "12 ounces of oricchette pasta",
+        "1 pound mature spinach, or about 1¼ pounds (two 10-ounce bags) baby spinach",
+        "Olive oil",
+        "5 oil-packed anchovies",
+        "¾ cup grated Parmesan, plus more for garnishing",
+        "1 teaspoon red-pepper flakes",
+        "1 lemon, halved"
+    ],
+    "steps": [
+        {
+            "description": "Bring a large pot of salted water to a boil. Add the pasta and adjust the heat to maintain a gentle boil. Cook until just shy of al dente, about 1 minute less than the package instructions. Reserve ½ cup pasta water."
+        },
+        {
+            "description": "Place the spinach in the pot and stir until mixed together. Then immediately drain the pasta over the spinach."
+        },
+        {
+            "description": "Wipe out the pot and place over medium-high heat. Carefully add 2 tablespoons olive oil and the anchovies and stir until they start to dissolve, about 30 seconds."
+        },
+        {
+            "description": "Pour the pasta and spinach into the pot, add the cheese and red-pepper flakes and stir until a glossy sauce forms and the spinach fully wilts, 1 to 2 minutes. If the pasta looks dry, add the reserved pasta water 1 or 2 tablespoons at a time."
+        },
+        {
+            "description": "Squeeze a lemon half over everything. Taste and season as needed with more salt or lemon. Garnish with more cheese, if desired."
+        }
+    ],
+    "sources": ["https://cooking.nytimes.com/recipes/1025629-spinach-one-pot-pasta"]
+}

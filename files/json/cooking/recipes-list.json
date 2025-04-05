@@ -18,5 +18,13 @@
     {
         "id": "cherrytomatopasta",
         "file": "cherrytomatopasta.json"
+    },
+    {
+        "id": "spinachpasta",
+        "file": "spinachpasta.json"
+    },
+    {
+        "id": "pastafagioli",
+        "file": "pastafagioli.json"
     }
 ]

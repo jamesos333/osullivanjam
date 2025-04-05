@@ -1,0 +1,48 @@
+{
+    "title": "Pasta e Fagioli Soup",
+    "description": "Tasty and simple soup that is perfect for a weeknight meal.",
+    "time": "1 Hour",
+    "image": "pastafagiolisoup.jpg",
+    "tags": "easy, fast, one pot, soup",
+    "ingredients": [
+        "1 tablespoon extra virgin olive oil",
+        "4 oz diced pancetta",
+        "1 onion diced",
+        "4 cloves garlic, minced",
+        "4 stalks celery, diced",
+        "1 jalapeno, diced",
+        "1 teaspoon dried oregano",
+        "1 teaspoon red pepper flakes",
+        "1 teaspoon salt",
+        "½ teaspoon black pepper",
+        "28 oz can diced tomatoes with juice",
+        "2 ½ cups chicken broth",
+        "1 cup ditalini pasta",
+        "14.5 oz can cannellini beans, drained and rinsed",
+        "½ cup parmesan cheese"
+    ],
+    "steps": [
+        {
+            "description": "Heat olive oil in a large pot over medium heat. While the oil is heating, dice up the celery, onions, jalapeno, and garlic."
+        },
+        {
+            "description": "Once the oil is hot, add the diced pancetta. Cook until the pancetta is about 75% cooked. Then add celery, jalapeno, and onions."
+        },
+        {
+            "description": "When the onions are translucent and soft, add all of the spices - salt, pepper, oregano, minced garlic, and red pepper flakes."
+        },
+        {
+            "description": "Cook for a few minutes, until garlic is fragrant, then add diced tomatoes and chicken broth. Bring this to a boil."
+        },
+        {
+            "description": "Once the broth is boiling, add the ditalini pasta. Cook the pasta for 10 minutes, until the pasta is tender. Make sure to stir this pretty regularly throughout the cooking process to ensure that the pasta does not get stuck to the bottom of the pot."
+        },
+        {
+            "description": "Once the pasta is tender add the cannellini beans. Cook for about 5 more minutes, until the beans are nice and soft."
+        },
+        {
+            "description": "Remove from heat and serve with grated parmesan cheese on top."
+        }
+    ],
+    "sources": ["https://southern-bytes.com/pasta-e-fagioli/"]
+}
