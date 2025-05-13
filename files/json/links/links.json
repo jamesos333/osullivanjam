@@ -548,5 +548,15 @@
         "title": "About - BlueDark",
         "url": "https://bluedark.org/",
         "category": "info"
+    },
+    {
+        "title": "SSoIH - Secret Society of Internet Hobos",
+        "url": "https://ssoih.com/index.html",
+        "category": "info"
+    },
+    {
+        "title": "Cameron's World",
+        "url": "https://www.cameronsworld.net/",
+        "category": "art"
     }
 ]
