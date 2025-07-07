@@ -558,5 +558,40 @@
         "title": "Cameron's World",
         "url": "https://www.cameronsworld.net/",
         "category": "art"
+    },
+    {
+        "title": "Wikitravel - The Free Travel Guide",
+        "url": "https://wikitravel.org/en/Main_Page",
+        "category": "info"
+    },
+    {
+        "title": "Nepenthes AI Tarpit",
+        "url": "https://zadzmo.org/code/nepenthes/",
+        "category": "tech"
+    },
+    {
+        "title": "Photopea | Online Photo Editor",
+        "url": "https://www.photopea.com/",
+        "category": "mscl"
+    },
+    {
+        "title": "freemediaheckyeah",
+        "url": "https://fmhy.net/",
+        "category": "info"
+    },
+    {
+        "title": "charts.css",
+        "url": "https://chartscss.org/",
+        "category": "tech"
+    },
+    {
+        "title": "BLIT - a short story by David Langford",
+        "url": "https://www.infinityplus.co.uk/stories/blit.htm",
+        "category": "books"
+    },
+    {
+        "title": "When Must We Kill Them?",
+        "url": "https://nicholasdecker.substack.com/p/when-must-we-kill-them",
+        "category": "info"
     }
 ]
