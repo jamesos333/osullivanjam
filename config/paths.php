@@ -11,7 +11,6 @@ define('JSON_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/json/');
 // variables for page-specific paths
 define('IMAGE_PATH_GLOBAL', IMAGE_PATH . 'global/');
 define('IMAGE_PATH_404', IMAGE_PATH . '404/');
-define('IMAGE_PATH_MOTH', IMAGE_PATH . 'moth/');
 define('IMAGE_PATH_INDEX', IMAGE_PATH . 'index/');
 define('IMAGE_PATH_ABOUT', IMAGE_PATH . 'about/');
 define('IMAGE_PATH_FAQ', IMAGE_PATH . 'faq/');
@@ -19,6 +18,7 @@ define('IMAGE_PATH_CONTACT', IMAGE_PATH . 'contact/');
 define('IMAGE_PATH_LOADING', IMAGE_PATH . 'loading/');
 define('IMAGE_PATH_LINKS', IMAGE_PATH . 'links/');
 define('IMAGE_PATH_COOKING', IMAGE_PATH . 'cooking/');
+define('IMAGE_PATH_MOTH', IMAGE_PATH . 'moth/');
 
 define('IMAGE_PATH_LETTERS', IMAGE_PATH_GLOBAL . 'letters/');
 define('IMAGE_PATH_NAVBAR', IMAGE_PATH_GLOBAL . 'navbar/');
@@ -43,6 +43,7 @@ define('ELEMENTS_PATH_PROJECTS', ELEMENTS_PATH . 'projects/');
 define('ELEMENTS_PATH_CONTACT', ELEMENTS_PATH . 'contact/');
 define('ELEMENTS_PATH_LINKS', ELEMENTS_PATH . 'links/');
 define('ELEMENTS_PATH_COOKING', ELEMENTS_PATH . 'cooking/');
+define('ELEMENTS_PATH_MOTH', ELEMENTS_PATH . 'moth/');
 
 define('HTML_PATH_INDEX', HTML_PATH . 'index/');
 define('HTML_PATH_ABOUT', HTML_PATH . 'about/');
@@ -58,5 +59,6 @@ define('JSON_PATH_MOVIES', JSON_PATH . 'movies/');
 define('JSON_PATH_PROJECTS', JSON_PATH . 'projects/');
 define('JSON_PATH_COOKING', JSON_PATH . 'cooking/');
 define('JSON_PATH_COOKING_RECIPES', JSON_PATH_COOKING . 'recipes/');
+define('JSON_PATH_MOTH', JSON_PATH . 'moth/');
 
 define('WORDLIST_PATH_CONTACT', TXT_PATH . 'wordlists/');
