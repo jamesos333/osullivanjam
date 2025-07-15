@@ -3,6 +3,7 @@ define('VERSION', '7.12');
 // variables for basic paths
 define('IMAGE_PATH', '/files/img/');
 define('CSS_PATH', '/styles/css/');
+define('JS_PATH', '/files/js/');
 define('ELEMENTS_PATH', $_SERVER['DOCUMENT_ROOT'] . '/modules/');
 define('TXT_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/txt/');
 define('HTML_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/html/');
