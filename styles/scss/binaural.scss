@@ -1,12 +1,13 @@
-body {
-    background-color: #2c3e50;
-    font-family: courier;
-    color: #fdfefe;
-}
+@use "colors" as c;
+@use "global" as g;
+@use "_quotes";
 
 h2 {
-    margin-left: 15%;
-    font-size: 50px;
+    font-family: Garamond, serif;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    margin-bottom: 12px;
 }
 
 a {
@@ -19,62 +20,75 @@ a {
     }
 }
 
-.content {
-    margin-left: 25%;
-    margin-right: 20%;
+.wrapper {
+    display: block;
     margin-top: 10%;
-    width: 50%;
+}
 
-    .aboutDiv {
-        font-size: 12px;
+#content {
+    padding-top: 30px;
+    max-width: 800px;
+}
+
+.slide-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        ". . ."
+        ". . ."
+        ". . ."
+        ". t .";
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    margin-bottom: 60px;
+
+    label {
+        text-align: right;
+        padding-right: 5px;
     }
 
-    .slidecontainer {
-        margin-top: 2%;
-        margin-left: 27%;
-        margin-right: 20%;
-    }
-
-    .controlbar {
-        margin-top: 2%;
-        margin-left: 22%;
-    }
-
-    .stopbar {
-        margin-top: 2%;
-        margin-left: 44%;
-        display: none;
-    }
-
-    .timer {
-        margin-top: 5%;
-        margin-left: 32%;
-        font-size: 50px;
-    }
-
-    tr.spaceUnder > td {
-        padding-bottom: 1em;
-    }
-
-    button {
-        text-align: center;
-        font-size: 15px;
-        font-family: courier;
-
-        &.nonButton {
-            background: none;
-            border: none;
-            color: white;
-            text-decoration: underline;
-        }
+    .freqContainer {
+        padding-left: 5px;
     }
 
     input.frequencytext[type="number"] {
         font-size: 11px;
-        width: 35%;
+        width: 32%;
     }
 
-    span.freqContainer {
+    .start-bar {
+        grid-area: t;
+        margin: 0 auto;
         white-space: nowrap;
     }
+}
+
+.timer {
+    margin-top: 5%;
+    margin-left: 32%;
+    //font-size: 50px;
+}
+
+.stopbar {
+    margin-top: 2%;
+    margin-left: 44%;
+    display: none;
+}
+
+button {
+    text-align: center;
+    font-size: 15px;
+    font-family: courier;
+
+    &.nonButton {
+        background: none;
+        border: none;
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+.aboutDiv {
+    font-size: 12px;
 }

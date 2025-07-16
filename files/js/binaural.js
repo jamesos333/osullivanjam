@@ -87,8 +87,7 @@ function start() {
         timer(minsToPlay);
         document.getElementById("controlbar").style.display = "none";
         document.getElementById("stopbar").style.display = "block";
-        document.getElementById("countdownWrapper").style.visibility =
-            "visible";
+        document.getElementById("countdownWrapper").style.visibility = "visible";
     }
 }
 
