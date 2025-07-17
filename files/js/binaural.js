@@ -17,7 +17,7 @@ var volume = 0.5;
 
 var isSafari = false;
 
-function start() {
+function togglePlay() {
     if (this.playing === false) {
         var AudioContext =
             window.AudioContext || // Default
@@ -85,17 +85,16 @@ function start() {
 
         var minsToPlay = document.getElementById("timerMins").value;
         timer(minsToPlay);
-        document.getElementById("controlbar").style.display = "none";
-        document.getElementById("stopbar").style.display = "block";
-        document.getElementById("countdownWrapper").style.visibility = "visible";
+        document.getElementById("startButton").innerHTML = "Stop";
+        document.getElementById("timerMins").disabled = "true";
+    } else {
+        stop();
     }
 }
 
 async function stop() {
-    console.log("stopping");
-    document.getElementById("controlbar").style.display = "block";
-    document.getElementById("stopbar").style.display = "none";
-    document.getElementById("countdownWrapper").style.visibility = "hidden";
+    document.getElementById("startButton").disabled = "true";
+    document.querySelector("div.countdown-text").innerHTML = "--:--";
     clearInterval(this.timerId);
     this.gain.gain.exponentialRampToValueAtTime(
         this.volume / 1.05,
@@ -117,6 +116,10 @@ async function stop() {
     this.osc1.stop();
     this.osc2.stop();
     this.playing = false;
+    document.getElementById("startButton").innerHTML = "Start";
+    document.getElementById("startButton").removeAttribute("disabled");
+    document.getElementById("timerMins").removeAttribute("disabled");
+    document.querySelector("div.countdown-text").innerHTML = "00:00";
 }
 
 function updateText(oscNum) {
@@ -177,8 +180,11 @@ const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 function timer(mins) {
     var countdown = mins * 60 * 1000;
     var minInit = Math.floor(countdown / (60 * 1000));
-    var secInit = Math.floor(60 * (mins % 1));
-    document.querySelector("div.timer").innerHTML = minInit + " : " + secInit;
+    var secInit = Math.floor(60 * (mins % 1)).toLocaleString("en-US", {
+        minimumIntegerDigits: 2,
+        useGrouping: false,
+    });
+    document.querySelector("div.countdown-text").innerHTML = minInit + ":" + secInit;
     this.timerId = setInterval(function () {
         countdown -= 1000;
         var min = Math.floor(countdown / (60 * 1000));
@@ -188,13 +194,13 @@ function timer(mins) {
             stop();
             clearInterval(timerId);
         } else {
-            document.querySelector("div.timer").innerHTML = min + " : " + sec;
+            document.querySelector("div.countdown-text").innerHTML = min + ":" + sec;
         }
     }, 1000);
 }
 
 function toggleAbout() {
-    var x = document.getElementById("aboutDiv");
+    var x = document.getElementById("about-text");
     if (x.style.display === "none") {
         x.style.display = "block";
         document.getElementById("up").style.display = "inline";
