@@ -1,0 +1,157 @@
+@use "colors" as c;
+@use "global" as g;
+@use "_quotes";
+
+body {
+    margin: 0;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+}
+
+.wrapper {
+    display: block;
+    width: 85vw;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#content {
+    padding-top: 38px;
+    max-width: 800px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-family: Garamond, serif;
+    font-size: 80px;
+    color: c.$light-blue;
+    text-align: center;
+}
+
+a {
+    &:link {
+        color: c.$light-blue;
+    }
+
+    &:visited {
+        color: gray;
+    }
+}
+
+input[type="number"] {
+    font-size: 12px;
+    max-width: 94px;
+}
+
+input[type="range"] {
+    accent-color: c.$blue-violet;
+}
+
+button {
+    text-align: center;
+    font-size: 15px;
+    font-family: courier;
+
+    &.nonButton {
+        background: none;
+        border: none;
+        color: c.$light-blue;
+        text-decoration: underline;
+    }
+}
+
+.slide-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+        ". . ."
+        ". . ."
+        ". s .";
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    margin: 0 60px;
+    margin-bottom: 0px;
+
+    label {
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .freqContainer {
+        padding-left: 5px;
+        white-space: nowrap;
+    }
+
+    .start-bar {
+        grid-area: s;
+        margin: 0 auto;
+        white-space: nowrap;
+    }
+}
+
+.player-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 2fr;
+    grid-template-areas:
+        "t . ."
+        "t . .";
+    column-gap: 12px;
+    margin-left: 128px;
+    margin-right: 100px;
+    margin-bottom: 28px;
+
+    label {
+        align-self: center;
+    }
+
+    .timerMins {
+        align-self: center;
+        justify-self: flex-start;
+    }
+
+    .countdown-box {
+        grid-area: t;
+        color: c.$light-blue;
+        background-color: rgba(0, 0, 0, 0.4);
+        border: 4px c.$main-purple solid;
+        border-radius: 6px;
+
+        .countdown-text {
+            font-family: monospace;
+            padding: 5px 10px;
+            font-size: 56px;
+            text-align: center;
+            white-space: nowrap;
+        }
+    }
+}
+
+.about-container {
+    padding: 10px;
+    font-size: 12px;
+
+    #about-text {
+        padding-left: 12px;
+        padding-right: 8px;
+    }
+}
+
+.binaural-footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 12px;
+    padding-right: 14px;
+    text-align: right;
+    color: c.$transparent-grey;
+    font-style: italic;
+
+    a {
+        color: c.$transparent-grey;
+        &:hover {
+            color: aliceblue;
+            text-decoration: underline;
+        }
+    }
+}

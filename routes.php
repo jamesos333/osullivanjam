@@ -4,6 +4,7 @@ get('/', '/views/index.php');
 get('/faq', '/views/faq.php');
 get('/movies', '/views/movies.php');
 get('/loading', '/views/loading.php');
+get('/binaural', '/views/binaural.php');
 get('/i/$id', '/views/moth.php');
 
 get('/about', '/views/about.php');
