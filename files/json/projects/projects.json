@@ -26,5 +26,12 @@
         "image": "safarisnapshot.png",
         "language": "unreal",
         "mobile": true
+    },
+    {
+        "title": "Binaural Focus",
+        "link": "/binaural",
+        "image": "binauralfocus.png",
+        "language": "js",
+        "mobile": true
     }
 ]
