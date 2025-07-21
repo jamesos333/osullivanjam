@@ -179,16 +179,13 @@ const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 function timer(mins) {
     var countdown = mins * 60 * 1000;
-    var minInit = Math.floor(countdown / (60 * 1000));
-    var secInit = Math.floor(60 * (mins % 1)).toLocaleString("en-US", {
-        minimumIntegerDigits: 2,
-        useGrouping: false,
-    });
+    var minInit = Math.floor(countdown / (60 * 1000)).toString().padStart(2, "0");
+    var secInit = Math.floor(60 * (mins % 1)).toString().padStart(2, "0");
     document.querySelector("div.countdown-text").innerHTML = minInit + ":" + secInit;
     this.timerId = setInterval(function () {
         countdown -= 1000;
-        var min = Math.floor(countdown / (60 * 1000));
-        var sec = Math.floor((countdown - min * 60 * 1000) / 1000);
+        var min = Math.floor(countdown / (60 * 1000)).toString().padStart(2, "0");
+        var sec = Math.floor((countdown - min * 60 * 1000) / 1000).toString().padStart(2, "0");
 
         if (countdown <= 0) {
             stop();

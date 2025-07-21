@@ -66,18 +66,18 @@ $description = "binaural focus";
 
                     You can choose whatever frequencies you like, it's the difference between the two that matters.<br><br>
 
-                    Disclaimer: I did not build this website from scratch. This webpage is a modified version of a website that
+                    Disclaimer: I did not build this website from scratch. This webpage is a modified version of a site that
                     used to be hosted at binauralfocus.com but is currently only accessible via
                     <a href="https://web.archive.org/web/20221227112744/https://binauralfocus.com/" target="_blank">internet archive</a>.
                     As a result of this downtime, I have decided to tweak the archived site and repost it here.
                     <br><br>
-                    Hopefully the original creator is doing well, if you want you can try to buy them a coffee at
-                    <a href="https://buymeacoffee.com/lukeryan" target="_blank">https://buymeacoffee.com/lukeryan</a>.
+                    Hopefully the original creator is doing well, if you want you can try to buy them a coffee
+                    <a href="https://buymeacoffee.com/lukeryan" target="_blank">here</a>.
                 </div>
             </div>
         </div>
         <div class="binaural-footer">
-            Hosted on <a href="/" target="_blank">osullivanjam.es</a>
+            Hosted on <a href="/">osullivanjam.es</a>
         </div>
     </div>
 </body>
