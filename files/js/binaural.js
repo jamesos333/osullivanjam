@@ -58,6 +58,7 @@ function togglePlay() {
             this.panLeftNode.pan.value = -1;
             this.panRightNode.pan.value = 1;
         }
+        
         updateVolume(document.getElementById("volumeSlider").value);
 
         this.osc1Freq = document.getElementById("freq1").value;
