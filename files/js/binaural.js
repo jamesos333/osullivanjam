@@ -83,42 +83,33 @@ function togglePlay() {
         var minsToPlay = document.getElementById("timerMins").value;
         timer(minsToPlay);
         document.getElementById("startButton").innerHTML = "Stop";
-        document.getElementById("timerMins").disabled = "true";
+        document.getElementById("timerMins").disabled = true;
     } else {
         stop();
     }
 }
 
 async function stop() {
-    document.getElementById("startButton").disabled = "true";
+    document.getElementById("startButton").disabled = true;
     setCountdownText("--", "--");
-
     clearInterval(this.timerId);
+
+    const fadeDuration = 3;
+    this.gain.gain.setValueAtTime(this.volume, context.currentTime);
     this.gain.gain.exponentialRampToValueAtTime(
-        this.volume / 1.05,
-        context.currentTime + 0.3
+        0.001,
+        context.currentTime + fadeDuration
     );
-    await delay(300);
-    this.gain.gain.exponentialRampToValueAtTime(
-        this.volume / 1.5,
-        context.currentTime + 0.3
-    );
-    await delay(300);
-    this.gain.gain.exponentialRampToValueAtTime(
-        this.volume / 2,
-        context.currentTime + 0.4
-    );
-    await delay(400);
-    this.gain.gain.exponentialRampToValueAtTime(0.001, context.currentTime + 2);
-    await delay(2000);
+    await delay(fadeDuration * 1000);
+
     this.osc1.stop();
     this.osc2.stop();
+    this.playing = false;
 
     document.getElementById("startButton").innerHTML = "Start";
-    document.getElementById("startButton").removeAttribute("disabled");
-    document.getElementById("timerMins").removeAttribute("disabled");
+    document.getElementById("startButton").disabled = false;
+    document.getElementById("timerMins").disabled = false;
     setCountdownTextFromSeconds(0);
-    this.playing = false;
 }
 
 function updateFrequency(newFreq, oscillator) {

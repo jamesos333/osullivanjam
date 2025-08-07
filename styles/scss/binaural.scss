@@ -5,7 +5,7 @@
 body {
     margin: 0;
     display: flex;
-    height: 90vh;
+    height: 88vh;
     align-items: center;
 }
 
@@ -128,8 +128,8 @@ input[type="range"] {
 }
 
 .about-container {
-    padding: 10px;
-    padding-left: 12px;
+    padding: 12px;
+    padding-left: 14px;
 
     summary {
         font-size: 15px;
@@ -140,7 +140,7 @@ input[type="range"] {
 
     #about-text {
         font-size: 12px;
-        padding-left: 10px;
+        padding-left: 8px;
         padding-right: 8px;
     }
 
