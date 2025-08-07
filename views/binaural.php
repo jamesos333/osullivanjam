@@ -40,11 +40,11 @@ $description = "binaural focus";
 
             <div class="slide-grid">
                 <label for="freq1">Freq 1 </label>
-                <input type="range" min="30" max="1000" value="440" class="slider" id="freq1" oninput="updateFrequency(this.value, 1)">
+                <input type="range" min="1" max="1000" value="440" class="slider" id="freq1" oninput="updateFrequency(this.value, 1)">
                 <span class="freqContainer"><input id="frequencyText1" type="number" class="frequencytext" value="440" size="4" onchange="updateFrequency(this.value, 1)"> Hz</span>
 
                 <label for="freq2">Freq 2 </label>
-                <input type="range" min="30" max="1000" value="447" class="slider" id="freq2" oninput="updateFrequency(this.value, 2)">
+                <input type="range" min="1" max="1000" value="447" class="slider" id="freq2" oninput="updateFrequency(this.value, 2)">
                 <span class="freqContainer"><input id="frequencyText2" type="number" class="frequencytext" value="447" size="4" onchange="updateFrequency(this.value, 2)"> Hz</span>
 
                 <div class="start-bar" id="controlbar">

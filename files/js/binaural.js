@@ -23,17 +23,12 @@ function togglePlay() {
             window.AudioContext || // Default
             window.webkitAudioContext || // Safari and old versions of Chrome
             false;
-
         if (window.webkitAudioContext) {
             this.isSafari = true;
         }
-
         if (AudioContext) {
-            // Do whatever you want using the Web Audio API
             var ctx = new AudioContext();
         } else {
-            // Web Audio API is not supported
-            // Alert the user
             alert(
                 "Sorry, but the Web Audio API is not supported by your browser. Please, consider upgrading to the latest version or downloading Google Chrome or Mozilla Firefox"
             );
@@ -126,45 +121,18 @@ async function stop() {
     this.playing = false;
 }
 
-function updateText(oscNum) {
-    if (oscNum === 1) {
-        document.getElementById("frequencyText1").value = this.osc1Freq;
-        return;
-    } else {
-        document.getElementById("frequencyText2").value = this.osc2Freq;
-        return;
-    }
-}
-
-function updateSlider(oscNum) {
-    if (oscNum === 1) {
-        document.getElementById("freq1").value = this.osc1Freq;
-        return;
-    } else {
-        document.getElementById("freq2").value = this.osc2Freq;
-        return;
-    }
-}
-
 function updateFrequency(newFreq, oscillator) {
-    var correctedFreq = newFreq;
-    if (correctedFreq > 1000) {
-        correctedFreq = 1000;
-    } else if (correctedFreq < 1) {
-        correctedFreq = 1;
-    }
+    var correctedFreq = Math.min(Math.max(parseInt(newFreq), 1), 1000);
     if (oscillator === 1) {
         this.osc1Freq = correctedFreq;
         if (this.playing === true) this.osc1.frequency.value = correctedFreq;
-        updateText(1);
-        updateSlider(1);
-        return;
+        document.getElementById("frequencyText1").value = this.osc1Freq;
+        document.getElementById("freq1").value = this.osc1Freq;
     } else if (oscillator === 2) {
         this.osc2Freq = correctedFreq;
         if (this.playing === true) this.osc2.frequency.value = correctedFreq;
-        updateText(2);
-        updateSlider(2);
-        return;
+        document.getElementById("frequencyText2").value = this.osc2Freq;
+        document.getElementById("freq2").value = this.osc2Freq;
     }
 }
 
