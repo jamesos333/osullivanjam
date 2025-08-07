@@ -100,8 +100,8 @@ async function stop() {
         0.001,
         context.currentTime + fadeDuration
     );
+    const delay = (ms) => new Promise((res) => setTimeout(res, ms));
     await delay(fadeDuration * 1000);
-
     this.osc1.stop();
     this.osc2.stop();
     this.playing = false;
@@ -136,8 +136,6 @@ function updateVolume(newVolume) {
         );
     }
 }
-
-const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 function timer(mins) {
     var countdownSeconds = mins * 60;
