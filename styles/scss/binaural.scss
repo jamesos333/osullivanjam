@@ -48,19 +48,6 @@ input[type="range"] {
     accent-color: c.$blue-violet;
 }
 
-button {
-    text-align: center;
-    font-size: 15px;
-    font-family: courier;
-
-    &.nonButton {
-        background: none;
-        border: none;
-        color: c.$light-blue;
-        text-decoration: underline;
-    }
-}
-
 .slide-grid {
     display: grid;
     grid-template-columns: 70px 1fr 100px;
@@ -78,6 +65,12 @@ button {
     label {
         text-align: right;
         padding-right: 5px;
+    }
+
+    button {
+        text-align: center;
+        font-size: 15px;
+        font-family: courier;
     }
 
     .freqContainer {
@@ -136,10 +129,18 @@ button {
 
 .about-container {
     padding: 10px;
-    font-size: 12px;
+    padding-left: 12px;
+
+    summary {
+        font-size: 15px;
+        font-family: courier;
+        color: c.$light-blue;
+        text-decoration: underline;
+    }
 
     #about-text {
-        padding-left: 12px;
+        font-size: 12px;
+        padding-left: 10px;
         padding-right: 8px;
     }
 

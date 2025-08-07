@@ -58,7 +58,7 @@ function togglePlay() {
             this.panLeftNode.pan.value = -1;
             this.panRightNode.pan.value = 1;
         }
-        
+
         updateVolume(document.getElementById("volumeSlider").value);
 
         this.osc1Freq = document.getElementById("freq1").value;
@@ -96,7 +96,8 @@ function togglePlay() {
 
 async function stop() {
     document.getElementById("startButton").disabled = "true";
-    document.querySelector("div.countdown-text").innerHTML = "--:--";
+    setCountdownText("--", "--");
+
     clearInterval(this.timerId);
     this.gain.gain.exponentialRampToValueAtTime(
         this.volume / 1.05,
@@ -117,11 +118,12 @@ async function stop() {
     await delay(2000);
     this.osc1.stop();
     this.osc2.stop();
-    this.playing = false;
+
     document.getElementById("startButton").innerHTML = "Start";
     document.getElementById("startButton").removeAttribute("disabled");
     document.getElementById("timerMins").removeAttribute("disabled");
-    document.querySelector("div.countdown-text").innerHTML = "00:00";
+    setCountdownTextFromSeconds(0);
+    this.playing = false;
 }
 
 function updateText(oscNum) {
@@ -167,8 +169,7 @@ function updateFrequency(newFreq, oscillator) {
 }
 
 function updateVolume(newVolume) {
-    var newVolumeScaled = newVolume / 100;
-    this.volume = newVolumeScaled;
+    this.volume = newVolume / 100;
     if (typeof this.gain !== "undefined") {
         this.gain.gain.linearRampToValueAtTime(
             this.volume,
@@ -180,33 +181,28 @@ function updateVolume(newVolume) {
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 function timer(mins) {
-    var countdown = mins * 60 * 1000;
-    var minInit = Math.floor(countdown / (60 * 1000)).toString().padStart(2, "0");
-    var secInit = Math.floor(60 * (mins % 1)).toString().padStart(2, "0");
-    document.querySelector("div.countdown-text").innerHTML = minInit + ":" + secInit;
+    var countdownSeconds = mins * 60;
+    setCountdownTextFromSeconds(countdownSeconds);
     this.timerId = setInterval(function () {
-        countdown -= 1000;
-        var min = Math.floor(countdown / (60 * 1000)).toString().padStart(2, "0");
-        var sec = Math.floor((countdown - min * 60 * 1000) / 1000).toString().padStart(2, "0");
-
-        if (countdown <= 0) {
+        countdownSeconds -= 1;
+        if (countdownSeconds <= 0) {
             stop();
-            clearInterval(timerId);
         } else {
-            document.querySelector("div.countdown-text").innerHTML = min + ":" + sec;
+            setCountdownTextFromSeconds(countdownSeconds);
         }
     }, 1000);
 }
 
-function toggleAbout() {
-    var x = document.getElementById("about-text");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-        document.getElementById("up").style.display = "inline";
-        document.getElementById("down").style.display = "none";
-    } else {
-        x.style.display = "none";
-        document.getElementById("up").style.display = "none";
-        document.getElementById("down").style.display = "inline";
-    }
+function setCountdownTextFromSeconds(countdownSeconds) {
+    var min = padNumberWithZero(countdownSeconds / 60);
+    var sec = padNumberWithZero(countdownSeconds - min * 60);
+    setCountdownText(min, sec);
+}
+
+function padNumberWithZero(num) {
+    return Math.floor(num).toString().padStart(2, "0");
+}
+
+function setCountdownText(min, sec) {
+    document.querySelector("div.countdown-text").innerHTML = min + ":" + sec;
 }

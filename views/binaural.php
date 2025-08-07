@@ -52,9 +52,9 @@ $description = "binaural focus";
                 </div>
             </div>
 
-            <div class="about-container">
-                <button onclick="toggleAbout()" class="nonButton">About <span id="down">▲</span><span id="up" style="display: none">▼</span></button>
-                <div id="about-text" style="display: none;">
+            <details class="about-container">
+                <summary>About</summary>
+                <div id="about-text">
                     <br>
                     Welcome to Binaural Focus, a low distraction site where you can bathe in the focus and relaxation that Binaural Beats bring.<br><br>
 
@@ -74,7 +74,8 @@ $description = "binaural focus";
                     Hopefully the original creator is doing well, if you want you can try to buy them a coffee
                     <a href="https://buymeacoffee.com/lukeryan" target="_blank">here</a>.
                 </div>
-            </div>
+            </details>
+
         </div>
         <div class="binaural-footer">
             Hosted on <a href="/">osullivanjam.es</a>
