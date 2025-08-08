@@ -103,7 +103,7 @@ function updateVolume(newVolume) {
 }
 
 function timer(mins) {
-    var countdownSeconds = mins * 60;
+    let countdownSeconds = mins * 60;
     setCountdownTextFromSeconds(countdownSeconds);
     timerId = setInterval(function () {
         countdownSeconds -= 1;
