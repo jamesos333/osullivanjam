@@ -593,5 +593,10 @@
         "title": "When Must We Kill Them?",
         "url": "https://nicholasdecker.substack.com/p/when-must-we-kill-them",
         "category": "info"
+    },
+    {
+        "title": "Introduction - Learn You a Haskell for Great Good!",
+        "url": "https://learnyouahaskell.github.io/introduction",
+        "category": "tech"
     }
 ]

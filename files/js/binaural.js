@@ -36,6 +36,7 @@ function togglePlay() {
         panRight.pan.value = 1;
     }
 
+    updateVolume(document.getElementById("volumeSlider").value);
     osc1 = context.createOscillator();
     osc1.frequency.value = parseInt(document.getElementById("freq1").value, 10);
     osc2 = context.createOscillator();
@@ -116,13 +117,10 @@ function timer(mins) {
 }
 
 function setCountdownTextFromSeconds(countdownSeconds) {
-    const min = padNumberWithZero(countdownSeconds / 60);
-    const sec = padNumberWithZero(countdownSeconds - min * 60);
+    const padWithZero = (num) => Math.floor(num).toString().padStart(2, "0");
+    const min = padWithZero(countdownSeconds / 60);
+    const sec = padWithZero(countdownSeconds - min * 60);
     setCountdownText(min, sec);
-}
-
-function padNumberWithZero(num) {
-    return Math.floor(num).toString().padStart(2, "0");
 }
 
 function setCountdownText(min, sec) {
