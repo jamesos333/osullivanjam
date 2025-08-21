@@ -598,5 +598,30 @@
         "title": "Introduction - Learn You a Haskell for Great Good!",
         "url": "https://learnyouahaskell.github.io/introduction",
         "category": "tech"
+    },
+    {
+        "title": "About - Anodyne",
+        "url": "https://anodyne.wiki/",
+        "category": "info"
+    },
+    {
+        "title": "How's My Driving NY - Search NYC traffic violations",
+        "url": "https://www.howsmydrivingny.nyc/",
+        "category": "mscl"
+    },
+    {
+        "title": "Facts about jw.org, Watchtower",
+        "url": "https://jwfacts.com/",
+        "category": "info"
+    },
+    {
+        "title": "The International Obfuscated C Code Contest",
+        "url": "https://www.ioccc.org/index.html",
+        "category": "tech"
+    },
+    {
+        "title": "Encyclopedia of New Religious Movements",
+        "url": "https://newreligiousmovements.org/",
+        "category": "info"
     }
 ]
