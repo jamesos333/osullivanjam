@@ -1,15 +1,16 @@
 <?php
 define('VERSION', '7.17');
-// variables for basic paths
+// basic paths
 define('IMAGE_PATH', '/files/img/');
 define('CSS_PATH', '/styles/css/');
 define('JS_PATH', '/files/js/');
+define('SWF_PATH', '/files/swf/');
 define('ELEMENTS_PATH', $_SERVER['DOCUMENT_ROOT'] . '/modules/');
 define('TXT_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/txt/');
 define('HTML_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/html/');
 define('JSON_PATH', $_SERVER['DOCUMENT_ROOT'] . '/files/json/');
 
-// variables for page-specific paths
+// page-specific paths
 define('IMAGE_PATH_GLOBAL', IMAGE_PATH . 'global/');
 define('IMAGE_PATH_404', IMAGE_PATH . '404/');
 define('IMAGE_PATH_INDEX', IMAGE_PATH . 'index/');
@@ -20,6 +21,7 @@ define('IMAGE_PATH_LOADING', IMAGE_PATH . 'loading/');
 define('IMAGE_PATH_LINKS', IMAGE_PATH . 'links/');
 define('IMAGE_PATH_COOKING', IMAGE_PATH . 'cooking/');
 define('IMAGE_PATH_MOTH', IMAGE_PATH . 'moth/');
+define('IMAGE_PATH_FLASH', IMAGE_PATH . 'flash/');
 
 define('IMAGE_PATH_LETTERS', IMAGE_PATH_GLOBAL . 'letters/');
 define('IMAGE_PATH_NAVBAR', IMAGE_PATH_GLOBAL . 'navbar/');
@@ -45,6 +47,7 @@ define('ELEMENTS_PATH_CONTACT', ELEMENTS_PATH . 'contact/');
 define('ELEMENTS_PATH_LINKS', ELEMENTS_PATH . 'links/');
 define('ELEMENTS_PATH_COOKING', ELEMENTS_PATH . 'cooking/');
 define('ELEMENTS_PATH_MOTH', ELEMENTS_PATH . 'moth/');
+define('ELEMENTS_PATH_FLASH', ELEMENTS_PATH . 'flash/');
 
 define('HTML_PATH_INDEX', HTML_PATH . 'index/');
 define('HTML_PATH_ABOUT', HTML_PATH . 'about/');
@@ -52,6 +55,7 @@ define('HTML_PATH_LINKS', HTML_PATH . 'links/');
 define('HTML_PATH_MOVIES', HTML_PATH . 'movies/');
 define('HTML_PATH_PROJECTS', HTML_PATH . 'projects/');
 define('HTML_PATH_COOKING', HTML_PATH . 'cooking/');
+define('HTML_PATH_FLASH', HTML_PATH . 'flash/');
 
 define('JSON_PATH_INDEX', JSON_PATH . 'index/');
 define('JSON_PATH_LINKS', JSON_PATH . 'links/');
@@ -61,5 +65,6 @@ define('JSON_PATH_PROJECTS', JSON_PATH . 'projects/');
 define('JSON_PATH_COOKING', JSON_PATH . 'cooking/');
 define('JSON_PATH_COOKING_RECIPES', JSON_PATH_COOKING . 'recipes/');
 define('JSON_PATH_MOTH', JSON_PATH . 'moth/');
+define('JSON_PATH_FLASH', JSON_PATH . 'flash/');
 
 define('WORDLIST_PATH_CONTACT', TXT_PATH . 'wordlists/');

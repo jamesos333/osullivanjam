@@ -1,0 +1,67 @@
+[
+    {
+        "id": "harumscarum",
+        "title": "Harum Scarum",
+        "image": "HarumScarum.png",
+        "file": "HarumScarum.swf",
+        "width": "432px",
+        "height": "330px",
+        "enabled": false
+    },
+    {
+        "id": "zoomass",
+        "title": "Zoomass",
+        "image": "Zoomass.png",
+        "file": "Zoomass.swf",
+        "width": "800px",
+        "height": "300px"
+    },
+    {
+        "id": "dirtdragons",
+        "title": "Dirt Dragons",
+        "image": "DirtDragons.png",
+        "file": "DirtDragons.swf",
+        "width": "600px",
+        "height": "400px"
+    },
+    {
+        "id": "findyourfamily",
+        "title": "Goosebumps Find Your Family",
+        "image": "GoosebumpsFamily.png",
+        "file": "GoosebumpsFindYourFamily.swf",
+        "width": "",
+        "height": ""
+    },
+    {
+        "id": "bloxorz",
+        "title": "Bloxorz",
+        "file": "Bloxorz.swf",
+        "image": "Bloxorz.jpg",
+        "width": "728px",
+        "height": "397px"
+    },
+    {
+        "id": "fireboywatergirl",
+        "title": "Fireboy & Watergirl The Forest Temple",
+        "image": "FireboyAndWatergirl.png",
+        "file": "FireboyAndWatergirlTheForestTemple.swf",
+        "width": "640px",
+        "height": "480px"
+    },
+    {
+        "id": "qwop",
+        "title": "Qwop",
+        "file": "qwop.swf",
+        "image": "Qwop.jpg",
+        "width": "640px",
+        "height": "400px"
+    },
+    {
+        "id": "worldshardestgame",
+        "title": "The Worlds Hardest Game",
+        "file": "WorldsHardestGame.swf",
+        "image": "WorldsHardestGame.jpg",
+        "width": "550px",
+        "height": "400px"
+    }
+]

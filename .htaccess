@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteRule ^projects/(.*)$ /views/projects/projects/$1 [L]
-RewriteCond %{REQUEST_URI}  !(\.png|\.jpg|\.webp|\.gif|\.jpeg|\.zip|\.css|\.svg|\.js|\.pdf|\.txt|\.html|\.wasm|\.pck)$
+RewriteCond %{REQUEST_URI}  !(\.png|\.jpg|\.webp|\.gif|\.jpeg|\.zip|\.css|\.svg|\.js|\.pdf|\.txt|\.html|\.wasm|\.pck|\.swf)$
 RewriteRule (.*) routes.php [QSA,L]

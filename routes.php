@@ -21,4 +21,7 @@ get('/cooking/recipe/$id', '/views/cooking/cooking-display.php');
 
 get('/projects', '/views/projects/projects-list.php');
 
+get('/flash', '/views/flash/flash-list.php');
+get('/flash/$id', '/views/flash/flash-view.php');
+
 any('/404', '/views/404.php');

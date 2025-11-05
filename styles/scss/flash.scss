@@ -1,0 +1,71 @@
+@use "colors" as c;
+@use "global" as g;
+@use "_quotes";
+
+#flash-player-container {
+    display: grid;
+
+    ruffle-player {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.flash-list-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+
+    padding: 0px;
+    margin: 25px;
+    margin-top: 15px;
+}
+
+.flash-item {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    justify-self: center;
+    padding: 0px;
+
+    .flash-title {
+        position: absolute;
+        bottom: 0.7em;
+        left: 0.9em;
+        margin-right: 0.4em;
+
+        color: c.$light-blue;
+        font-size: 1.6rem;
+        font-family: Garamond, serif;
+
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 4px;
+        padding: 2px 6px;
+    }
+
+    .flash-image img {
+        display: block;
+        width: 480px;
+        height: auto;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+
+        border-radius: 14px;
+        border: 3px solid rgba(c.$main-purple, 1);
+        background-color: rgba(c.$main-purple, 0.6);
+    }
+
+    &:hover {
+        img {
+            filter: saturate(900%);
+        }
+    }
+
+    img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+}
