@@ -80,5 +80,13 @@
         "image": "Duck.png",
         "width": "600px",
         "height": "600px"
+    },
+    {
+        "id": "raftwars",
+        "title": "Raft Wars",
+        "file": "RaftWars.swf",
+        "image": "RaftWars.png",
+        "width": "640px",
+        "height": "480px"
     }
 ]
