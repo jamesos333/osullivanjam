@@ -30,7 +30,8 @@
         "image": "GoosebumpsFamily.png",
         "file": "GoosebumpsFindYourFamily.swf",
         "width": "",
-        "height": ""
+        "height": "",
+        "enabled": false
     },
     {
         "id": "bloxorz",
