@@ -11,6 +11,7 @@ $pageName = $flash_title;
 $cssName = 'flash';
 $backLink = "/flash";
 $description = "play online flash games nya nya";
+$additionalHeader = "<style>#flash-player-container{min-height: " . $flash_height + 60 . ";}</style>";
 ?>
 <?php include ELEMENTS_PATH_TEMPLATES_TOP ?>
 
