@@ -16,8 +16,8 @@
 
 .flash-list-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 16px;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px 14px;
 
     padding: 0px;
     margin: 25px;
@@ -33,12 +33,12 @@
 
     .flash-title {
         position: absolute;
-        bottom: 0.7em;
-        left: 0.5em;
-        margin-right: 0.4em;
+        bottom: 0.4em;
+        left: 0.4em;
+        margin-right: 0.2em;
 
         color: c.$light-blue;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         font-family: Garamond, serif;
 
         background: rgba(0, 0, 0, 0.75);
@@ -50,7 +50,7 @@
         display: block;
         width: 480px;
         height: auto;
-        aspect-ratio: 16/9;
+        aspect-ratio: 3/2;
         object-fit: fill;
 
         border-radius: 10px;
