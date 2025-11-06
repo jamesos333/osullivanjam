@@ -30,7 +30,7 @@ function getFlashListElement($element) {
         array("%TITLE%", "%LINK%", "%IMAGE%"),
         array(
             $element["title"],
-            "flash/" . $element["id"],
+            $element["id"],
             IMAGE_PATH_FLASH . $element["image"]
         ),
         FLASH_TEMPLATE
