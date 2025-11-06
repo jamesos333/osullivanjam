@@ -2,8 +2,12 @@
 @use "global" as g;
 @use "_quotes";
 
+:root {
+    --splash-screen-background: c.$main-purple;
+}
+
 #flash-player-container {
-    display: grid;
+    display: flex;
     min-height: 400px;
 
     ruffle-player {
@@ -64,7 +68,7 @@
         }
 
         .flash-title {
-            background: rgba(0, 0, 0, 0.90);
+            background: rgba(0, 0, 0, 0.9);
         }
     }
 
