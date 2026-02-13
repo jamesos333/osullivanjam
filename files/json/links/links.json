@@ -623,5 +623,25 @@
         "title": "Encyclopedia of New Religious Movements",
         "url": "https://newreligiousmovements.org/",
         "category": "info"
+    },
+    {
+        "title": "Jim Carrey Online",
+        "url": "https://www.jimcarreyonline.com/",
+        "category": "mscl"
+    },
+    {
+        "title": "Gathering of the Juggalos Archives",
+        "url": "https://gotjarchives.com/",
+        "category": "mscl"
+    },
+    {
+        "title": "noclip.website",
+        "url": "https://noclip.website/",
+        "category": "art"
+    },
+    {
+        "title": "Odd Lots Recommended Books",
+        "url": "https://odd-lots-books.netlify.app/",
+        "category": "info"
     }
 ]
