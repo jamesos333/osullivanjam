@@ -643,5 +643,15 @@
         "title": "Odd Lots Recommended Books",
         "url": "https://odd-lots-books.netlify.app/",
         "category": "info"
+    },
+    {
+        "title": "Museum of Obsolete Media",
+        "url": "https://obsoletemedia.org/",
+        "category": "info"
+    },
+    {
+        "title": "MxOemu - The Matrix Online Server Emulators",
+        "url": "https://mxoemu.info/",
+        "category": "art"
     }
 ]
