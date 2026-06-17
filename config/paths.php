@@ -1,5 +1,5 @@
 <?php
-define('VERSION', '8.1');
+define('VERSION', '8.2');
 // basic paths
 define('IMAGE_PATH', '/files/img/');
 define('CSS_PATH', '/styles/css/');

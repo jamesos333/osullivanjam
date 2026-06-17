@@ -25,8 +25,8 @@ $description = "abandon all hope ye who enter here";
 </blockquote>
 
 <div class="aligators">
-    <img src="<?= IMAGE_PATH_INDEX . 'alligator.gif'; ?>" width="732" height="580" alt="alligators dancing" class="aligators">
-    <img src="<?= IMAGE_PATH_INDEX . 'alligator.gif'; ?>" width="732" height="580" alt="alligators dancing" class="aligators">
+    <a href='i/ninehourworkday'><img src="<?= IMAGE_PATH_INDEX . 'alligator.gif'; ?>" width="732" height="580" alt="alligators dancing" class="aligators"></a>
+    <a href='i/solarplexusclownglider'><img src="<?= IMAGE_PATH_INDEX . 'alligator.gif'; ?>" width="732" height="580" alt="alligators dancing" class="aligators"></a>
 </div>
 
 <p class="subquote earthquote">"i descended beneath the earth and became hypoxic from the fumes"</p>

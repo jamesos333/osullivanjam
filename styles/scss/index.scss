@@ -65,13 +65,15 @@
     display: grid;
     grid-template-columns: auto auto;
     padding: 5px 0px;
+    margin-bottom: 10px;
 
     img {
+        @include g.center;
         height: auto;
         width: 74%;
         justify-self: center;
-        margin-bottom: 10px;
         padding-right: 5%;
+        cursor: default;
     }
 }
 
